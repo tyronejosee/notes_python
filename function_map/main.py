@@ -13,3 +13,12 @@ print(list(map(multiply_two, numbers))) # [4, 8, 12, 16, 20]
 # Using a lambda function
 
 print(list(map(lambda number: number * 2, numbers))) # [4, 8, 12, 16, 20]
+
+# Ejemplo 2
+def cuadrado(x):
+    return x ** 2
+
+numeros = [1, 2, 3, 4, 5]
+cuadrados = map(cuadrado, numeros)
+
+print(list(cuadrados))  # Salida: [1, 4, 9, 16, 25]
