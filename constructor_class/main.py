@@ -5,6 +5,3 @@ class MyClass():
         self.name = name
         self.age = age
         self.genre = genre
-
-class.name("jose")
-print(MyClass(name))
