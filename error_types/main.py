@@ -4,4 +4,7 @@ IndexError
 ModuleNotFoundError
 AttributeError
 KeyError
+ValueError
 TypeError
+ImportError
+ZeroDivisionError
