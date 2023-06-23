@@ -1,5 +1,5 @@
 """
-IndexError
+### IndexError
 Es una excepción que se produce cuando se intenta acceder a un índice inválido en una secuencia, 
 como una lista o una cadena. Esto ocurre cuando se realiza una referencia a un índice que está fuera del 
 rango de índices válidos para la secuencia en cuestión.
