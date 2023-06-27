@@ -56,3 +56,5 @@ def uppercase_decorator(function):
         return make_uppercase
 
     return wrapper
+
+https://www.datacamp.com/tutorial/decorators-python
