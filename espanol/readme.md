@@ -1,3 +1,5 @@
+![explore_python](../images/explore_python.svg)
+
 ## ¿Qué es Python?
 
 Python es un lenguaje de programación popular. Fue creado por Guido van Rossum y lanzado en 1991.
