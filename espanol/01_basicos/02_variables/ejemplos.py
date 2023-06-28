@@ -73,22 +73,25 @@ MyVariableName = "Juan"
 my_variable_name = "Juan"
 
 ### Asignar múltiples valores a múltiples variables
+
+## Ejemplo: Python te permite asignar valores a múltiples variables en una sola línea.
 x, y, z = "Naranja", "Plátano", "Cereza"
 print(x) # Imprime Naranja
 print(y) # Imprime Plátano
 print(z) # Imprime Cereza
 
-"""
-Asegúrate de que la cantidad de variables coincida con la cantidad de valores, de lo contrario obtendrá un error
-"""
-
 ### Un valor para múltiples variables
+
+## Ejemplo: Y puede asignar el mismo valor a múltiples variables en una línea.
 x = y = z = "Naranja"
 print(x) # Imprime Naranja
 print(y) # Imprime Naranja
 print(z) # Imprime Naranja
 
 ### Desempaquetar una colección
+# Puedes extraer los valores de una colección, en variables individuales, lo cual se conoce como desempaquetado (unpacking)
+
+## Ejemplo: Desempaquetar una lista.
 frutas = ["Manzana", "Plátano", "Cereza"]
 x, y, z = frutas
 print(x) # Imprime Manzana
@@ -96,37 +99,44 @@ print(y) # Imprime Plátano
 print(z) # Imprime Cereza
 
 ### Variables de salida
+
+## Ejemplo: La función print() de Python se utiliza frecuentemente para mostrar variables.
 x = "Python es increíble"
 print(x) # Imprime Python es increíble
 
-## La función print() imprime todo en una sola línea
+## Ejemplo: La función print() imprime todo en una sola línea.
 x = "Python"
 y = "es"
 z = "increíble"
 print(x, y, z) # Imprime Python es increíble
 
-## También puede usar el operador + para generar múltiples variables
+## Ejemplo: También puede usar el operador + para generar múltiples variables
 x = "Python "
 y = "es " # No olvides el espacio
 z = "increíble"
 print(x + y + z) # Imprime Python es increíble
 
-## Para números, el carácter + funciona como un operador matemático
+## Ejemplo: Para números, el carácter + funciona como un operador matemático
 x = 5
 y = 10
 print(x + y) # Imprime 15
 
-## Errores típicos
+## Ejemplo: Errores típicos al usar + en tipos de datos diferentes.
 #x = 5
 #y = "John"
 #print(x + y) # Imprime TypeError: unsupported operand type(s) for +: 'int' and 'str'
 # Descomenta y ejecuta para ver el error
 
-### Variables Globales
-# Al crear una variable dentro de una función, esta es local y solo se puede utilizar dentro de esa función
-# Para crear una variable global dentro de una función, puedes usar la palabra clave "global"
+## Ejemplo: En su lugar usa comas, para evitar estos errores.
+x = 5
+y = "John"
+print(x, y) # Imprime 5 John
 
-## Ejemplo: Si utilizas la palabra clave "global", la variable pertenece al ámbito global
+### Variables Globales
+# Al crear una variable dentro de una función, esta es local y solo se puede utilizar dentro de esa función.
+# Para crear una variable global dentro de una función, puedes usar la palabra clave "global".
+
+## Ejemplo: Si utilizas la palabra clave "global", la variable pertenece al ámbito global.
 def mifuncion():
   global x
   x = "fantástico"
@@ -134,3 +144,41 @@ def mifuncion():
 mifuncion()
 
 print("Python es " + x) # Imprime Python es fantastico
+
+## Ejemplo: Crear una variable dentro de una función con el mismo nombre que la variable global.
+#x = "impresionante"
+
+#def mifuncion():
+#  x = "fantástico"
+#  print("Python es " + x)
+
+#mifuncion() # Imprime Python es fantástico
+
+#print("Python es " + x) # Imprime Python es impresionante
+# Descomenta, función ya creada al duplicarla genera errores.
+
+### La palabra clave "global"
+# Normalmente, cuando creas una variable dentro de una función, esa variable es local y solo puede ser utilizada dentro de esa función.
+# Para crear una variable global dentro de una función, puedes utilizar la palabra clave "global".
+
+## Ejemplo: Si usas la palabra clave "global", la variable pertenece al ámbito global.
+#def mi_funcion():
+#global x
+#x = "fantástico"
+
+#mi_funcion()
+
+#print("Python es " + x) # Imprime Python es fantástico
+
+# Además, utiliza la palabra clave "global" si deseas cambiar una variable global dentro de una función.
+
+## Ejemplo: Para cambiar el valor de una variable global dentro de una función, haz referencia a la variable utilizando la palabra clave "global".
+#x = "increíble"
+
+#def mi_funcion():
+#global x
+#x = "fantástico"
+
+#mi_funcion()
+
+#print("Python es " + x)
