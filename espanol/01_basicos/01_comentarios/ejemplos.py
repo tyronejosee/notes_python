@@ -1,4 +1,6 @@
-### Comentarios ###
+"""
+Comentarios
+"""
 
 ### Creando un comentario
 # Los comentarios comienzan con un # y Python los ignorará
