@@ -1,6 +1,4 @@
-"""
-Ejemplos de Comentarios
-"""
+### Comentarios ###
 
 ### Creando un comentario
 # Los comentarios comienzan con un # y Python los ignorará
@@ -31,3 +29,4 @@ escrito en
 más de una línea
 """
 print("¡Hola, Mundo!")
+# Python leerá esta línea, pero al no esta designada a una variable la ignorará

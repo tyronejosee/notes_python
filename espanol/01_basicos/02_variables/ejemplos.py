@@ -1,43 +1,51 @@
 """
-Ejemplos de Variables
+Variables
 """
 
 ### Creación de variables
+
+## Ejemplo: Una variable se crea en el momento en que le asignas un valor por primera vez.
 x = 5
 y = "Juan"
 print(x) # Imprime 5
 print(y) # Imprime John
 
+## Ejemplo: Las variables no necesitan ser declaradas con un tipo específico y pueden cambiar de tipo incluso después de haber sido asignadas.
 x = 4 # x es de tipo int
 x = "María" # x ahora es de tipo str
 print(x) # Imprime María
 
-### Cambiar su tipo
+### Casting
+
+## Ejemplo: Si deseas especificar el tipo de datos de una variable, esto se puede hacer mediante el casting.
 x = str(3) # x será '3'
 y = int(3) # y será 3
 z = float(3) # z será 3.0
 
+
 ### Obtener el tipo de dato
+
+## Ejemplo: Puedes obtener el tipo de datos de una variable utilizando la función type().
 x = 5
 y = "Juan"
 print(type(x)) # Imprime <class 'int'>
 print(type(y)) # Imprime <class 'str'>
 
-## ¿Comillas simples o dobles?
+### ¿Comillas simples o dobles?
+
+## Ejemplo: Las variables de tipo cadena se pueden declarar utilizando comillas simples o dobles.
 x = "Juan"
 # Es lo mismo que
 x = 'Juan'
 
-## Distingue mayúsculas y minúsculas
+## Ejemplo: Distingue mayúsculas y minúsculas
 a = 4
 A = "María"
 # La variable "A" no sobrescribirá "a"
 
-"""
-Nombres de Variables
-"""
+### Nombrar variables
 
-### Nombres de variables validos
+## Ejemplo: Nombres de variables validos
 myvar = "Juan"
 my_var = "Juan"
 _my_var = "Juan"
@@ -45,24 +53,23 @@ myVar = "Juan"
 MYVAR = "Juan"
 myvar2 = "Juan"
 
-### Nombres de variables no validos
+## Ejemplo: Nombres de variables no validos
 #2myvar = "Juan"
 #my-var = "Juan"
 #my var = "Juan"
 # Descomenta para ver los errores
 
-"""
-Recuerda que los nombres de las variables distinguen entre mayúsculas y minúsculas
-"""
-
 ### Nombrar variables con diferentes estilos
-## Camel Case
+# Los nombres de variables con más de una palabra pueden ser difíciles de leer.
+# Hay varias técnicas que puede utilizar para hacerlos más legibles.
+
+## Camel Case: Cada palabra, excepto la primera, comienza con una letra mayúscula.
 myVariableName = "Juan"
 
-## Pascal Case
+## Pascal Case: Cada palabra comienza con una letra mayúscula.
 MyVariableName = "Juan"
 
-## Snake Case
+## Snake Case: Cada palabra está separada por un guion bajo.
 my_variable_name = "Juan"
 
 ### Asignar múltiples valores a múltiples variables
@@ -72,8 +79,7 @@ print(y) # Imprime Plátano
 print(z) # Imprime Cereza
 
 """
-Asegúrate de que la cantidad de variables coincida con la cantidad de valores,
-de lo contrario obtendrá un error
+Asegúrate de que la cantidad de variables coincida con la cantidad de valores, de lo contrario obtendrá un error
 """
 
 ### Un valor para múltiples variables
@@ -116,3 +122,15 @@ print(x + y) # Imprime 15
 #print(x + y) # Imprime TypeError: unsupported operand type(s) for +: 'int' and 'str'
 # Descomenta y ejecuta para ver el error
 
+### Variables Globales
+# Al crear una variable dentro de una función, esta es local y solo se puede utilizar dentro de esa función
+# Para crear una variable global dentro de una función, puedes usar la palabra clave "global"
+
+## Ejemplo: Si utilizas la palabra clave "global", la variable pertenece al ámbito global
+def mifuncion():
+  global x
+  x = "fantástico"
+
+mifuncion()
+
+print("Python es " + x) # Imprime Python es fantastico
