@@ -9,12 +9,19 @@ Las variables pueden almacenar datos de diferentes tipos, y diferentes tipos pue
 Python tiene los siguientes tipos de datos incorporados por defecto, en estas categorías:
 
 Tipo de texto: `str`
+
 Tipos numéricos: `int`, `float`, `complex`
+
 Tipos de secuencia: `list`, `tuple`, `range`
+
 Tipo de mapeo: `dict`
+
 Tipos de conjunto: `set`, `frozenset`
+
 Tipo booleano: `bool`
+
 Tipos binarios: `bytes`, `bytearray`, `memoryview`
+
 Tipo de nulo: `NoneType`
 
 ## Obteniendo el Tipo de Datos
