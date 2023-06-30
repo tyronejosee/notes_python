@@ -87,9 +87,9 @@ También puedes tener un `else` sin el `elif.`
 a = 200
 b = 33
 if b > a:
-		print("b es mayor que a")
+	print("b es mayor que a")
 else:
-		print("b no es mayor que a")
+	print("b no es mayor que a")
 ```
 
 ## **Short Hand** if
