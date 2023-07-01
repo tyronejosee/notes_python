@@ -17,7 +17,7 @@ Estas condiciones se pueden utilizar de varias formas, más comúnmente en "decl
 
 Una "declaración if" se escribe utilizando la palabra clave `if`.
 
-### Ejemplo
+- Ejemplo
 
 ```python
 # Declaración if
@@ -33,7 +33,7 @@ En este ejemplo, utilizamos dos variables, `a` y `b`, que se utilizan como parte
 
 Python se basa en la indentación (espacios en blanco al principio de una línea) para definir el alcance en el código. Otros lenguajes de programación a menudo utilizan llaves ({}) para este propósito.
 
-### Ejemplo
+- Ejemplo
 
 ```python
 # Declaración if (sin indentación: generará un error)
@@ -47,7 +47,7 @@ print("b es mayor que a")  # obtendrás un error
 
 La palabra clave `elif` es la forma de Python de decir "si las condiciones anteriores no son verdaderas, entonces prueba esta condición".
 
-### Ejemplo
+- Ejemplo
 
 ```python
 a = 33
@@ -64,13 +64,13 @@ En este ejemplo, `a` es igual a `b`, por lo que la primera condición no es verd
 
 La palabra clave `else` captura cualquier cosa que no sea capturada por las condiciones anteriores.
 
-### Ejemplo
+- Ejemplo
 
 ```python
 a = 200
 b = 33
 if b > a:
-	print("b es mayor que a")
+    print("b es mayor que a")
 elif a == b:
 	print("a y b son iguales")
 else:
@@ -81,7 +81,7 @@ En este ejemplo, `a` es mayor que `b`, por lo que la primera condición no es ve
 
 También puedes tener un `else` sin el `elif.`
 
-### Ejemplo
+- Ejemplo
 
 ```python
 a = 200
@@ -96,7 +96,7 @@ else:
 
 Si solo tienes una declaración para ejecutar, puedes ponerla en la misma línea que la declaración if.
 
-### Ejemplo
+- Ejemplo
 
 ```python
 # Declaración if en una línea
@@ -107,7 +107,7 @@ if a > b: print("a es mayor que b")
 
 Si solo tienes una declaración para ejecutar, una para el if y otra para el else, puedes ponerlo todo en la misma línea.
 
-### Ejemplo
+- Ejemplo
 
 ```python
 # Declaración if else en una línea
@@ -116,14 +116,11 @@ b = 330
 print("A") if a > b else print("B")
 ```
 
-<aside>
-💡 Esta técnica se conoce como **Operadores Ternarios** o **Expresiones Condicionales**.
-
-</aside>
+> Esta técnica se conoce como **Operadores Ternarios** o **Expresiones Condicionales**.
 
 También puedes tener múltiples declaraciones else en la misma línea.
 
-### Ejemplo
+- Ejemplo
 
 ```python
 # Declaración if else en una línea, con 3 condiciones
@@ -136,7 +133,7 @@ print("A") if a > b else print("=") if a == b else print("B")
 
 La palabra clave `and` es un operador lógico y se utiliza para combinar declaraciones condicionales.
 
-### Ejemplo
+- Ejemplo
 
 ```python
 # Prueba si a es mayor que b y si c es mayor que a
@@ -144,14 +141,14 @@ a = 200
 b = 33
 c = 500
 if a > b and c > a:
-	print("Ambas condiciones son verdaderas")
+    print("Ambas condiciones son verdaderas")
 ```
 
 ## Operador or
 
 La palabra clave `or` es un operador lógico y se utiliza para combinar declaraciones condicionales.
 
-### Ejemplo
+- Ejemplo
 
 ```python
 # Prueba si a es mayor que b o si a es mayor que c
@@ -166,7 +163,7 @@ if a > b or a > c:
 
 La palabra clave `not` es un operador lógico y se utiliza para invertir el resultado de la declaración condicional.
 
-### Ejemplo
+- Ejemplo
 
 ```python
 # Prueba si a NO es mayor que b
@@ -180,7 +177,7 @@ if not a > b:
 
 Puedes tener declaraciones `if` dentro de otras declaraciones `if`, esto se llama declaraciones `if` anidadas.
 
-### Ejemplo
+- Ejemplo
 
 ```python
 x = 41
@@ -197,7 +194,7 @@ if x > 10:
 
 Las declaraciones `if` no pueden estar vacías, pero si por alguna razón tienes una declaración `if` sin contenido, utiliza la declaración `pass` para evitar obtener un error.
 
-### Ejemplo
+- Ejemplo
 
 ```python
 a = 33

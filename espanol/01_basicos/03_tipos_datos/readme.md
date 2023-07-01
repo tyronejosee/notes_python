@@ -28,17 +28,17 @@ Python tiene los siguientes tipos de datos incorporados por defecto, en estas ca
 
 Puedes obtener el tipo de datos de cualquier objeto utilizando la función `type()`:
 
-###### Ejemplo
+- Ejemplo
 
 ```python
-# Imprime el tipo de datos de la variable x
+# Imprime el tipo de dato de la variable x
 x = 5
 print(type(x))
 ```
 
-## Estableciendo el Tipo de Datos
+## Estableciendo el Tipo de Dato
 
-En Python, el tipo de datos se establece cuando asignas un valor a una variable:
+En Python, el tipo de datos se establece cuando asignas un valor a una variable.
 
 | Ejemplo | Tipo de Dato |
 | --- | --- |
@@ -58,7 +58,7 @@ En Python, el tipo de datos se establece cuando asignas un valor a una variable:
 | x = memoryview(bytes(5)) | memoryview |
 | x = None | NoneType |
 
-## Estableciendo el Tipo de Datos Específico
+## Estableciendo el Tipo de Dato Específico
 
 | Ejemplo | Tipo de Dato |
 | --- | --- |
