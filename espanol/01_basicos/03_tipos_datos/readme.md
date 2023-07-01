@@ -28,7 +28,7 @@ Python tiene los siguientes tipos de datos incorporados por defecto, en estas ca
 
 Puedes obtener el tipo de datos de cualquier objeto utilizando la función `type()`:
 
-### Ejemplo:
+###### Ejemplo
 
 ```python
 # Imprime el tipo de datos de la variable x
