@@ -4,7 +4,7 @@ Los operadores se utilizan para realizar operaciones en variables y valores.
 
 En el ejemplo siguiente, utilizamos el operador `+` para sumar dos valores.
 
-### Ejemplo
+#### Ejemplo
 
 ```python
 print(10 + 5)
@@ -54,7 +54,7 @@ Los operadores de asignación se utilizan para asignar valores a variables.
 | >>= | x >>= 3 | x = x >> 3 |
 | <<= | x <<= 3 | x = x << 3 |
 
-## **Operadores de Comparación**
+## Operadores de Comparación
 
 Los operadores de comparación se utilizan para comparar dos valores.
 
@@ -67,7 +67,7 @@ Los operadores de comparación se utilizan para comparar dos valores.
 | >= | Mayor o igual que | x >= y |
 | <= | Menor o igual que | x <= y |
 
-## **Operadores Lógicos**
+## Operadores Lógicos
 
 Los operadores lógicos se utilizan para combinar declaraciones condicionales.
 
@@ -77,7 +77,7 @@ Los operadores lógicos se utilizan para combinar declaraciones condicionales.
 | or | Devuelve True si una de las declaraciones es verdadera | x < 5 or x < 4 |
 | not | Invierte el resultado, devuelve False si el resultado es verdadero | not(x < 5 and x < 10) |
 
-## **Operadores de Identidad**
+## Operadores de Identidad
 
 Los operadores de identidad se utilizan para comparar objetos, no si son iguales, sino si son realmente el mismo objeto, con la misma ubicación de memoria.
 
@@ -86,7 +86,7 @@ Los operadores de identidad se utilizan para comparar objetos, no si son iguales
 | is | Devuelve True si ambas variables son el mismo objeto | x is y |
 | is not | Devuelve True si ambas variables no son el mismo objeto | x is not y |
 
-## **Operadores de Membresía**
+## Operadores de Membresía
 
 Los operadores de membresía se utilizan para comprobar si una secuencia está presente en un objeto.
 
@@ -95,7 +95,7 @@ Los operadores de membresía se utilizan para comprobar si una secuencia está p
 | in | Devuelve True si una secuencia con el valor especificado está presente en el objeto | x in y |
 | not in | Devuelve True si una secuencia con el valor especificado no está presente en el objeto | x not in y |
 
-## **Operadores Bitwise**
+## Operadores Bitwise
 
 Los operadores bitwise se utilizan para comparar números (binarios).
 
@@ -108,11 +108,11 @@ Los operadores bitwise se utilizan para comparar números (binarios).
 | << | Desplazamiento hacia la izquierda con relleno de ceros | Desplazamiento hacia la izquierda empujando ceros desde la derecha y dejando caer los bits más a la izquierda | x << 2 |
 | >> | Desplazamiento hacia la derecha con signo | Desplazamiento hacia la derecha empujando copias del bit más a la izquierda desde la izquierda y dejando caer los bits más a la derecha | x >> 2 |
 
-## ****Precedencia de Operadores****
+## Precedencia de Operadores
 
 La precedencia de operadores describe el orden en el que se realizan las operaciones.
 
-### Ejemplo
+#### Ejemplo
 
 Los paréntesis tienen la mayor precedencia, lo que significa que las expresiones dentro de los paréntesis deben evaluarse primero.
 
@@ -120,7 +120,7 @@ Los paréntesis tienen la mayor precedencia, lo que significa que las expresione
 print((6 + 3) - (6 + 3))
 ```
 
-### Ejemplo
+#### Ejemplo
 
 La multiplicación `*` tiene una precedencia más alta que la suma `+`, por lo que las multiplicaciones se evalúan antes que las sumas.
 
@@ -148,7 +148,7 @@ El orden de precedencia se describe en la siguiente tabla, comenzando por la may
 
 Si dos operadores tienen la misma precedencia, la expresión se evalúa de izquierda a derecha.
 
-### Ejemplo
+#### Ejemplo
 
 La suma `+` y la resta `-` tienen la misma precedencia, por lo que evaluamos la expresión de izquierda a derecha.
 
