@@ -10,7 +10,7 @@ La conversión de tipos en Python se realiza utilizando funciones constructoras:
 - `float()` - construye un número de punto flotante a partir de un literal entero, un literal de punto flotante o un literal de cadena (si la cadena representa un número de punto flotante o entero).
 - `str()` - construye una cadena a partir de una amplia variedad de tipos de datos, incluyendo cadenas, literales enteros y literales de punto flotante.
 
-- Ejemplo
+#### Ejemplo
 
 ```python
 # Enteros
@@ -19,7 +19,7 @@ y = int(2.8) # y será 2
 z = int("3") # z será 3
 ```
 
-- Ejemplo
+#### Ejemplo
 
 ```python
 # Flotantes
@@ -29,7 +29,7 @@ z = float("3") # z será 3.0
 w = float("4.2") # w será 4.2
 ```
 
-- Ejemplo
+#### Ejemplo
 
 ```python
 # Cadenas
