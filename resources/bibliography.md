@@ -2,10 +2,10 @@
 
 ## Pages
 
+https://www.w3schools.com/
+https://roadmap.sh/
 https://www.geeksforgeeks.org/
 http://chat.openai.com/
-https://roadmap.sh/
-https://www.w3schools.com/
 https://www.programiz.com/
 
 ## Apps
