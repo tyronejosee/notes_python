@@ -10,12 +10,12 @@ La distinción entre ambas es que mientras podemos editar el contenido de una li
 ("Suzuki", "Audi", "BMW", "Skoda") es una tupla.
 ```
 
-### Características de las Tuplas
+## Características de las Tuplas
 
 - Las tuplas son un tipo de dato inmutable, lo que significa que una vez que se han creado, sus elementos no pueden cambiarse.
 - Dado que las tuplas son secuencias ordenadas, cada elemento tiene un orden específico que nunca cambiará.
 
-### Creación de Tuplas
+## Creación de Tuplas
 
 Para crear una tupla, todos los objetos (o "elementos") deben estar encerrados entre paréntesis (), separados por comas. Aunque no es necesario incluir paréntesis, se recomienda hacerlo.
 
@@ -111,7 +111,7 @@ print(type(tupla_individual))
 <class 'tuple'>
 ```
 
-# Acceso a los Elementos de una Tupla
+## Acceso a los Elementos de una Tupla
 
 Podemos acceder a los objetos de una tupla de varias formas.
 
@@ -192,7 +192,7 @@ Elemento en el índice -1: Inmutable
 Elementos entre los índices -4 y -1: ('Python', 'Tupla', 'Ordenada')
 ```
 
-# Segmentación
+## Segmentación
 
 En Python, la segmentación de tuplas es una práctica común y el método más popular para que los programadores manejen problemas prácticos. Piense en una tupla de Python. Para acceder a una variedad de elementos en una tupla, debemos segmentarla. Una forma sencilla de hacerlo es utilizar el colon como operador de segmentación (:).
 
@@ -224,7 +224,7 @@ Elementos entre los índices 0 y -4: ('Python', 'Tupla')
 Tupla completa: ('Python', 'Tupla', 'Ordenada', 'Inmutable', 'Colección', 'Objetos')
 ```
 
-# Eliminación de una Tupla
+## Eliminación de una Tupla
 
 No se pueden alterar los componentes de una tupla, como se mencionó anteriormente. Como resultado, no podemos deshacernos o eliminar los componentes de una tupla.
 
@@ -262,7 +262,7 @@ except Exception as e:
 name 'tuple_' is not defined
 ```
 
-# Repetición de Tuplas
+## Repetición de Tuplas
 
 **Código:**
 
@@ -284,7 +284,7 @@ Tupla original: ('Python', 'Tuplas')
 Nueva tupla: ('Python', 'Tuplas', 'Python', 'Tuplas', 'Python', 'Tuplas')
 ```
 
-# Métodos de Tuplas
+## Métodos de Tuplas
 
 Las tuplas de Python son una colección de objetos inmutables similares a las listas. Python ofrece algunas formas de trabajar con tuplas. Estos dos enfoques se cubrirán en detalle en este artículo con la ayuda de algunos ejemplos.
 
@@ -349,7 +349,7 @@ Primera aparición de 1 es 2
 Primera aparición de 1 después del cuarto índice es: 6
 ```
 
-# Prueba de Pertenencia a una Tupla
+## Prueba de Pertenencia a una Tupla
 
 Utilizando la palabra clave `in`, podemos determinar si un elemento está presente en la tupla dada o no.
 
@@ -379,7 +379,7 @@ False
 True
 ```
 
-# Iterar a Través de una Tupla
+## Iterar a Través de una Tupla
 
 Podemos utilizar un bucle `for` para iterar a través de cada elemento de una tupla.
 
@@ -405,7 +405,7 @@ Ordenada
 Inmutable
 ```
 
-# Cambiando una Tupla
+## Cambiando una Tupla
 
 Las tuplas, a diferencia de las listas, son objetos inmutables.
 
@@ -469,7 +469,7 @@ print(tupla_ + (4, 5, 6))
 ('Python', 'Tupla', 'Ordenada', 'Inmutable', 4, 5, 6)
 ```
 
-# Ventajas de las Tuplas en Comparación con las Listas
+## Ventajas de las Tuplas en Comparación con las Listas
 
 - Las tuplas tardan menos que las listas.
 - El código está protegido contra cambios accidentales gracias a las tuplas. Si un programa requiere que los datos no cambien, es mejor almacenarlos en **"tuplas"** en lugar de **"listas"**.
