@@ -20,7 +20,7 @@ Las funciones lambda se pueden utilizar siempre que se necesiten argumentos de f
 
 A continuación se muestra un ejemplo de una función lambda que suma 4 al número de entrada.
 
-**Código**
+**Código:**
 
 ```python
 # Código para demostrar cómo podemos usar una función lambda
@@ -38,7 +38,7 @@ La función lambda es `lambda num: num+4` en el programa dado. El parámetro es 
 
 No hay una etiqueta para esta función. Genera un objeto de función asociado con el identificador `add`. Ahora podemos referirnos a ella como una función estándar. La declaración lambda, `lambda num: num+4`, es casi lo mismo que:
 
-**Código**
+**Código:**
 
 ```python
 def add(num):
@@ -56,7 +56,7 @@ print(add(6))
 
 Echemos un vistazo a este ejemplo para ver cómo una función definida de manera convencional con `def` difiere de una función definida usando la palabra clave `lambda`. Este programa calcula el recíproco de un número dado:
 
-**Código**
+**Código:**
 
 ```python
 # Código de Python para mostrar el recíproco del número dado para resaltar la diferencia entre def() y lambda().
@@ -93,7 +93,7 @@ La función se llama para cada elemento de la lista y se devuelve un nuevo itera
 
 Aquí hay una ilustración simple del uso del método `filter()` para devolver solo los números impares de una lista.
 
-**Código**
+**Código:**
 
 ```python
 # Código para filtrar números impares de una lista dada
@@ -118,7 +118,7 @@ La función se ejecuta para todos los elementos de la lista, y se genera una nue
 
 En este ejemplo, se utiliza el método `map()` para elevar al cuadrado todas las entradas de una lista.
 
-**Código**
+**Código:**
 
 ```python
 # Código para calcular el cuadrado de cada número de una lista utilizando la función "map()"
@@ -139,7 +139,7 @@ print(lista_cuadrados)
 
 Aplicaremos la función lambda combinada con la comprensión de listas y la palabra clave lambda con un bucle `for` en este ejemplo. Intentaremos imprimir el cuadrado de los números en el rango del 0 al 11.
 
-**Código**
+**Código:**
 
 ```python
 # Código para calcular el cuadrado de cada número de una lista utilizando la comprensión de listas
@@ -159,7 +159,7 @@ for square in cuadrados:
 
 Utilizaremos la función lambda con el bloque if-else.
 
-**Código**
+**Código:**
 
 ```python
 # Código para usar la función lambda con if-else
@@ -178,7 +178,7 @@ print(Minimo(35, 74))
 
 No se permiten múltiples expresiones en las funciones lambda, pero podemos construir 2 o más funciones lambda y luego llamar a la segunda expresión lambda como argumento de la primera. Veamos cómo usar lambda para encontrar el tercer elemento máximo.
 
-**Código**
+**Código:**
 
 ```python
 # Código para imprimir el tercer número máximo de la lista dada utilizando la función lambda
