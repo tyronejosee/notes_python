@@ -290,7 +290,7 @@ Las tuplas de Python son una colección de objetos inmutables similares a las li
 
 A continuación se muestran ejemplos de estos métodos.
 
-- Método `count()`
+### Método `count()`
 
 El método `count()` de las tuplas devuelve el número de veces que aparece el elemento especificado en la tupla.
 
@@ -317,7 +317,7 @@ Conteo de 2 en T1: 5
 Conteo de Java en T2: 2
 ```
 
-## Método index()
+### Método index()
 
 El método `index()` devuelve la primera aparición del elemento solicitado de la tupla.
 
