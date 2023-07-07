@@ -10,12 +10,12 @@ La distinción entre ambas es que mientras podemos editar el contenido de una li
 ("Suzuki", "Audi", "BMW", "Skoda") es una tupla.
 ```
 
-### Características de las Tuplas
+## Características de las Tuplas
 
 - Las tuplas son un tipo de dato inmutable, lo que significa que una vez que se han creado, sus elementos no pueden cambiarse.
 - Dado que las tuplas son secuencias ordenadas, cada elemento tiene un orden específico que nunca cambiará.
 
-### Creación de Tuplas
+## Creación de Tuplas
 
 Para crear una tupla, todos los objetos (o "elementos") deben estar encerrados entre paréntesis (), separados por comas. Aunque no es necesario incluir paréntesis, se recomienda hacerlo.
 
@@ -115,7 +115,7 @@ print(type(tupla_individual))
 
 Podemos acceder a los objetos de una tupla de varias formas.
 
-- **Indexación**
+## Indexación
 
 Para acceder a un objeto de una tupla, podemos utilizar el operador de indexación [], donde la indexación en la tupla comienza desde 0.
 
@@ -166,7 +166,7 @@ l
 6
 ```
 
-- **Indexación Negativa**
+## Indexación Negativa
 
 Los objetos de secuencia de Python admiten la indexación negativa.
 
@@ -290,7 +290,7 @@ Las tuplas de Python son una colección de objetos inmutables similares a las li
 
 A continuación se muestran ejemplos de estos métodos.
 
-### Método `count()`
+## Método count()
 
 El método `count()` de las tuplas devuelve el número de veces que aparece el elemento especificado en la tupla.
 
@@ -317,7 +317,7 @@ Conteo de 2 en T1: 5
 Conteo de Java en T2: 2
 ```
 
-### Método index()
+## Método index()
 
 El método `index()` devuelve la primera aparición del elemento solicitado de la tupla.
 
