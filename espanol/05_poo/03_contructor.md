@@ -11,7 +11,7 @@ Los constructores pueden ser de dos tipos:
 
 La definición del constructor se ejecuta cuando creamos el objeto de esta clase. Los constructores también verifican que haya suficientes recursos para que el objeto realice cualquier tarea de inicio.
 
-# Creando el Constructor
+## Creando el Constructor
 
 En Python, el método `__init()__` simula el constructor de la clase. Este método se llama cuando se instancia la clase. Acepta la palabra clave **self** como primer argumento, lo que permite acceder a los atributos o métodos de la clase.
 
@@ -49,7 +49,7 @@ ID: 102
 Nombre: David
 ```
 
-# Contando el Número de Objetos de Una Clase
+## Contando el Número de Objetos de Una Clase
 
 El constructor se llama automáticamente cuando creamos el objeto de la clase. Considera el siguiente ejemplo.
 
@@ -75,7 +75,7 @@ print("El número de estudiantes:", Estudiante.contador)
 El número de estudiantes: 3
 ```
 
-# Constructor sin Parámetros
+## Constructor sin Parámetros
 
 El constructor sin parámetros se utiliza cuando no queremos manipular el valor o cuando el constructor tiene solo `self` como argumento. Considera el siguiente ejemplo.
 
@@ -94,7 +94,7 @@ estudiante = Estudiante()
 estudiante.mostrar("John")
 ```
 
-# Constructor con Parámetros
+## Constructor con Parámetros
 
 El constructor con parámetros tiene varios parámetros junto con `self`. Considera el siguiente ejemplo.
 
@@ -121,7 +121,7 @@ Este es el constructor con parámetros
 Hola John
 ```
 
-# Constructor Predeterminado
+## Constructor Predeterminado
 
 Cuando no incluimos el constructor en la clase o nos olvidamos de declararlo, entonces se convierte en el constructor predeterminado. No realiza ninguna tarea, pero inicializa los objetos. Considera el siguiente ejemplo.
 
@@ -145,7 +145,7 @@ st.mostrar()
 101 Joseph
 ```
 
-# Más de Un Constructor en Una Sola Clase
+## Más de Un Constructor en Una Sola Clase
 
 Veamos otro escenario, ¿qué sucede si declaramos dos constructores iguales en la clase?
 
@@ -171,9 +171,8 @@ Segundo constructor
 En el código anterior, el objeto `st` llama al segundo constructor, aunque ambos tienen la misma configuración. El primer método no es accesible mediante el objeto `st`. Internamente, el objeto de la clase siempre llamará al último constructor si la clase tiene varios constructores.
 
 > **Nota: La sobrecarga de constructores no está permitida en Python.**
-> 
 
-# Funciones Integradas de Clase
+## Funciones Integradas de Clase
 
 Las funciones integradas definidas en la clase se describen en la siguiente tabla.
 
@@ -223,7 +222,7 @@ True
 AttributeError: 'Estudiante' object has no attribute 'edad'
 ```
 
-# Atributos de Clase Integrados
+## Atributos de Clase Integrados
 
 Junto con los otros atributos, una clase de Python también contiene algunos atributos de clase integrados que proporcionan información sobre la clase.
 
