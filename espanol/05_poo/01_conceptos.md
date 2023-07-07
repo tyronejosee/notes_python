@@ -1,6 +1,6 @@
 # Programación Orientada a Objetos
 
-# Conceptos
+## Conceptos
 
 Al igual que otros lenguajes de programación de propósito general, Python también es un lenguaje orientado a objetos desde sus inicios. Nos permite desarrollar aplicaciones utilizando un enfoque orientado a objetos. En Python, podemos crear y utilizar fácilmente clases y objetos.
 
@@ -16,7 +16,7 @@ Los principales principios del sistema de programación orientada a objetos son 
 - Abstracción de datos
 - Encapsulación
 
-# Clase
+## Clase
 
 La clase se puede definir como una colección de objetos. Es una entidad lógica que tiene atributos y métodos específicos. Por ejemplo, si tienes una clase de empleados, debería contener un atributo y un método, como una dirección de correo electrónico, nombre, edad, salario, etc.
 
@@ -30,7 +30,7 @@ class NombreClase:
     <declaraciones-N>
 ```
 
-# Objeto
+## Objeto
 
 El objeto es una entidad que tiene estado y comportamiento. Puede ser cualquier objeto del mundo real, como un ratón, un teclado, una silla, una mesa, un bolígrafo, etc.
 
@@ -61,11 +61,11 @@ Toyota 2016
 
 En el ejemplo anterior, hemos creado la clase llamada `Coche`, y tiene dos atributos: `modelo` y `año`. Hemos creado un objeto `c1` para acceder al atributo de la clase. El objeto `c1` asignará memoria para estos valores. Aprenderemos más sobre clases y objetos en el próximo tutorial.
 
-# Método
+## Método
 
 El método es una función asociada a un objeto. En Python, un método no es exclusivo de las instancias de clase. Cualquier tipo de objeto puede tener métodos.
 
-# Herencia
+## Herencia
 
 La herencia es el aspecto más importante de la programación orientada a objetos, ya que simula el concepto de herencia del mundo real. Especifica que el objeto hijo adquiere todas las propiedades y comportamientos del objeto padre.
 
@@ -73,21 +73,21 @@ Mediante el uso de la herencia, podemos crear una clase que utilice todas las pr
 
 Esto proporciona la reutilización del código.
 
-# Polimorfismo
+## Polimorfismo
 
 El polimorfismo consta de dos palabras: "poly" y "morphs". "Poly" significa muchos, y "morph" significa forma. Con el polimorfismo, entendemos que una tarea se puede realizar de diferentes formas. Por ejemplo, tienes una clase "animal" y todos los animales hablan. Pero hablan de manera diferente. Aquí, el comportamiento "hablar" es polimórfico en un sentido y depende del animal. Por lo tanto, el concepto abstracto de "animal" no "habla" realmente, pero animales específicos (como perros y gatos) tienen una implementación concreta de la acción "hablar".
 
-# Encapsulación
+## Encapsulación
 
 La encapsulación también es un aspecto esencial de la programación orientada a objetos. Se utiliza para restringir el acceso a métodos y variables. En la encapsulación, el código y los datos se encapsulan juntos en una sola unidad para evitar modificaciones accidentales.
 
-# Abstracción de Datos
+## Abstracción de Datos
 
 La abstracción de datos y la encapsulación a menudo se utilizan como sinónimos. Ambos son casi sinónimos porque la abstracción de datos se logra mediante la encapsulación.
 
 La abstracción se utiliza para ocultar los detalles internos y mostrar solo las funcionalidades. Abstraer algo significa dar nombres a las cosas para que el nombre capture la esencia de lo que hace una función o un programa completo.
 
-# Lenguajes de Prog. Orientada a Objetos vs. Lenguajes de Prog. Orientada a Procedimientos
+## Lenguajes de Prog. Orientada a Objetos vs. Lenguajes de Prog. Orientada a Procedimientos
 
 A continuación, se muestra la diferencia entre la programación orientada a objetos y la programación orientada a procedimientos:
 
