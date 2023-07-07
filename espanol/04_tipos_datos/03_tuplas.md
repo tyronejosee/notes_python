@@ -262,7 +262,7 @@ except Exception as e:
 name 'tuple_' is not defined
 ```
 
-### Repetición de Tuplas
+# Repetición de Tuplas
 
 **Código**
 
@@ -284,7 +284,7 @@ Tupla original: ('Python', 'Tuplas')
 Nueva tupla: ('Python', 'Tuplas', 'Python', 'Tuplas', 'Python', 'Tuplas')
 ```
 
-### Métodos de Tuplas
+# Métodos de Tuplas
 
 Las tuplas de Python son una colección de objetos inmutables similares a las listas. Python ofrece algunas formas de trabajar con tuplas. Estos dos enfoques se cubrirán en detalle en este artículo con la ayuda de algunos ejemplos.
 
@@ -317,7 +317,7 @@ Conteo de 2 en T1: 5
 Conteo de Java en T2: 2
 ```
 
-### Método index()
+## Método index()
 
 El método `index()` devuelve la primera aparición del elemento solicitado de la tupla.
 
@@ -349,7 +349,7 @@ Primera aparición de 1 es 2
 Primera aparición de 1 después del cuarto índice es: 6
 ```
 
-### Prueba de Pertenencia a una Tupla
+# Prueba de Pertenencia a una Tupla
 
 Utilizando la palabra clave `in`, podemos determinar si un elemento está presente en la tupla dada o no.
 
@@ -379,7 +379,7 @@ False
 True
 ```
 
-### Iterar a Través de una Tupla
+# Iterar a Través de una Tupla
 
 Podemos utilizar un bucle `for` para iterar a través de cada elemento de una tupla.
 
@@ -405,7 +405,7 @@ Ordenada
 Inmutable
 ```
 
-### Cambiando una Tupla
+# Cambiando una Tupla
 
 Las tuplas, a diferencia de las listas, son objetos inmutables.
 
@@ -469,7 +469,7 @@ print(tupla_ + (4, 5, 6))
 ('Python', 'Tupla', 'Ordenada', 'Inmutable', 4, 5, 6)
 ```
 
-### Ventajas de las Tuplas en Comparación con las Listas
+# Ventajas de las Tuplas en Comparación con las Listas
 
 - Las tuplas tardan menos que las listas.
 - El código está protegido contra cambios accidentales gracias a las tuplas. Si un programa requiere que los datos no cambien, es mejor almacenarlos en **"tuplas"** en lugar de **"listas"**.
