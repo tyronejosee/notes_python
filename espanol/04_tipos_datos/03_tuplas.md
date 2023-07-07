@@ -4,7 +4,7 @@ Una tupla en Python es un grupo de elementos separados por comas. El indexado, l
 
 La distinción entre ambas es que mientras podemos editar el contenido de una lista, no podemos modificar los elementos de una tupla una vez que han sido asignados.
 
-**Ejemplo**
+**Ejemplo:**
 
 ```python
 ("Suzuki", "Audi", "BMW", "Skoda") es una tupla.
@@ -21,7 +21,7 @@ Para crear una tupla, todos los objetos (o "elementos") deben estar encerrados e
 
 Una tupla puede contener cualquier número de elementos, incluidos elementos con diferentes tipos de datos (diccionario, cadena, número decimal, lista, etc.).
 
-**Código**
+**Código:**
 
 ```python
 # Programa de Python para mostrar cómo crear una tupla
@@ -43,7 +43,7 @@ tupla_anidada = ("Python", {4: 5, 6: 2, 8: 2}, (5, 3, 5, 6))
 print("Una tupla anidada:", tupla_anidada)
 ```
 
-**Salida**
+**Salida:**
 
 ```bash
 Tupla vacía: ()
@@ -54,7 +54,7 @@ Una tupla anidada: ('Python', {4: 5, 6: 2, 8: 2}, (5, 3, 5, 6))
 
 Las tuplas se pueden construir sin utilizar paréntesis. Esto se conoce como empaquetado triple.
 
-**Código**
+**Código:**
 
 ```python
 # Programa de Python para crear una tupla sin utilizar paréntesis
@@ -75,7 +75,7 @@ except:
     print(TypeError)
 ```
 
-**Salida**
+**Salida:**
 
 ```bash
 (4, 5.7, 'Tuplas', ['Python', 'Tuplas'])
@@ -87,7 +87,7 @@ La construcción de una tupla a partir de un solo elemento puede ser confusa.
 
 Simplemente agregar paréntesis alrededor del elemento no es suficiente. Para que sea reconocido como una tupla, el elemento debe ir seguido de una coma.
 
-**Código**
+**Código:**
 
 ```python
 # Programa de Python para mostrar cómo crear una tupla con un solo elemento
@@ -103,7 +103,7 @@ tupla_individual = "Tupla",
 print(type(tupla_individual))
 ```
 
-**Salida**
+**Salida:**
 
 ```bash
 <class 'str'>
@@ -125,7 +125,7 @@ No podemos dar un índice de un tipo de dato flotante u otros tipos porque el í
 
 El siguiente ejemplo ilustra cómo se realiza la indexación en tuplas anidadas para acceder a los elementos.
 
-**Código**
+**Código:**
 
 ```python
 # Programa de Python para mostrar cómo acceder a los elementos de una tupla
@@ -172,7 +172,7 @@ Los objetos de secuencia de Python admiten la indexación negativa.
 
 El último elemento de la colección se representa con -1, el penúltimo elemento con -2 y así sucesivamente.
 
-**Código**
+**Código:**
 
 ```python
 # Programa de Python para mostrar cómo funciona la indexación negativa en tuplas
@@ -198,7 +198,7 @@ En Python, la segmentación de tuplas es una práctica común y el método más 
 
 Podemos utilizar el operador de segmentación, dos puntos (:), para acceder a un rango de elementos de una tupla.
 
-**Código**
+**Código:**
 
 ```python
 # Programa de Python para mostrar cómo funciona la segmentación en tuplas de Python
@@ -216,7 +216,7 @@ print("Elementos entre los índices 0 y -4:", tuple_[:-4])
 print("Tupla completa:", tuple_[:])
 ```
 
-**Salida**
+**Salida:**
 
 ```bash
 Elementos entre los índices 1 y 3: ('Tupla', 'Ordenada')
@@ -230,7 +230,7 @@ No se pueden alterar los componentes de una tupla, como se mencionó anteriormen
 
 Sin embargo, una tupla se puede eliminar por completo con la palabra clave `del`.
 
-**Código**
+**Código:**
 
 ```python
 # Programa de Python para mostrar cómo eliminar elementos de una tupla de Python
@@ -255,7 +255,7 @@ except Exception as e:
     print(e)
 ```
 
-**Salida**
+**Salida:**
 
 ```bash
 'tuple' object does not support item deletion
@@ -264,7 +264,7 @@ name 'tuple_' is not defined
 
 # Repetición de Tuplas
 
-**Código**
+**Código:**
 
 ```python
 # Programa de Python para mostrar la repetición en tuplas
@@ -277,7 +277,7 @@ tupla_ = tupla_ * 3
 print("Nueva tupla:", tupla_)
 ```
 
-**Salida**
+**Salida:**
 
 ```bash
 Tupla original: ('Python', 'Tuplas')
@@ -294,7 +294,7 @@ A continuación se muestran ejemplos de estos métodos.
 
 El método `count()` de las tuplas devuelve el número de veces que aparece el elemento especificado en la tupla.
 
-**Código**
+**Código:**
 
 ```python
 # Crear tuplas
@@ -310,7 +310,7 @@ res = T2.count('java')
 print('Conteo de Java en T2:', res)
 ```
 
-**Salida**
+**Salida:**
 
 ```bash
 Conteo de 2 en T1: 5
@@ -327,7 +327,7 @@ El método `index()` devuelve la primera aparición del elemento solicitado de l
 - begin (opcional): el índice utilizado como punto de partida para la búsqueda.
 - final (opcional): el último índice hasta el cual se realiza la búsqueda.
 
-**Código**
+**Código:**
 
 ```python
 # Crear tuplas
@@ -342,7 +342,7 @@ res = Datos_tupla.index(3, 4)
 print('Primera aparición de 1 después del cuarto índice es:', res)
 ```
 
-**Salida**
+**Salida:**
 
 ```bash
 Primera aparición de 1 es 2
@@ -353,7 +353,7 @@ Primera aparición de 1 después del cuarto índice es: 6
 
 Utilizando la palabra clave `in`, podemos determinar si un elemento está presente en la tupla dada o no.
 
-**Código**
+**Código:**
 
 ```python
 # Programa de Python para mostrar cómo realizar una prueba de pertenencia en tuplas
@@ -370,7 +370,7 @@ print('Inmutable' not in tuple_)
 print('Items' not in tuple_)
 ```
 
-**Salida**
+**Salida:**
 
 ```bash
 True
@@ -383,7 +383,7 @@ True
 
 Podemos utilizar un bucle `for` para iterar a través de cada elemento de una tupla.
 
-**Código**
+**Código:**
 
 ```python
 # Programa de Python para mostrar cómo iterar sobre los elementos de una tupla
@@ -396,7 +396,7 @@ for item in tuple_:
     print(item)
 ```
 
-**Salida**
+**Salida:**
 
 ```bash
 Python
@@ -413,7 +413,7 @@ Esto significa que no podemos cambiar los elementos de una tupla una vez que han
 
 Una tupla se puede asignar a varios valores (reasignación).
 
-**Código**
+**Código:**
 
 ```python
 # Programa de Python para mostrar que las tuplas de Python son objetos inmutables
@@ -437,7 +437,7 @@ tupla_ = ("Python", "Items")
 print(tupla_)
 ```
 
-**Salida**
+**Salida:**
 
 ```bash
 'tuple' object does not support item assignment
@@ -451,7 +451,7 @@ También podemos repetir los elementos de una tupla un número específico de ve
 
 Los resultados de las operaciones `+` y `*` son nuevas tuplas.
 
-**Código**
+**Código:**
 
 ```python
 # Programa de Python para mostrar cómo concatenar tuplas
@@ -463,7 +463,7 @@ tupla_ = ("Python", "Tupla", "Ordenada", "Inmutable")
 print(tupla_ + (4, 5, 6))
 ```
 
-**Salida**
+**Salida:**
 
 ```bash
 ('Python', 'Tupla', 'Ordenada', 'Inmutable', 4, 5, 6)
