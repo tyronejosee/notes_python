@@ -1,4 +1,4 @@
-# Módulo<s
+# Módulos
 
 En este tutorial, explicaremos cómo construir e importar módulos personalizados en Python. Además, podemos importar o integrar módulos incorporados de Python mediante varios métodos.
 
