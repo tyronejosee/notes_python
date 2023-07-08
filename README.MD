@@ -1,6 +1,6 @@
 # Learn Python
 
-¡Bienvenid@ a mi portafolio personal de Python! Aquí encontrarás una recopilación de recursos, documentación y proyectos prácticos para mejorar tus habilidades en Python, el repositorio trata de ser lo más sencillo posible evitando las redundancias. Espero pueda serte de ayuda.
+¡Bienvenid@ a mi portafolio personal! Aquí encontrarás una recopilación de recursos, documentación y proyectos prácticos para mejorar tus habilidades en Python, el repositorio trata de ser lo más sencillo y amigable posible evitando las redundancias. Espero pueda serte de ayuda.
 
 ## Contenido
 
@@ -28,7 +28,11 @@
 
 ## Instrucciones
 
-El repositorio sigue una estructura numérica para facilitar la navegación y evitar confusiones.
+- A medida que vayas completando cada tema, es importante practicar por tu cuenta. Esta práctica adicional te ayudará a familiarizarte con el lenguaje de programación y a perderle el miedo.
+
+- Si eres nuevo programando, sigue la jeraquia de las carpetas, no te saltes contenidos.
+
+- El repositorio sigue una estructura numérica para facilitar la navegación y evitar confusiones.
 
 ## Contribuciones
 
