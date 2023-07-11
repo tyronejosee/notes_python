@@ -1,18 +1,27 @@
 # Learn Python
 
-**[Español](README_ESP.md)**
+- **[English](README.md)**
+- **[Español](README_ESP.md)**
 
-¡Bienvenid@ a mi portafolio personal! Aquí encontrarás una recopilación de recursos, documentación y proyectos prácticos para mejorar tus habilidades en **Python**, el repositorio trata de ser lo más sencillo y amigable posible para los nuevos programadores.
+¡Bienvenid@ a mi portafolio personal! Aquí encontrarás una recopilación de recursos, documentación y proyectos prácticos para mejorar tus habilidades en **Python**, el repositorio trata de ser lo más sencillo y amigable posible para los nuevos programadores, traduciendo documentación para hispanohablantes.
 
 ## Instrucciones
 
-1. Clona el repositorio a tu máquina local.
+Aquí te explicaré cómo puedes interactuar con el repositorio de la forma más sencilla.
+
+1. Clonar el repositorio en tu computadora.
+
+    - Copia el siguiente comando y pégalo en tu terminal o línea de comandos:
 
    ```bash
-   git clone https://github.com/tu-usuario/learn_python.git
+   git clone https://github.com/tyronejosee/learn_python.git
    ```
 
-2. Abre el archivo 'README.md' este contiene todos los enlaces al contenido del repositorio.
+2. Abrir el archivo 'README.md'.
+
+    - Encuentra el archivo llamado 'README.md' en la carpeta que se creó en tu computadora después de clonar el repositorio. Ábrelo con cualquier editor de texto.
+
+    - Este archivo contiene todos los enlaces que te llevarán al contenido del repositorio y te ayudará a no tener que buscar por tu cuenta.
 
 ## Contribuciones
 
