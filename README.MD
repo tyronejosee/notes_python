@@ -5,53 +5,49 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-6.0+-00684A?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=101010)](https://www.mongodb.com)
 [![ChatGPT](https://img.shields.io/badge/ChatGPT-GPT--4-7CF178?style=for-the-badge&logo=openai&logoColor=white&labelColor=101010)](https://platform.openai.com)
 
+- **[English](README.md)**
+- **[Español](README_ESP.md)**
+
 ¡Bienvenid@ a mi portafolio personal! Aquí encontrarás una recopilación de recursos, documentación y proyectos prácticos para mejorar tus habilidades en **Python**, el repositorio trata de ser lo más sencillo y amigable posible para los nuevos programadores, traduciendo documentación para hispanohablantes.
 
 ## Instrucciones
 
 Aquí te explicaré cómo puedes interactuar con el repositorio de la forma más sencilla.
 
-1. Clonar el repositorio en tu computadora.
+- Clonar el repositorio en tu computadora.
 
    ```bash
    git clone https://github.com/tyronejosee/learn_python.git
    ```
 
-2. Abrir el archivo 'README.md'.
+- Abrir el archivo 'README.md'.
 
-   ```bash
-   README.md
-   ```
+- Seleccionar el idioma de tu preferencia.
 
-3. Seleccionar el idioma de tu preferencia.
-
-   - **[English](README.md)**
-   - **[Español](README_ESP.md)**
-
-4. Empieza a aprender **Python**.
+- Empieza a aprender **Python**.
 
 ## Contribuciones
 
 Si deseas contribuir al repositorio y agregar más contenido, ¡serás bienvenido! Puedes hacerlo siguiendo estos pasos:
 
-1. Realiza un fork de este repositorio.
+- Realiza un fork de este repositorio.
 
-2. Crea una rama para tu contribución.
+- Crea una rama para tu contribución.
 
     ```bash
     git checkout -b tu-rama
     ```
 
-3. Agrega tu contenido y realiza los cambios necesarios.
+- Agrega tu contenido y realiza los cambios necesarios.
 
-4. Envía un pull request.
+- Envía un pull request.
 
 ## Créditos
 
-**Autores:**
+- Autores:
 
-- [Tyrone Jose](https://github.com/tyronejosee)
+  - [Tyrone Jose](https://github.com/tyronejosee)
 
-**Recursos:**
+- Recursos:
 
-- pass
+  - pass
