@@ -1,5 +1,8 @@
 # Learn Python
 
+[English](english/readme.md)
+[Español](espanol/readme.md)
+
 ¡Bienvenid@ a mi portafolio personal! Aquí encontrarás una recopilación de recursos, documentación y proyectos prácticos para mejorar tus habilidades en Python, el repositorio trata de ser lo más sencillo y amigable posible evitando las redundancias. Espero pueda serte de ayuda.
 
 ## Contenido
