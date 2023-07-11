@@ -1,51 +1,41 @@
 # Learn Python
 
-## Versiones
+**[Español](README_ESP.md)**
 
-[Español](README_ESP.md)
-
-¡Bienvenid@ a mi portafolio personal! Aquí encontrarás una recopilación de recursos, documentación y proyectos prácticos para mejorar tus habilidades en Python, el repositorio trata de ser lo más sencillo y amigable posible evitando las redundancias. Espero pueda serte de ayuda.
-
-## Contenido
-
-1. **Básicos**: pass
-
-2. **Tipos Datos**: pass
-
-3. **Flujos**: pass
-
-4. **Funciones**: pass
-
-5. **POO**: pass
-
-6. **Avanzados**: pass
-
-7. **Estructuras**: pass
-
-8. **Algoritmos**: pass
-
-9. **Frameworks**: pass
-
-10. **Pruebas**: pass
-
-11. **Extras**: pass
+¡Bienvenid@ a mi portafolio personal! Aquí encontrarás una recopilación de recursos, documentación y proyectos prácticos para mejorar tus habilidades en **Python**, el repositorio trata de ser lo más sencillo y amigable posible para los nuevos programadores.
 
 ## Instrucciones
 
-- A medida que vayas completando cada tema, es importante practicar por tu cuenta. Esta práctica adicional te ayudará a familiarizarte con el lenguaje de programación y a perderle el miedo.
+1. Clona el repositorio a tu máquina local.
 
-- Si eres nuevo programando, sigue la jeraquia de las carpetas, no te saltes contenidos.
+   ```bash
+   git clone https://github.com/tu-usuario/learn_python.git
+   ```
 
-- El repositorio sigue una estructura numérica para facilitar la navegación y evitar confusiones.
+2. Abre el archivo 'README.md' este contiene todos los enlaces al contenido del repositorio.
 
 ## Contribuciones
 
-¡Las contribuciones son bienvenidas! Si tienes algún ejemplo interesante, proyecto o desafío de programación que te gustaría agregar a este repositorio, no dudes en hacerlo. Solo asegúrate de seguir estas pautas:
+Si deseas contribuir al repositorio y agregar más contenido, ¡serás bienvenido! Puedes hacerlo siguiendo estos pasos:
 
-- Crea un directorio adecuado para tu contribución y coloca todos los archivos relevantes dentro de él.
-- Proporciona una documentación clara y concisa para que otros puedan comprender fácilmente tu contribución.
-- Si has creado un nuevo desafío de práctica, asegúrate de incluir también una solución de muestra.
+1. Realiza un fork de este repositorio.
 
-Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarme. ¡Estoy aquí para ayudarte!
+2. Crea una rama para tu contribución.
 
-> Tyrone Jose
+    ```bash
+    git checkout -b tu-rama
+    ```
+
+3. Agrega tu contenido y realiza los cambios necesarios.
+
+4. Envía un pull request.
+
+## Créditos
+
+### Autor
+
+- [Tyrone Jose](https://github.com/tyronejosee)
+
+### Recursos Utilizados
+
+- pass
