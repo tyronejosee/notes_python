@@ -1,7 +1,9 @@
 # Learn Python
 
-- **[English](README.md)**
-- **[Español](README_ESP.md)**
+[![Python](https://img.shields.io/badge/Python-3.10+-yellow?style=for-the-badge&logo=python&logoColor=white&labelColor=101010)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.88.0+-00a393?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=101010)](https://fastapi.tiangolo.com)
+[![MongoDB](https://img.shields.io/badge/MongoDB-6.0+-00684A?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=101010)](https://www.mongodb.com)
+[![ChatGPT](https://img.shields.io/badge/ChatGPT-GPT--4-7CF178?style=for-the-badge&logo=openai&logoColor=white&labelColor=101010)](https://platform.openai.com)
 
 ¡Bienvenid@ a mi portafolio personal! Aquí encontrarás una recopilación de recursos, documentación y proyectos prácticos para mejorar tus habilidades en **Python**, el repositorio trata de ser lo más sencillo y amigable posible para los nuevos programadores, traduciendo documentación para hispanohablantes.
 
@@ -11,17 +13,22 @@ Aquí te explicaré cómo puedes interactuar con el repositorio de la forma más
 
 1. Clonar el repositorio en tu computadora.
 
-    - Copia el siguiente comando y pégalo en tu terminal o línea de comandos:
-
    ```bash
    git clone https://github.com/tyronejosee/learn_python.git
    ```
 
 2. Abrir el archivo 'README.md'.
 
-    - Encuentra el archivo llamado 'README.md' en la carpeta que se creó en tu computadora después de clonar el repositorio. Ábrelo con cualquier editor de texto.
+   ```bash
+   README.md
+   ```
 
-    - Este archivo contiene todos los enlaces que te llevarán al contenido del repositorio y te ayudará a no tener que buscar por tu cuenta.
+3. Seleccionar el idioma de tu preferencia.
+
+   - **[English](README.md)**
+   - **[Español](README_ESP.md)**
+
+4. Empieza a aprender **Python**.
 
 ## Contribuciones
 
