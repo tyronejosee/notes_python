@@ -32,10 +32,10 @@ Si deseas contribuir al repositorio y agregar más contenido, ¡serás bienvenid
 
 ## Créditos
 
-### Autor
+**Autores:**
 
 - [Tyrone Jose](https://github.com/tyronejosee)
 
-### Recursos Utilizados
+**Recursos:**
 
 - pass
