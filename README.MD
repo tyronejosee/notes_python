@@ -44,10 +44,10 @@ Si deseas contribuir al repositorio y agregar más contenido, ¡serás bienvenid
 
 ## Créditos
 
-- Autores:
+- Autores.
 
   - [Tyrone Jose](https://github.com/tyronejosee)
 
-- Recursos:
+- Recursos.
 
   - pass
