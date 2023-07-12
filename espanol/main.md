@@ -22,7 +22,7 @@ Aquí te explicaré cómo puedes interactuar con el repositorio de la forma más
 
 - Seleccionar el idioma de tu preferencia.
 
-- Abrir el archivo **[Index](espanol/index.md)**.
+- Abrir el archivo **[Index](index.md)**.
 
 - Empieza a aprender **Python**.
 
