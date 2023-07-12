@@ -22,7 +22,7 @@ Here, I will explain how you can interact with the repository in the simplest wa
 
 - Select your preferred language.
 
-- Open the **[Index](espanol/index.md)** file.
+- Open the **[Index](english/index.md)** file.
 
 - Start learning **Python**.
 
