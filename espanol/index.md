@@ -1,6 +1,6 @@
 # Learn Python
 
-[Inicio](../README_ESP.md)
+[Principal](../README_ESP.MD)
 
 Guíate por el indice completo de contenidos.
 

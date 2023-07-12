@@ -5,8 +5,8 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-6.0+-00684A?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=101010)](https://www.mongodb.com)
 [![ChatGPT](https://img.shields.io/badge/ChatGPT-GPT--4-7CF178?style=for-the-badge&logo=openai&logoColor=white&labelColor=101010)](https://platform.openai.com)
 
-- **[English](README.md)**
-- **[Español](README_ESP.md)**
+- **[English](README.MD)**
+- **[Español](README_ESP.MD)**
 
 Welcome to my personal portfolio! Here you will find a collection of resources, documentation, and practical projects to enhance your skills in **Python**. This repository aims to be as simple and user-friendly as possible for new programmers, providing documentation translation for Spanish speakers.
 
