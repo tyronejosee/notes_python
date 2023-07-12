@@ -8,46 +8,57 @@
 - **[English](README.md)**
 - **[Español](README_ESP.md)**
 
-¡Bienvenid@ a mi portafolio personal! Aquí encontrarás una recopilación de recursos, documentación y proyectos prácticos para mejorar tus habilidades en **Python**, el repositorio trata de ser lo más sencillo y amigable posible para los nuevos programadores, traduciendo documentación para hispanohablantes.
+Welcome to my personal portfolio! Here you will find a collection of resources, documentation, and practical projects to enhance your skills in **Python**. This repository aims to be as simple and user-friendly as possible for new programmers, providing documentation translation for Spanish speakers.
 
-## Instrucciones
+## Instructions
 
-Aquí te explicaré cómo puedes interactuar con el repositorio de la forma más sencilla.
+Here, I will explain how you can interact with the repository in the simplest way possible.
 
-- Clonar el repositorio en tu computadora.
+- Clone the repository to your computer (optional).
 
    ```bash
    git clone https://github.com/tyronejosee/learn_python.git
    ```
 
-- Abrir el archivo 'README.md'.
+- Select your preferred language.
 
-- Seleccionar el idioma de tu preferencia.
+- Open the **[Index](espanol/index.md)** file.
 
-- Empieza a aprender **Python**.
+- Start learning **Python**.
 
-## Contribuciones
+## Contributions
 
-Si deseas contribuir al repositorio y agregar más contenido, ¡serás bienvenido! Puedes hacerlo siguiendo estos pasos:
+If you wish to contribute to the repository and add more content, you can do so by following these steps:
 
-- Realiza un fork de este repositorio.
+- Fork this repository.
 
-- Crea una rama para tu contribución.
+- Create a branch for your contribution.
 
-    ```bash
-    git checkout -b tu-rama
-    ```
+   ```bash
+   git checkout -b your-branch
+   ```
 
-- Agrega tu contenido y realiza los cambios necesarios.
+- Add your content and make necessary changes.
 
-- Envía un pull request.
+- Submit a pull request.
 
-## Créditos
+## Credits
 
-- Autores.
+- Resources:
+
+  - [Javatpoint](https://www.javatpoint.com/)
+  - [W3schools](https://www.w3schools.com/)
+  - [Roadmap](https://roadmap.sh/)
+  - [GeeksforGeeks](https://www.geeksforgeeks.org/)
+  - [ChatGPT](http://chat.openai.com/)
+  - [Programiz](https://www.programiz.com/)
+
+- Applications:
+  - Visual Studio Code
+  - Notion
+  - Figma
+  - GitHub
+
+- Authors:
 
   - [Tyrone Jose](https://github.com/tyronejosee)
-
-- Recursos.
-
-  - pass
