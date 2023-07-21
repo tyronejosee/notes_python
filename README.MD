@@ -5,43 +5,46 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-6.0+-00684A?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=101010)](https://www.mongodb.com)
 [![ChatGPT](https://img.shields.io/badge/ChatGPT-GPT--4-7CF178?style=for-the-badge&logo=openai&logoColor=white&labelColor=101010)](https://platform.openai.com)
 
-Welcome to my personal portfolio! Here you will find a collection of resources, documentation, and practical projects to enhance your skills in **Python**. This repository aims to be as simple and user-friendly as possible for new programmers, providing documentation translation for Spanish speakers.
+- **[English](../README.MD)**
+- **[Español](main.md)**
 
-## Instructions
+¡Bienvenid@ a mi portafolio personal! Aquí encontrarás una recopilación de recursos, documentación y proyectos prácticos para mejorar tus habilidades en **Python**, el repositorio trata de ser lo más sencillo y amigable posible para los nuevos programadores, traduciendo documentación para hispanohablantes.
 
-Here, I will explain how you can interact with the repository in the simplest way possible.
+## Instrucciones
 
-- Clone the repository to your computer (optional).
+Aquí te explicaré cómo puedes interactuar con el repositorio de la forma más sencilla.
+
+- Clonar el repositorio en tu computadora. (Opcional)
 
    ```bash
    git clone https://github.com/tyronejosee/learn_python.git
    ```
 
-- Select your preferred language.
+- Seleccionar el idioma de tu preferencia.
 
-- Open the **[Index](english/index.md)** file.
+- Abrir el archivo **[Index](index.md)**.
 
-- Start learning **Python**.
+- Empieza a aprender **Python**.
 
-## Contributions
+## Contribuciones
 
-If you wish to contribute to the repository and add more content, you can do so by following these steps:
+Si deseas contribuir al repositorio y agregar más contenido, puedes hacerlo siguiendo estos pasos:
 
-- Fork this repository.
+- Realiza un fork de este repositorio.
 
-- Create a branch for your contribution.
+- Crea una rama para tu contribución.
 
-   ```bash
-   git checkout -b your-branch
-   ```
+    ```bash
+    git checkout -b tu-rama
+    ```
 
-- Add your content and make necessary changes.
+- Agrega tu contenido y realiza los cambios necesarios.
 
-- Submit a pull request.
+- Envía un pull request.
 
-## Credits
+## Créditos
 
-- Resources:
+- Recursos:
 
   - [Javatpoint](https://www.javatpoint.com/)
   - [W3schools](https://www.w3schools.com/)
@@ -50,12 +53,8 @@ If you wish to contribute to the repository and add more content, you can do so 
   - [ChatGPT](http://chat.openai.com/)
   - [Programiz](https://www.programiz.com/)
 
-- Applications:
+- Aplicaciones:
   - Visual Studio Code
   - Notion
   - Figma
   - GitHub
-
-- Authors:
-
-  - [Tyrone Jose](https://github.com/tyronejosee)
