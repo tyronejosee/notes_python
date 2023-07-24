@@ -1,4 +1,4 @@
-# Lambda
+# Lambdas
 
 En este tutorial, estudiaremos las funciones anónimas, comúnmente llamadas funciones lambda. Entenderemos qué son, cómo ejecutarlas y su sintaxis.
 
