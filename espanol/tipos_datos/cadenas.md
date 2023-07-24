@@ -54,7 +54,7 @@ representar cadenas multilínea o
 docstrings
 ```
 
-## Indexación y división de cadenas
+## Indexación y División de Cadenas
 
 Al igual que en otros lenguajes, la indexación de las cadenas de Python comienza desde 0. Por ejemplo, la cadena "HELLO" se indexa como se muestra en la siguiente figura.
 
@@ -406,7 +406,7 @@ print(r"C:\\\\Users\\\\DEVANSH SHARMA\\\\Python32")
 C:\\\\Users\\\\DEVANSH SHARMA\\\\Python32
 ```
 
-## El método format()
+## El Método format()
 
 El método **format()** es el método más flexible y útil para formatear cadenas. Las llaves {} se utilizan como marcadores de posición en la cadena y se reemplazan por los argumentos del método **format()**. Veamos un ejemplo:
 
@@ -432,7 +432,7 @@ Rohit y Virat son los mejores jugadores
 James, Peter, Ricky
 ```
 
-## Formateo de cadenas utilizando el operador %
+## Formateo de Cadenas Utilizando el Operador %
 
 Python nos permite utilizar los especificadores de formato utilizados en la instrucción printf de C. Los especificadores de formato en Python se tratan de la misma manera que en C. Sin embargo, Python proporciona un operador adicional %, que se utiliza como una interfaz entre los especificadores de formato y sus valores. En otras palabras, podemos decir que vincula los especificadores de formato a los valores.
 
