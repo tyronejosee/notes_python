@@ -1,344 +1,475 @@
 # Variables
 
-Las variables son contenedores para almacenar valores de datos.
+Una variable es un nombre que se utiliza para referirse a una ubicación de memoria. En Python, una variable también se conoce como un identificador y se utiliza para almacenar valores.
 
-## Creación de Variables
+En Python, no es necesario especificar el tipo de variable porque Python es un lenguaje inferencial y lo suficientemente inteligente para obtener el tipo de variable.
 
-Python no tiene un comando para declarar una variable.
+Los nombres de las variables pueden ser un grupo de letras y dígitos, pero deben comenzar con una letra o un guión bajo.
 
-Una variable se crea en el momento en que le asignas un valor por primera vez.
+Se recomienda utilizar letras minúsculas para el nombre de las variables. "Rahul" y "rahul" son dos variables diferentes.
 
-#### Ejemplo
+## Nomenclatura de Identificadores
 
-```python
-x = 5
-y = "John"
-print(x)
-print(y)
-```
+Las variables son un ejemplo de identificadores. Un identificador se utiliza para identificar los literales utilizados en el programa. Las reglas para nombrar un identificador son las siguientes:
 
-Las variables no necesitan ser declaradas con ningún *tipo* específico y pueden cambiar de tipo incluso después de haber sido establecidas.
+- El primer carácter de la variable debe ser una letra o un guión bajo (_).
+- Todos los caracteres, excepto el primer carácter, pueden ser letras en minúscula (a-z), letras en mayúscula (A-Z), guiones bajos o dígitos (0-9).
+- El nombre del identificador no debe contener espacios en blanco ni caracteres especiales (!, @, #, %, ^, &, *).
+- El nombre del identificador no debe ser similar a ninguna palabra clave definida en el lenguaje.
+- Los nombres de los identificadores distinguen entre mayúsculas y minúsculas; por ejemplo, "mi nombre" y "MyName" no son lo mismo.
+- Ejemplos de identificadores válidos: a123, _n, n_9, etc.
+- Ejemplos de identificadores no válidos: 1a, n%4, n 9, etc.
 
-#### Ejemplo
+## Declaración de Variables y Asignación de Valores
 
-```python
-x = 4 # x es de tipo entero (int)
-x = "Sally" # x ahora es de tipo cadena (str)
-print(x)
-```
+Python no nos obliga a declarar una variable antes de usarla en la aplicación. Nos permite crear una variable en el momento necesario.
 
-## Conversión de Tipos
+No es necesario declarar explícitamente una variable en Python. Cuando asignamos un valor a una variable, esa variable se declara automáticamente.
 
-Si deseas especificar el tipo de datos de una variable, puedes hacerlo mediante la conversión de tipos (casting).
+El operador igual (=) se utiliza para asignar un valor a una variable.
 
-#### Ejemplo
+## Referencias de Objetos
 
-```python
-x = str(3) # x será '3'
-y = int(3) # y será 3
-z = float(3) # z será 3.0
-```
+Es necesario entender cómo funciona el intérprete de Python cuando declaramos una variable. El proceso de tratamiento de variables es algo diferente de muchos otros lenguajes de programación.
 
-## Obtener el Tipo
+Python es un lenguaje de programación altamente orientado a objetos; por eso, cada elemento de datos pertenece a un tipo específico de clase.
 
-Puedes obtener el tipo de datos de una variable utilizando la función `type()`.
-
-#### Ejemplo
+**Ejemplo:**
 
 ```python
-x = 5
-y = "John"
-print(type(x))
-print(type(y))
+print("John")
 ```
 
-> Aprenderás más sobre tipos de datos y conversión más adelante en este tutorial.
-> 
+**Salida:**
 
-## Comillas Simples o Dobles?
-
-Las variables de tipo cadena pueden declararse utilizando comillas simples o dobles.
-
-#### Ejemplo
-
-```
-x = "John"
-# es lo mismo que
-x = 'John'
+```bash
+John
 ```
 
-## Sensible a Mayúsculas y Minúsculas
+El objeto de Python crea un objeto entero y lo muestra en la consola. En la declaración de impresión anterior, hemos creado un objeto de cadena. Verifiquemos su tipo usando la función integrada de Python **type()**.
 
-Los nombres de las variables distinguen entre mayúsculas y minúsculas.
-
-#### Ejemplo
-
-Esto creará dos variables.
+**Ejemplo:**
 
 ```python
-a = 4
-A = "Sally"
-# A no sobrescribirá a
+type("John")
 ```
+
+**Salida:**
+
+```bash
+<class 'str'>
+```
+
+En Python, las variables son un nombre simbólico que es una referencia o un puntero a un objeto. Las variables se utilizan para denotar objetos por ese nombre.
+
+**Ejemplo:**
+
+```python
+a = 50
+```
+
+![https://static.javatpoint.com/python/images/python-variables.png](https://static.javatpoint.com/python/images/python-variables.png)
+
+En la imagen anterior, la variable **a** se refiere a un objeto entero.
+
+Supongamos que asignamos el valor entero 50 a una nueva variable b.
+
+**Ejemplo:**
+
+```python
+a = 50
+b = a
+```
+
+![https://static.javatpoint.com/python/images/python-variables2.png](https://static.javatpoint.com/python/images/python-variables2.png)
+
+La variable b se refiere al mismo objeto al que apunta a porque Python no crea otro objeto.
+
+Asignemos un nuevo valor a b. Ahora ambas variables se referirán a diferentes objetos.
+
+**Ejemplo:**
+
+```python
+a = 50
+b = 100
+```
+
+![https://static.javatpoint.com/python/images/python-variables3.png](https://static.javatpoint.com/python/images/python-variables3.png)
+
+Python gestiona la memoria de manera eficiente si asignamos la misma variable a dos valores diferentes.
+
+## Identidad de Objeto
+
+En Python, cada objeto creado se identifica de manera única. Python garantiza que no habrá dos objetos con el mismo identificador. La función incorporada **id()** se utiliza para identificar el identificador del objeto. Consideremos el siguiente ejemplo.
+
+```python
+a = 50
+
+b = a
+
+print(id(a))
+
+print(id(b))
+
+# Reasignar la variable a
+
+a = 500
+
+print(id(a))
+```
+
+**Salida:**
+
+```bash
+140734982691168
+140734982691168
+2822056960944
+```
+
+Asignamos **b = a, a** y **b** apuntan al mismo objeto. Cuando lo verificamos mediante la función **id()**, devuelve el mismo número. Luego, reasignamos **a** a 500; luego se refiere al nuevo identificador de objeto.
 
 ## Nombres de Variables
 
-Una variable puede tener un nombre corto (como x e y) o un nombre más descriptivo (age, carname, total_volume). Las reglas para las variables en Python son:
+Ya hemos discutido cómo declarar una variable válida. Los nombres de las variables pueden tener cualquier longitud y pueden tener mayúsculas, minúsculas (de A a Z, de a a z), el dígito (0-9) y el guión bajo (_). Consideremos el siguiente ejemplo de nombres de variables válidos.
 
-- El nombre de una variable debe comenzar con una letra o el carácter de subrayado (_).
-- El nombre de una variable no puede comenzar con un número.
-- El nombre de una variable solo puede contener caracteres alfanuméricos y guiones bajos (A-z, 0-9 y _).
-- Los nombres de las variables distinguen entre mayúsculas y minúsculas (age, Age y AGE son tres variables diferentes).
-- El nombre de una variable no puede ser una palabra clave de Python.
-
-#### Ejemplo
-
-Nombres de variables válidos.
+**Ejemplo:**
 
 ```python
-myvar = "John"
-my_var = "John"
-_my_var = "John"
-myVar = "John"
-MYVAR = "John"
-myvar2 = "John"
+nombre = "Devansh"
+
+edad = 20
+
+calificaciones = 80.50
+
+print(nombre)
+
+print(edad)
+
+print(calificaciones)
 ```
 
----
+**Salida:**
 
-#### Ejemplo
-
-Nombres de variables no válidos.
-
-```python
-2myvar = "John"
-my-var = "John"
-my var = "John"
+```bash
+Devansh
+20
+80.5
 ```
 
----
+Consideremos el siguiente nombre de variables válido.
 
-> Recuerda que los nombres de variables distinguen entre mayúsculas y minúsculas
-> 
-
-## Nombres de Variables con Varias Palabras
-
-Los nombres de variables con más de una palabra pueden ser difíciles de leer.
-
-Existen varias técnicas que puedes utilizar para que sean más legibles.
-
-### Camel Case
-
-Cada palabra, excepto la primera, comienza con una letra mayúscula.
+**Ejemplo:**
 
 ```python
-myVariableName = "John"
+nombre = "A"
+
+Nombre = "B"
+
+naMe = "C"
+
+NAME = "D"
+
+n_a_m_e = "E"
+
+_name = "F"
+
+name_ = "G"
+
+_name_ = "H"
+
+na56me = "I"
+
+print(nombre,Nombre,naMe,NAME,n_a_m_e, NAME, n_a_m_e, _name,
+
+name_,_name, na56me)
 ```
 
-### Pascal Case
+**Salida:**
 
-Cada palabra comienza con una letra mayúscula.
-
-```python
-MyVariableName = "John"
+```bash
+A B C D E D E F G F I
 ```
 
-### Snake Case
+En el ejemplo anterior, hemos declarado algunos nombres de variables válidos como nombre, *name*, etc. Pero no se recomienda porque cuando intentamos leer el código, puede generar confusión. El nombre de la variable debe ser descriptivo para hacer que el código sea más legible.
 
-Cada palabra está separada por un guion bajo.
+Los nombres de palabras clave de varias palabras se pueden crear utilizando los siguientes métodos.
 
-```python
-my_variable_name = "John"
-```
+- **Camel Case -** En Camel Case, cada palabra o abreviatura en el medio comienza con una letra mayúscula. No hay intervención de espacios en blanco. Por ejemplo - nameOfStudent, valueOfVaraible, etc.
+- **Pascal Case -** Es igual que Camel Case, pero aquí la primera palabra también es mayúscula. Por ejemplo - NameOfStudent, etc.
+- **Snake Case -** En Snake Case, las palabras están separadas por guiones bajos. Por ejemplo - name_of_student, etc.
 
-## Asignar Muchos Valores a Múltiples Variables
+## Asignación Múltiple
 
-Python te permite asignar valores a múltiples variables en una sola línea.
+Python nos permite asignar un valor a varias variables en una sola declaración, lo que también se conoce como asignaciones múltiples.
 
-#### Ejemplo
+Podemos aplicar asignaciones múltiples de dos maneras, ya sea asignando un solo valor a varias variables o asignando varios valores a varias variables. Consideremos el siguiente ejemplo.
 
-```python
-x, y, z = "Orange", "Banana", "Cherry"
+### 1. Asignar un Solo Valor a Varias Variables
+
+**Ejemplo:**
+
+```bash
+x=y=z=50
+
 print(x)
+
 print(y)
+
 print(z)
 ```
 
-> **Nota:** Asegúrate de que el número de variables coincida con el número de valores, de lo contrario obtendrás un error.
-> 
+**Salida:**
 
-## Asignar un Único Valor a Múltiples Variables
+```bash
+50
+50
+50
+```
 
-También puedes asignar el *mismo* valor a múltiples variables en una sola línea.
+### 2. Asignación de múltiples valores a varias variables
 
-#### Ejemplo
+**Ejemplo:**
+
+```bash
+a,b,c=5,10,15
+
+print a
+
+print b
+
+print c
+```
+
+**Salida:**
+
+```bash
+5
+10
+15
+```
+
+Los valores se asignarán en el orden en que aparecen las variables.
+
+## Tipos de Variables
+
+Hay dos tipos de variables en Python: variables locales y variables globales. Veamos las siguientes variables.
+
+### Variable Local
+
+Las variables locales son las variables que se declaran dentro de la función y tienen ámbito dentro de la función. Veamos el siguiente ejemplo.
+
+**Ejemplo:**
 
 ```python
-x = y = z = "Orange"
+# Declarando una función
+
+def suma():
+
+# Definición de variables locales. Tienen alcance solo dentro de la función
+
+a = 20
+
+b = 30
+
+c = a + b
+
+print("La suma es:", c)
+
+# Llamando a una función
+
+suma()
+```
+
+**Salida:**
+
+```bash
+La suma es: 50
+```
+
+**Explicación:**
+
+En el código anterior, declaramos una función llamada **suma()** y asignamos algunas variables dentro de la función. Estas variables se referirán como las **variables locales** que solo tienen alcance dentro de la función. Si intentamos usarlas fuera de la función, obtendremos un siguiente error.
+
+**Ejemplo:**
+
+```python
+suma()
+
+# Acceso a variable local fuera de la función
+
+print(a)
+```
+
+**Salida:**
+
+```bash
+La suma es: 50
+    print(a)
+NameError: name 'a' is not defined
+```
+
+Intentamos usar una variable local fuera de su alcance; arrojó el error **NameError**.
+
+### Variables Globales
+
+Las variables globales se pueden utilizar en todo el programa, y su alcance es en todo el programa. Podemos usar variables globales dentro o fuera de la función.
+
+Una variable declarada fuera de la función es la variable global de forma predeterminada. Python proporciona la palabra clave **global** para usar la variable global dentro de la función. Si no usamos la palabra clave **global**, la función la trata como una variable local. Veamos el siguiente ejemplo.
+
+**Ejemplo:**
+
+```python
+# Declarar una variable y inicializarla
+
+x = 101
+
+# Variable global en la función
+
+def funcionPrincipal():
+
+# imprimiendo una variable global
+
+global x
+
 print(x)
-print(y)
-print(z)
-```
 
-## Desempaquetar una Colección
+# modificar una variable global
 
-Si tienes una colección de valores en una lista, tupla, etc., Python te permite extraer los valores en variables. Esto se llama *desempaquetar*.
+x = 'Bienvenido a Javatpoint'
 
-#### Ejemplo
-
-Desempaquetar una lista.
-
-```python
-fruits = ["apple", "banana", "cherry"]
-x, y, z = fruits
 print(x)
-print(y)
-print(z)
-```
 
-## Variables de Salida
+funcionPrincipal()
 
-La función `print()` de Python se utiliza a menudo para mostrar variables.
-
-#### Ejemplo
-
-```python
-x = "Python es increíble"
 print(x)
 ```
 
-En la función `print()`, puedes mostrar múltiples variables separadas por comas.
+**Salida:**
 
-#### Ejemplo
-
-```python
-x = "Python"
-y = "es"
-z = "increíble"
-print(x, y, z)
+```bash
+101
+Bienvenido a Javatpoint
+Bienvenido a Javatpoint
 ```
 
-También puedes utilizar el operador `+` para mostrar múltiples variables.
+**Explicación:**
 
-#### Ejemplo
+En el código anterior, declaramos una variable global **x** y le asignamos un valor. A continuación, definimos una función y accedimos a la variable declarada utilizando la palabra clave **global** dentro de la función. Ahora podemos modificar su valor. Luego, asignamos un nuevo valor de cadena a la variable **x**.
+
+Ahora, llamamos a la función y procedimos a imprimir **x**. Imprimió el valor recién asignado de **x**.
+
+## Eliminar una Variable
+
+Podemos eliminar la variable utilizando la palabra clave **del**. La sintaxis se muestra a continuación.
+
+**Sintaxis:**
 
 ```python
-x = "Python "
-y = "es "
-z = "increíble"
-print(x + y + z)
+
+del <nombre_variable>
 ```
 
-> Observa el espacio después de "Python " y "es ", sin ellos, el resultado sería "Pythonesincreíble".
-> 
+En el siguiente ejemplo, creamos una variable x y le asignamos un valor. Eliminamos la variable x y la imprimimos, obtenemos el error **"variable x no está definida"**. La variable x ya no se usará en el futuro.
 
-Para los números, el carácter `+` funciona como un operador matemático.
-
-#### Ejemplo
+**Ejemplo:**
 
 ```python
-x = 5
-y = 10
-print(x + y)
+# Asignando un valor a x
+
+x = 6
+
+print(x)
+
+# eliminando una variable.
+
+del x
+
+print(x)
 ```
 
-En la función `print()`, cuando intentas combinar una cadena y un número con el operador `+`, Python te dará un error.
+**Salida:**
 
----
-
-#### Ejemplo
-
-```python
-x = 5
-y = "John"
-print(x + y)
+```bash
+6
+Traceback (most recent call last):
+  File "C:/Users/DEVANSH SHARMA/PycharmProjects/Hello/multiprocessing.py", line 389, in
+    print(x)
+NameError: name 'x' is not defined
 ```
 
----
+## Valor Máximo Posible de un Entero
 
-La mejor manera de mostrar múltiples variables en la función `print()` es separarlas con comas, lo cual incluso admite diferentes tipos de datos.
+A diferencia de otros lenguajes de programación, Python no tiene tipos de datos long int o float. Trata todos los valores enteros como un tipo de dato **int**. Aquí surge la pregunta. ¿Cuál es el valor máximo posible que puede contener la variable en Python? Consideremos el siguiente ejemplo.
 
-#### Ejemplo
+**Ejemplo:**
 
 ```python
-x = 5
-y = "John"
-print(x, y)
+# Un programa de Python para demostrar que podemos almacenar
+
+# números grandes en Python
+
+a = 10000000000000000000000000000000000000000000
+
+a = a + 1
+
+print(type(a))
+
+print (a)
 ```
 
-## Variables Globales
+**Salida:**
 
-Las variables que se crean fuera de una función (como en todos los ejemplos anteriores) se conocen como variables globales.
-
-Las variables globales pueden ser utilizadas por todos, tanto dentro de funciones como fuera de ellas.
-
-#### Ejemplo
-
-Crear una variable fuera de una función y utilizarla dentro de la función
-
-```python
-x = "increíble"
-
-def myfunc():
-    print("Python es " + x)
-
-myfunc()
+```bash
+<class 'int'>
+10000000000000000000000000000000000000000001
 ```
 
-Si creas una variable con el mismo nombre dentro de una función, esta variable
+Como podemos ver en el ejemplo anterior, asignamos un valor entero grande a la variable **x** y verificamos su tipo. Imprimió **class <int>** no **long int**. Por lo tanto, no hay limitación del número por bits y podemos expandirlo al límite de nuestra memoria.
 
-será local y solo se podrá usar dentro de la función. La variable global con el mismo nombre seguirá siendo global y mantendrá su valor original.
+Python no tiene un tipo de dato especial para almacenar números más grandes.
 
-#### Ejemplo
+### Imprimir Variables Individuales y Múltiples
 
-Crear una variable dentro de una función con el mismo nombre que la variable global
+Podemos imprimir varias variables en una sola instrucción de impresión. A continuación se presentan ejemplos de impresión de valores individuales y múltiples.
+
+**Ejemplo: Impresión de variable individual:**
 
 ```python
-x = "increíble"
+# imprimir un solo valor
 
-def myfunc():
-    x = "fantástico"
-    print("Python es " + x)
+a = 5
 
-myfunc()
+print(a)
 
-print("Python es " + x)
+print((a))
 ```
 
-## La Palabra Clave global
+**Salida:**
 
-Normalmente, cuando creas una variable dentro de una función, esa variable es local y solo se puede usar dentro de esa función.
-
-Para crear una variable global dentro de una función, puedes usar la palabra clave `global`.
-
-#### Ejemplo
-
-Si utilizas la palabra clave `global`, la variable pertenece al ámbito global.
-
-```python
-def myfunc():
-    global x
-    x = "fantástico"
-
-myfunc()
-
-print("Python es " + x)
+```bash
+5
+5
 ```
 
-Además, utiliza la palabra clave `global` si deseas cambiar una variable global dentro de una función.
-
-#### Ejemplo
-
-Para cambiar el valor de una variable global dentro de una función, haz referencia a la variable utilizando la palabra clave `global`.
+**Ejemplo: Impresión de varias variables:**
 
 ```python
-x = "increíble"
+a = 5
 
-def myfunc():
-    global x
-    x = "fantástico"
+b = 6
 
-myfunc()
+# imprimir múltiples variables
 
-print("Python es " + x)
+print(a,b)
+
+# separar las variables por la coma
+
+Print(1, 2, 3, 4, 5, 6, 7, 8)
+```
+
+**Salida:**
+
+```bash
+5 6
+1 2 3 4 5 6 7 8
 ```
