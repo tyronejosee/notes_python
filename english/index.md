@@ -1,3 +1,0 @@
-# pending
-
-[Main](../README.MD)
