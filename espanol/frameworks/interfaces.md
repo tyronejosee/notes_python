@@ -1,4 +1,0 @@
-PyQt
-Tkinter
-wxPython
-Kivy

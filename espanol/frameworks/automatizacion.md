@@ -1,5 +1,0 @@
-Selenium
-BeautifulSoup
-PyAutoGUI
-Fabric
-PyTest
