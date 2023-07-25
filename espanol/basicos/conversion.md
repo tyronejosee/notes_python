@@ -19,7 +19,7 @@ El siguiente programa ilustra cómo se puede hacer en Python.
 
 **Ejemplo:**
 
-```bash
+```python
 # Programa para demostrar la conversión de tipo implícito
 
 # Inicializando el valor de a
@@ -101,7 +101,7 @@ int(), float() y str() se utilizan principalmente para la conversión de tipo ex
 
 **Ejemplo:**
 
-```bash
+```python
 # Programa para demostrar la conversión de tipo explícito
 
 # Inicializando el valor de a
@@ -163,7 +163,7 @@ Finalmente, echemos un vistazo al último programa de este artículo que cubre p
 
 **Ejemplo:**
 
-```bash
+```python
 # Programa para demostrar la conversión de tipo explícito
 
 # Inicializando el valor de a
