@@ -1,7 +1,10 @@
-# Síncrono
+# Django
 
-Los frameworks sincrónicos en Python manejan el flujo de datos de manera síncrona. En una solicitud síncrona, haces la solicitud y detienes la ejecución de tu programa hasta que recibas una respuesta del servidor HTTP (o un error si no se puede alcanzar el servidor, o un tiempo de espera si el servidor está tardando demasiado en responder). El intérprete queda bloqueado hasta que se complete la solicitud (hasta que obtengas una respuesta definitiva de lo que sucedió con la solicitud: ¿fue exitosa? ¿hubo un error? ¿ocurrió un tiempo de espera?...).
+Django es un marco de trabajo web gratuito y de código abierto basado en Python que sigue el patrón arquitectónico modelo-vista-template (MVT). Es mantenido por la Django Software Foundation, una organización independiente establecida en Estados Unidos como una entidad sin fines de lucro 501.
 
-## Recursos
+Visita los siguientes recursos para obtener más información:
 
-- **[Sync vs. Async Python: ¿Cuál es la diferencia?](https://blog.miguelgrinberg.com/post/sync-vs-async-python-what-is-the-difference)**
+- **[Sitio web oficial de Django](https://www.djangoproject.com/)**
+- **[Guía oficial de introducción](https://www.djangoproject.com/start/)**
+- **[Tutorial de Python Django para principiantes](https://www.youtube.com/watch?v=rHux0gMZ3Eg)**
+- **[¿Es Django síncrono o asíncrono?](https://stackoverflow.com/questions/58548089/django-is-synchronous-or-asynchronous)**
