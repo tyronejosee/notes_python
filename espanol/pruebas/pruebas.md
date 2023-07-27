@@ -1,4 +1,4 @@
-# Pruebas
+# Pruebas (Testing)
 
 Una clave para construir software que cumpla con los requisitos sin defectos es la realización de pruebas. Las pruebas de software ayudan a los desarrolladores a asegurarse de que están construyendo el software correcto. Cuando las pruebas se ejecutan como parte del proceso de desarrollo (a menudo con herramientas de integración continua), aumentan la confianza y evitan regresiones en el código.
 
