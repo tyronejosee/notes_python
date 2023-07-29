@@ -1,4 +1,13 @@
-# Índices
+# Tabla de Contenidos
+
+## Introducción
+
+- [Introducción](introduccion)
+- [Introducción](introduccion)
+- [Introducción](introduccion)
+- [Introducción](introduccion)
+- [Introducción](introduccion)
+- [Introducción](introduccion)
 
 ## Temas Básicos
 
@@ -11,7 +20,7 @@
 - [Entrada](basicos/entrada.md)
 - [Comentarios](basicos/comentarios.md)
 
-**Flujos:**
+**Flujos de Control:**
 
 - [Condicionales](flujos/condicionales.md)
 - [Bucles](flujos/bucles.md)
@@ -36,7 +45,7 @@
 - [Global](funciones/funciones.md)
 - [Modulos](funciones/funciones.md)
 
-**POO:**
+**Programación Orientada a Objetos (POO):**
 
 - [Conceptos](poo/conceptos.md)
 - [Clases y Objetos](poo/clases_objetos.md)
@@ -57,7 +66,7 @@
 
 ## Estructuras y Algoritmos
 
-**Estructuras:**
+**Estructuras de Datos:**
 
 - [Arreglos](estructuras/arreglos.md)
 - [Listas Enlazadas](estructuras/listas_enlazadas.md)
