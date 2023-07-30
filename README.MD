@@ -1,60 +1,44 @@
-# Learn Python
+# Roadmap: Python
 
-[![Python](https://img.shields.io/badge/Python-3.10+-yellow?style=for-the-badge&logo=python&logoColor=white&labelColor=101010)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.88.0+-00a393?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=101010)](https://fastapi.tiangolo.com)
-[![MongoDB](https://img.shields.io/badge/MongoDB-6.0+-00684A?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=101010)](https://www.mongodb.com)
-[![ChatGPT](https://img.shields.io/badge/ChatGPT-GPT--4-7CF178?style=for-the-badge&logo=openai&logoColor=white&labelColor=101010)](https://platform.openai.com)
+![Visual](resources/visual.svg)
 
-- **[English](../README.MD)**
-- **[Español](main.md)**
+[![Estado del repositorio](https://img.shields.io/badge/Estado-Activo-brightgreen.svg)](https://github.com/tyronejosee/roadmap_ux_design)
+[![Licencia](https://img.shields.io/badge/Licencia-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-¡Bienvenid@ a mi portafolio personal! Aquí encontrarás una recopilación de recursos, documentación y proyectos prácticos para mejorar tus habilidades en **Python**, el repositorio trata de ser lo más sencillo y amigable posible para los nuevos programadores, traduciendo documentación para hispanohablantes.
+## ¿Qué es Python?
 
-## Instrucciones
+El diseño UX (User Experience) o Experiencia de Usuario, es un conjunto de procesos, técnicas, métodos y metodologías con los cuales desarrollamos productos, ya sean digitales o físicos. El objetivo es crear experiencias significativas, relevantes y placenteras para los usuarios.
 
-Aquí te explicaré cómo puedes interactuar con el repositorio de la forma más sencilla.
+En cada momento de nuestras vidas, experimentamos reacciones y emociones, y es precisamente en ese punto donde entra en juego un diseñador UX. Su rol es diseñar y gestionar cada una de las interacciones que los usuarios tienen con nuestros productos. El diseñador UX se esfuerza por entender las necesidades y comportamientos de los usuarios para ofrecerles una experiencia satisfactoria y agradable en su interacción con el producto.
 
-- Clonar el repositorio en tu computadora. (Opcional)
+El mundo del diseño de experiencias no es tan sencillo como parece, ya que quienes reaccionan y experimentan emociones son las personas, seres humanos. Es precisamente ahí donde todo se complica; los seres humanos somos una especie compleja, con motivaciones, sentimientos, entornos, patrones de conducta y una serie de complejidades que nos conforman.
 
-   ```bash
-   git clone https://github.com/tyronejosee/learn_python.git
-   ```
+Para obtener un sólido entendimiento de estos conceptos, te invito a explorar detenidamente la siguiente lista de contenidos. Ten presente que esta información es solo un punto de partida, es crucial que sigas investigando por tu cuenta para adquirir un conocimiento más profundo y aplicable en diversas situaciones.
 
-- Seleccionar el idioma de tu preferencia.
+**Haz Clic Aquí:**
+[![Index](resources/bottom_index.svg)](espanol/index.md)
 
-- Abrir el archivo **[Index](index.md)**.
+## Notas del Autor
 
-- Empieza a aprender **Python**.
+Este repositorio tiene como objetivo proporcionar información clara de diversas fuentes y facilitar el acceso a personas hispanohablantes. Está diseñado tanto como un recurso educativo y de consulta, para el beneficio de cualquier persona que lo necesite.
 
-## Contribuciones
+- La estructura del repositorio está organizada dentro de una tabla de contenidos jerárquica.
+- Se han utilizado etiquetas de vínculos para mejorar la experiencia de búsqueda y navegación.
+- Encontrarás enlaces a recursos adicionales, que complementarán tu conocimiento.
 
-Si deseas contribuir al repositorio y agregar más contenido, puedes hacerlo siguiendo estos pasos:
+**Fuentes:**
+La información presente en este repositorio proviente del siguiente listado.
 
-- Realiza un fork de este repositorio.
+- [Javatpoint](https://www.javatpoint.com/)
+- [W3schools](https://www.w3schools.com/)
+- [Roadmap](https://roadmap.sh/)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/)
+- [ChatGPT](http://chat.openai.com/)
+- [Programiz](https://www.programiz.com/)
 
-- Crea una rama para tu contribución.
+**Aplicaciones:**
 
-    ```bash
-    git checkout -b tu-rama
-    ```
-
-- Agrega tu contenido y realiza los cambios necesarios.
-
-- Envía un pull request.
-
-## Créditos
-
-- Recursos:
-
-  - [Javatpoint](https://www.javatpoint.com/)
-  - [W3schools](https://www.w3schools.com/)
-  - [Roadmap](https://roadmap.sh/)
-  - [GeeksforGeeks](https://www.geeksforgeeks.org/)
-  - [ChatGPT](http://chat.openai.com/)
-  - [Programiz](https://www.programiz.com/)
-
-- Aplicaciones:
-  - Visual Studio Code
-  - Notion
-  - Figma
-  - GitHub
+- Visual Studio Code
+- Notion
+- Figma
+- GitHub
