@@ -7,38 +7,34 @@
 
 ## ¿Qué es Python?
 
-El diseño UX (User Experience) o Experiencia de Usuario, es un conjunto de procesos, técnicas, métodos y metodologías con los cuales desarrollamos productos, ya sean digitales o físicos. El objetivo es crear experiencias significativas, relevantes y placenteras para los usuarios.
+**Python** es un lenguaje de programación interpretado de alto nivel, versátil y fácil de aprender. Fue creado por **Guido van Rossum** en la década de 1990 y se ha vuelto muy popular debido a su sintaxis clara y legible. Python es conocido por su filosofía "baterías incluidas", lo que significa que incluye una amplia biblioteca incluida que facilita el desarrollo de diversas aplicaciones sin necesidad de reinventar la rueda. Además, su comunidad activa y colaborativa ha contribuido a crear una gran cantidad de módulos y librerías de terceros que abarcan desde el desarrollo web y científico hasta el aprendizaje automático y la inteligencia artificial.
 
-En cada momento de nuestras vidas, experimentamos reacciones y emociones, y es precisamente en ese punto donde entra en juego un diseñador UX. Su rol es diseñar y gestionar cada una de las interacciones que los usuarios tienen con nuestros productos. El diseñador UX se esfuerza por entender las necesidades y comportamientos de los usuarios para ofrecerles una experiencia satisfactoria y agradable en su interacción con el producto.
-
-El mundo del diseño de experiencias no es tan sencillo como parece, ya que quienes reaccionan y experimentan emociones son las personas, seres humanos. Es precisamente ahí donde todo se complica; los seres humanos somos una especie compleja, con motivaciones, sentimientos, entornos, patrones de conducta y una serie de complejidades que nos conforman.
-
-Para obtener un sólido entendimiento de estos conceptos, te invito a explorar detenidamente la siguiente lista de contenidos. Ten presente que esta información es solo un punto de partida, es crucial que sigas investigando por tu cuenta para adquirir un conocimiento más profundo y aplicable en diversas situaciones.
+Para obtener un sólido entendimiento de este lenguaje, te invito a explorar detenidamente la siguiente lista de contenidos. Ten presente que esta información es solo un punto de partida, es crucial que sigas investigando por tu cuenta y prácticando para adquirir un conocimiento más profundo y aplicable en diversas situaciones.
 
 **Haz Clic Aquí:**
+
 [![Index](resources/bottom_index.svg)](espanol/index.md)
 
 ## Notas del Autor
 
 Este repositorio tiene como objetivo proporcionar información clara de diversas fuentes y facilitar el acceso a personas hispanohablantes. Está diseñado tanto como un recurso educativo y de consulta, para el beneficio de cualquier persona que lo necesite.
 
-- La estructura del repositorio está organizada dentro de una tabla de contenidos jerárquica.
-- Se han utilizado etiquetas de vínculos para mejorar la experiencia de búsqueda y navegación.
-- Encontrarás enlaces a recursos adicionales, que complementarán tu conocimiento.
+- La estructura del repositorio está organizada sobre una tabla de contenidos o índice.
+- Se han utilizado enlaces de referencias para mejorar la experiencia de búsqueda y navegación.
+- Encontrarás vínculos a recursos externos de alto valor, que complementarán tu conocimiento.
 
 **Fuentes:**
-La información presente en este repositorio proviente del siguiente listado.
 
 - [Javatpoint](https://www.javatpoint.com/)
 - [W3schools](https://www.w3schools.com/)
 - [Roadmap](https://roadmap.sh/)
 - [GeeksforGeeks](https://www.geeksforgeeks.org/)
-- [ChatGPT](http://chat.openai.com/)
 - [Programiz](https://www.programiz.com/)
 
 **Aplicaciones:**
 
-- Visual Studio Code
-- Notion
-- Figma
-- GitHub
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [ChatGPT](http://chat.openai.com/)
+- [Notion](https://www.notion.so/)
+- [Figma](https://www.figma.com/)
+- [GitHub](https://github.com/)
