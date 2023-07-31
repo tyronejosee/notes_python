@@ -190,3 +190,6 @@ Las listas enlazadas son una estructura de datos popular en ciencias de la compu
 # Conclusión
 
 Las Listas Enlazadas son estructuras de datos versátiles que proporcionan asignación de memoria dinámica y operaciones de inserción y eliminación eficientes. Comprender los conceptos básicos de las Listas Enlazadas es esencial para cualquier programador o entusiasta de la informática. Con este conocimiento, puedes implementar Listas Enlazadas para resolver diversos problemas y ampliar tu comprensión de las estructuras de datos y algoritmos.
+
+# Recursos Adicionales
+https://www.geeksforgeeks.org/data-structures/linked-list/?ref=lbp

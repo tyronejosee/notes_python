@@ -1,113 +1,325 @@
-# Pilas (Stack)
+# Pilas (Stacks)
 
-Una pila es una estructura de datos lineal que sigue el principio de **Último en Entrar, Primero en Salir (LIFO)**. Esto significa que el último elemento insertado en la pila es el primero en ser removido.
+Una **pila** es una estructura de datos lineal que almacena elementos en un orden de **[Último en entrar, primero en salir (LIFO)](https://www.geeksforgeeks.org/lifo-last-in-first-out-approach-in-programming/)** o de primero en entrar, último en salir (FILO). En una pila, un nuevo elemento se agrega en un extremo y solo se elimina un elemento de ese extremo. Las operaciones de inserción y eliminación se llaman comúnmente "push" y "pop", respectivamente.
 
-Puedes pensar en la estructura de datos pila como un montón de platos apilados uno encima del otro.
+![https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/stack.png](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/stack.png)
 
-![https://cdn.programiz.com/sites/tutorial2program/files/stack-of-plates_0.png](https://cdn.programiz.com/sites/tutorial2program/files/stack-of-plates_0.png)
+**Las funciones asociadas con una pila son:**
 
-**Representación de una pila similar a un montón de platos**
+- **empty()** - Devuelve si la pila está vacía - Complejidad temporal: O(1)
+- **size()** - Devuelve el tamaño de la pila - Complejidad temporal: O(1)
+- **top() / peek()** - Devuelve una referencia al elemento superior de la pila - Complejidad temporal: O(1)
+- **push(a)** - Inserta el elemento 'a' en la parte superior de la pila - Complejidad temporal: O(1)
+- **pop()** - Elimina el elemento superior de la pila - Complejidad temporal: O(1)
 
-Aquí puedes:
+### Implementación:
 
-- Colocar un nuevo plato encima.
-- Quitar el plato de la parte superior.
+Existen varias formas en que se puede implementar una pila en Python. Este artículo cubre la implementación de una pila utilizando estructuras de datos y módulos de la biblioteca Python.
 
-Y si deseas el plato que está en la parte inferior, primero debes quitar todos los platos que están encima. Así es exactamente cómo funciona la estructura de datos pila.
+Una pila en Python se puede implementar utilizando las siguientes formas:
 
-# Principio LIFO de la Pila
+- Lista (list)
+- Collections.deque
+- queue.LifoQueue
 
-En términos de programación, poner un elemento en la parte superior de la pila se llama **push** (emplazar), y quitar un elemento se llama **pop** (sacar).
+# Implementación usando lista (list):
 
-![https://cdn.programiz.com/sites/tutorial2program/files/stack.png](https://cdn.programiz.com/sites/tutorial2program/files/stack.png)
+En Python, la estructura de datos incorporada "list" se puede utilizar como una pila. En lugar de "push()", se utiliza "append()" para agregar elementos en la parte superior de la pila, mientras que "pop()" elimina el elemento en orden LIFO.
 
-**Operaciones de emplazar (push) y sacar (pop) en la pila**
+Desafortunadamente, la lista tiene algunas limitaciones. El problema más grande es que puede experimentar problemas de velocidad a medida que crece. Los elementos en la lista se almacenan uno al lado del otro en memoria. Si la pila crece más grande que el bloque de memoria que la contiene actualmente, entonces Python necesita hacer algunas asignaciones de memoria. Esto puede hacer que algunas llamadas de "append()" tomen mucho más tiempo que otras.
 
-En la imagen anterior, aunque el elemento **3** fue el último en ser colocado, fue el primero en ser removido. Esto es exactamente cómo funciona el **Principio LIFO (Último en Entrar, Primero en Salir)**.
-
-Podemos implementar una pila en cualquier lenguaje de programación como C, C++, Java, Python o C#, pero la especificación es prácticamente la misma.
-
-# Operaciones Básicas de la Pila
-
-Hay algunas operaciones básicas que nos permiten realizar diferentes acciones en una pila.
-
-- **Empujar (Push)**: Agregar un elemento en la parte superior de la pila.
-- **Sacar (Pop)**: Quitar un elemento de la parte superior de la pila.
-- **Está Vacía (IsEmpty)**: Comprobar si la pila está vacía.
-- **Está Llena (IsFull)**: Comprobar si la pila está llena.
-- **Mirar (Peek)**: Obtener el valor del elemento en la parte superior sin quitarlo.
-
-# Funcionamiento de la Estructura de Datos Pila
-
-Las operaciones funcionan de la siguiente manera:
-
-1. Se utiliza un puntero llamado TOP para realizar un seguimiento del elemento en la parte superior de la pila.
-    
-    TOP
-    
-2. Al inicializar la pila, establecemos su valor en -1 para poder comprobar si la pila está vacía comparando `TOP == -1`.
-3. Al empujar (push) un elemento, aumentamos el valor de TOP y colocamos el nuevo elemento en la posición indicada por TOP.
-    
-    TOP
-    
-    TOP
-    
-4. Al sacar (pop) un elemento, devolvemos el elemento apuntado por TOP y disminuimos su valor.
-    
-    TOP
-    
-5. Antes de empujar (push), verificamos si la pila ya está llena.
-6. Antes de sacar (pop), verificamos si la pila ya está vacía.
-
-![https://cdn.programiz.com/sites/tutorial2program/files/stack-operations.png](https://cdn.programiz.com/sites/tutorial2program/files/stack-operations.png)
-
-**Funcionamiento de la Estructura de Datos Pila**
-
-# Implementaciones de la Pila en Python
-
-La implementación de pila más común es utilizando arreglos, pero también se puede implementar utilizando listas.
+**Ejemplo:**
 
 ```python
-# Implementación de la pila en Python
+# Programa en Python para
+# demostrar la implementación de una pila
+# usando "list"
 
-# Crear una pila
-def crear_pila():
-    pila = []
-    return pila
+pila = []
 
-# Verificar si la pila está vacía
-def esta_vacia(pila):
-    return len(pila) == 0
+# Función "append()" para agregar
+# elementos en la pila
 
-# Agregar elementos a la pila
-def empujar(pila, elemento):
-    pila.append(elemento)
-    print("elemento empujado: " + elemento)
+pila.append('a')
+pila.append('b')
+pila.append('c')
 
-# Quitar un elemento de la pila
-def sacar(pila):
-    if (esta_vacia(pila)):
-        return "la pila está vacía"
+print('Pila inicial:')
+print(pila)
 
-    return pila.pop()
+# Función "pop()" para eliminar
+# elementos de la pila en orden LIFO
 
-pila = crear_pila()
-empujar(pila, str(1))
-empujar(pila, str(2))
-empujar(pila, str(3))
-empujar(pila, str(4))
-print("elemento sacado: " + sacar(pila))
-print("pila después de sacar un elemento: " + str(pila))
+print('\\nElementos extraídos de la pila:')
+print(pila.pop())
+print(pila.pop())
+print(pila.pop())
+
+print('\\nPila después de eliminar elementos:')
+print(pila)
+
+# Descomentar pila.pop()
+# causará un IndexError
+# ya que la pila está ahora vacía
+
 ```
 
-# Complejidad Temporal de la Pila
+**Salida:**
 
-Para la implementación de la pila basada en un arreglo, las operaciones push y pop toman tiempo constante, es decir, `O(1)`.
+```python
+Pila inicial
+['a', 'b', 'c']
 
-# Aplicaciones de la Estructura de Datos Pila
+Elementos extraídos de la pila:
+c
+b
+a
 
-Aunque la pila es una estructura de datos simple de implementar, es muy poderosa. Los usos más comunes de una pila son:
+Pila después de eliminar elementos:
+[]
 
-- **Invertir una palabra**: Colocar todas las letras en una pila y sacarlas. Debido al orden LIFO de la pila, se obtendrán las letras en orden inverso.
-- **En compiladores**: Los compiladores utilizan la pila para calcular el valor de expresiones como `2 + 4 / 5 * (7 - 9)` mediante la conversión de la expresión a una forma prefija o postfija.
-- **En navegadores web**: El botón de retroceso en un navegador web guarda todas las URL que has visitado previamente en una pila. Cada vez que visitas una nueva página, se agrega en la parte superior de la pila. Cuando presionas el botón de retroceso, se elimina la URL actual de la pila y se accede a la URL anterior.
+```
+
+# Implementación usando collections.deque:
+
+En Python, una pila se puede implementar utilizando la clase "deque" del módulo "collections". La cola doble ("deque") se prefiere sobre la lista en casos donde necesitamos operaciones de agregar y quitar elementos más rápidas desde ambos extremos del contenedor, ya que "deque" proporciona una complejidad temporal de O(1) para las operaciones de agregar y quitar, en comparación con la lista que proporciona una complejidad temporal de O(n).
+
+Se utilizan las mismas funciones que en la lista, "append()" y "pop()".
+
+- Python3
+
+```python
+# Programa en Python para
+# demostrar la implementación de una pila
+# usando "collections.deque"
+
+from collections import deque
+
+pila = deque()
+
+# Función "append()" para agregar
+# elementos en la pila
+
+pila.append('a')
+pila.append('b')
+pila.append('c')
+
+print('Pila inicial:')
+print(pila)
+
+# Función "pop()" para eliminar
+# elementos de la pila en orden LIFO
+
+print('\\nElementos extraídos de la pila:')
+print(pila.pop())
+print(pila.pop())
+print(pila.pop())
+
+print('\\nPila después de eliminar elementos:')
+print(pila)
+
+# Descomentar pila.pop()
+# causará un IndexError
+# ya que la pila está ahora vacía
+
+```
+
+**Salida:**
+
+```python
+Pila inicial:
+deque(['a', 'b', 'c'])
+
+Elementos extraídos de la pila:
+c
+b
+a
+
+Pila después de eliminar elementos:
+deque([])
+
+```
+
+### Implementación utilizando el módulo "queue"
+
+El módulo "queue" también tiene una estructura de datos llamada LifoQueue, que es básicamente una pila. Los datos se insertan en la cola utilizando la función "put()" y se extraen utilizando la función "get()".
+
+Hay varias funciones disponibles en este módulo:
+
+- **maxsize**: Número máximo de elementos permitidos en la cola.
+- **empty()**: Devuelve True si la cola está vacía, False en caso contrario.
+- **full()**: Devuelve True si hay "maxsize" elementos en la cola. Si la cola se inicializó con maxsize=0 (por defecto), full() nunca devuelve True.
+- **get()**: Elimina y devuelve un elemento de la cola. Si la cola está vacía, espera hasta que haya un elemento disponible.
+- **get_nowait()**: Devuelve un elemento si hay uno disponible de inmediato; de lo contrario, genera una excepción QueueEmpty.
+- **put(item)**: Coloca un elemento en la cola. Si la cola está llena, espera hasta que haya un espacio libre antes de agregar el elemento.
+- **put_nowait(item)**: Coloca un elemento en la cola sin bloqueo. Si no hay espacio libre de inmediato, genera una excepción QueueFull.
+- **qsize()**: Devuelve el número de elementos en la cola.
+
+**Ejemplo:**
+
+```python
+# Programa Python para
+# demostrar la implementación de una pila
+# usando el módulo "queue"
+
+from queue import LifoQueue
+
+# Inicialización de una pila
+
+pila = LifoQueue(maxsize=3)
+
+# qsize() muestra el número de elementos
+# en la pila
+
+print(pila.qsize())
+
+# Función "put()" para agregar
+# elementos a la pila
+
+pila.put('a')
+pila.put('b')
+pila.put('c')
+
+print("Llena: ", pila.full())
+print("Tamaño: ", pila.qsize())
+
+# Función "get()" para extraer
+# el elemento de la pila en orden LIFO
+
+print('\\nElementos extraídos de la pila:')
+print(pila.get())
+print(pila.get())
+print(pila.get())
+
+print("\\nVacia: ", pila.empty())
+
+```
+
+---
+
+**Salida:**
+
+```python
+0
+Llena:  True
+Tamaño:  3
+
+Elementos extraídos de la pila:
+c
+b
+a
+
+Vacia:  True
+
+```
+
+### Implementación usando una lista enlazada simple:
+
+La lista enlazada tiene dos métodos: `addHead(item)` y `removeHead()`, que se ejecutan en tiempo constante. Estos dos métodos son adecuados para implementar una pila.
+
+- **getSize()** - Obtiene el número de elementos en la pila.
+- **isEmpty()** - Devuelve True si la pila está vacía, False en caso contrario.
+- **peek()** - Devuelve el elemento superior de la pila. Si la pila está vacía, se lanza una excepción.
+- **push(value)** - Agrega un valor en la cabeza de la pila.
+- **pop()** - Elimina y devuelve un valor de la cabeza de la pila. Si la pila está vacía, se lanza una excepción.
+
+**A continuación se muestra la implementación del enfoque anterior:**
+
+```python
+# Programa Python para demostrar
+# la implementación de una pila usando una lista enlazada simple.
+
+# Clase nodo
+class Nodo:
+    def __init__(self, valor):
+        self.valor = valor
+        self.siguiente = None
+
+class Pila:
+    # Inicializar una pila.
+    # Usar un nodo ficticio, que es
+    # más fácil para manejar casos especiales.
+    def __init__(self):
+        self.cabeza = Nodo("cabeza")
+        self.tamaño = 0
+
+    # Representación en cadena de la pila
+    def __str__(self):
+        actual = self.cabeza.siguiente
+        cadena = ""
+        while actual:
+            cadena += str(actual.valor) + "->"
+            actual = actual.siguiente
+        return cadena[:-2]
+
+    # Obtener el tamaño actual de la pila
+    def getSize(self):
+        return self.tamaño
+
+    # Verificar si la pila está vacía
+    def isEmpty(self):
+        return self.tamaño == 0
+
+    # Obtener el elemento superior de la pila
+    def peek(self):
+        # Comprobar si estamos mirando una pila vacía.
+        if self.isEmpty():
+            raise Exception("Mirando desde una pila vacía")
+        return self.cabeza.siguiente.valor
+
+    # Agregar un valor a la pila en la cabeza
+    def push(self, valor):
+        nodo = Nodo(valor)
+        nodo.siguiente = self.cabeza.siguiente
+        self.cabeza.siguiente = nodo
+        self.tamaño += 1
+
+    # Eliminar un valor de la pila y devolverlo.
+    def pop(self):
+        if self.isEmpty():
+            raise Exception("Extrayendo desde una pila vacía")
+        remover = self.cabeza.siguiente
+        self.cabeza.siguiente = self.cabeza.siguiente.siguiente
+        self.tamaño -= 1
+        return remover.valor
+
+# Código del controlador
+if __name__ == "__main__":
+    pila = Pila()
+    for i in range(1, 11):
+        pila.push(i)
+    print(f"Pila: {pila}")
+    for _ in range(1, 6):
+        remover = pila.pop()
+        print(f"Extracción: {remover}")
+    print(f"Pila: {pila}")
+
+```
+
+---
+
+**Salida:**
+
+```python
+Pila: 10->9->8->7->6->5->4->3->2->1
+Extracción: 10
+Extracción: 9
+Extracción: 8
+Extracción: 7
+Extracción: 6
+Pila: 5->4->3->2->1
+
+```
+
+### **Ventajas de la pila:**
+
+- Las pilas son estructuras de datos simples con un conjunto de operaciones bien definido, lo que las hace fáciles de entender y utilizar.
+- Las pilas son eficientes para agregar y eliminar elementos, ya que estas operaciones tienen una complejidad de tiempo de O(1).
+- Para revertir el orden de los elementos, utilizamos la estructura de datos de pila.
+- Las pilas se pueden utilizar para implementar funciones de deshacer/rehacer en aplicaciones.
+
+### **Desventajas de la pila:**
+
+- La restricción del tamaño en la pila es una desventaja, y si están llenas, no se pueden agregar más elementos a la pila.
+- Las pilas no proporcionan un acceso rápido a elementos que no sean el elemento superior.
+- Las pilas no admiten una búsqueda eficiente, ya que debes extraer elementos uno por uno hasta que encuentres el elemento que estás buscando.
