@@ -2,12 +2,11 @@
 
 ## Introducción
 
-- [Introducción](introduccion)
-- [Introducción](introduccion)
-- [Introducción](introduccion)
-- [Introducción](introduccion)
-- [Introducción](introduccion)
-- [Introducción](introduccion)
+- [Introducción](introduccion/introduccion.md)
+- [Carácteristicas](introduccion/caracteristicas.md)
+- [Historia](introduccion/historia.md)
+- [Aplicaciones](introduccion/aplicaciones.md)
+- [Instalación](introduccion/instalacion.md)
 
 ## Temas Básicos
 
@@ -98,8 +97,15 @@
 
 **Asíncrono:**
 
+- pass
+- pass
+
 **Síncrono:**
+
+- pass
+- pass
 
 ## [Pruebas](pruebas/pruebas.md)
 
-- 
+- pass
+- pass
