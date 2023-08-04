@@ -1,9 +1,9 @@
 <p align="center">
   <a href="https://github.com/tyronejosee/docs_python#gh-light-mode-only" target="_blank">
-    <img src="./assets/logo_dark.svg" alt="logo-light" width="400">
+    <img src="./assets/logo_light.svg" alt="logo-light" width="400">
   </a>
   <a href="https://github.com/tyronejosee/docs_python#gh-dark-mode-only" target="_blank">
-    <img src="./assets/logo_light.svg" alt="logo-dark" width="400">
+    <img src="./assets/logo_dark.svg" alt="logo-dark" width="400">
   </a>
 </p>
 
