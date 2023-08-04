@@ -1,9 +1,9 @@
 <p align="center">
-  <a href="https://github.com/tyronejosee/docs_ux_design#gh-light-mode-only" target="_blank">
-    <img src="./.github/logo-light.svg" alt="logo-light" width="400">
+  <a href="https://github.com/tyronejosee/docs_python#gh-light-mode-only" target="_blank">
+    <img src="./assets/logo_dark.svg" alt="logo-light" width="400">
   </a>
-  <a href="https://github.com/tyronejosee/docs_ux_design#gh-dark-mode-only" target="_blank">
-    <img src="./.github/logo-dark.svg" alt="logo-dark" width="400">
+  <a href="https://github.com/tyronejosee/docs_python#gh-dark-mode-only" target="_blank">
+    <img src="./assets/logo_light.svg" alt="logo-dark" width="400">
   </a>
 </p>
 
@@ -14,7 +14,7 @@
 
 <p align="center">
     <a href="#"><img src="https://img.shields.io/badge/contributions-yes-blue" alt="Contruibutions"></a>
-    <a href="https://github.com/tyronejosee/roadmap_ux_design/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License"></a>
+    <a href="https://github.com/tyronejosee/docs_python/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License"></a>
 </p>
 
 ## ¿Qué es Python?
@@ -24,10 +24,10 @@
 Para obtener un sólido entendimiento de este lenguaje, te invito a explorar detenidamente la siguiente lista de contenidos. Ten presente que esta información es solo un punto de partida, es crucial que sigas investigando por tu cuenta y prácticando para adquirir un conocimiento más profundo y aplicable en diversas situaciones. Aquí encontrarás una tabla de contenidos que necesitas conocer para comprender que es Python.
 
 <p align="center">
-  <a href="https://github.com/tyronejosee/docs_ux_design/blob/main/docs/spa/index.md#gh-light-mode-only" target="_blank">
+  <a href="https://github.com/tyronejosee/docs_python/blob/main/docs/spa/index.md#gh-light-mode-only" target="_blank">
     <img src="./assets/buttom_index_light.svg" alt="logo-light" width="150">
   </a>
-  <a href="https://github.com/tyronejosee/docs_ux_design/blob/main/docs/spa/index.md#gh-dark-mode-only" target="_blank">
+  <a href="https://github.com/tyronejosee/docs_python/blob/main/docs/spa/index.md#gh-dark-mode-only" target="_blank">
     <img src="./assets/buttom_index_dark.svg" alt="logo-dark" width="150">
   </a>
 </p>
