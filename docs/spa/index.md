@@ -8,9 +8,7 @@
 - [Aplicaciones](introduccion/aplicaciones.md)
 - [Instalación](introduccion/instalacion.md)
 
-## Temas Básicos
-
-**Básicos:**
+## Básicos
 
 - [Variables](basicos/variables.md)
 - [Tipos de Datos](basicos/tipos_datos.md)
@@ -19,13 +17,17 @@
 - [Entrada](basicos/entrada.md)
 - [Comentarios](basicos/comentarios.md)
 
-**Flujos de Control:**
+## Flujos de Control
 
 - [Condicionales](flujos/condicionales.md)
 - [Bucles](flujos/bucles.md)
 - [Excepciones](flujos/excepciones.md)
+- [Sentencias](flujos/excepciones.md)
+  - [Break](flujos/excepciones.md)
+  - [Continue](flujos/excepciones.md)
+  - [Pass](flujos/excepciones.md)
 
-**Tipos de Datos:**
+## Tipos de Datos
 
 - [Números](tipos_datos/numeros.md)
 - [Cadenas](tipos_datos/cadenas.md)
@@ -34,7 +36,7 @@
 - [Conjuntos](tipos_datos/conjuntos.md)
 - [Diccionarios](tipos_datos/diccionarios.md)
 
-**Funciones:**
+## Funciones
 
 - [Funciones](funciones/funciones.md)
 - [Incorporadas](funciones/incorporadas.md)
@@ -44,7 +46,7 @@
 - [Global](funciones/funciones.md)
 - [Modulos](funciones/funciones.md)
 
-**Programación Orientada a Objetos (POO):**
+## Programación Orientada a Objetos (POO)
 
 - [Conceptos](poo/conceptos.md)
 - [Clases y Objetos](poo/clases_objetos.md)
@@ -52,9 +54,7 @@
 - [Herencia](poo/herencia.md)
 - [Abstracción](poo/abstraccion.md)
 
-## Temas Avanzados
-
-**Avanzados:**
+## Avanzados
 
 - [Iteradores](avanzados/iteradores.md)
 - [Generadores](avanzados/generadores.md)
@@ -63,9 +63,7 @@
 - [Property](avanzados/property.md)
 - [Exp. Regulares](avanzados/exp_regulares.md)
 
-## Estructuras y Algoritmos
-
-**Estructuras de Datos:**
+## Estructuras de Datos
 
 - [Arreglos](estructuras/arreglos.md)
 - [Listas Enlazadas](estructuras/listas_enlazadas.md)
@@ -75,7 +73,7 @@
 - [Hash](estructuras/hash.md)
 - [Árboles](estructuras/arboles.md)
 
-**Algoritmos:**
+## Algoritmos
 
 - [Búsqueda](algoritmos/busqueda.md)
 - [Ordenamiento](algoritmos/ordenamiento.md)
@@ -91,21 +89,16 @@
 - [Aleatorios](algoritmos/aleatorios.md)
 - [Ramificación y Acotación](algoritmos/ramificacion_acotacion.md)
 
-## [Frameworks](marcos_trabajo/frameworks.md)
+## Marcos de Trabajo (Framework)
 
+- [Frameworks](marcos_trabajo/frameworks.md)
 - [FastAPI](marcos_trabajo)
-
 **Asíncrono:**
-
-- pass
-- pass
-
 **Síncrono:**
 
-- pass
-- pass
+## Pruebas (Testing)
 
-## [Pruebas](pruebas/pruebas.md)
+[Pruebas](pruebas/pruebas.md)
 
 - pass
 - pass
