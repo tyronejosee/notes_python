@@ -1,5 +1,9 @@
 # Tornado
 
+- Desarrollador(es): Denis Bilenko
+- Lanzamiento: Septiembre 19, 2009
+- Tipo: Framework Web
+- Licencia: MIT
 Tornado es un servidor web y un marco de aplicación web escalable y sin bloqueos escrito en Python. Fue desarrollado para ser utilizado por FriendFeed; la empresa fue adquirida por Facebook en 2009 y Tornado fue liberado como código abierto poco después.
 
 Visita los siguientes recursos para obtener más información:

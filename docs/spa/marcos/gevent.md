@@ -1,6 +1,6 @@
 # gevent
 
--Desarrollador(es): Denis Bilenko
+- Desarrollador(es): Denis Bilenko
 - Lanzamiento: Septiembre 19, 2009
 - Tipo: Framework Web
 - Licencia: MIT

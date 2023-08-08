@@ -1,13 +1,9 @@
 # AIOHTTP
 
-Desarrollador(es): Nikolay Kim
-
-Lanzamiento: Mayo 1, 2005
-
-Licencia: Apache 2.0
-
-Tipo: Framework Web
-
+- Desarrollador(es): Nikolay Kim
+- Lanzamiento: Mayo 1, 2005
+- Licencia: Apache 2.0
+- Tipo: Framework Web
 - [AIOHTTP Website](https://docs.aiohttp.org/en/stable/)
 - [AIOHTTP GitHub](https://github.com/aio-libs/aiohttp)
 

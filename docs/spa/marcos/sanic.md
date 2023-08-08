@@ -1,5 +1,9 @@
 # Sanic
 
+- Desarrollador(es): Denis Bilenko
+- Lanzamiento: Septiembre 19, 2009
+- Tipo: Framework Web
+- Licencia: MIT
 Sanic es un servidor web y un marco de trabajo web escrito en Python 3.7+ diseñado para ser rápido. Permite el uso de la sintaxis async/await agregada en Python 3.5, lo que hace que tu código sea no bloqueante y veloz.
 
 Visita los siguientes recursos para obtener más información:
