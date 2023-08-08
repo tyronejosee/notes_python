@@ -1,17 +1,12 @@
 # Django
 
-Autor(es): Adrian Holovaty, Simon Willison
-
-Desarrollador(es): Django Software Foundation
-
-Lanzamiento: Julio 21, 2005
-
-Tipo: Framework Web
-
-Licencia: 3-clause BSD
-
-www.djangoproject.com
-github.com/django/django
+- Autor(es): Adrian Holovaty, Simon Willison
+- Desarrollador(es): Django Software Foundation
+- Lanzamiento: Julio 21, 2005
+- Tipo: Framework Web
+- Licencia: 3-clause BSD
+- www.djangoproject.com
+- github.com/django/django
 
 ## Introducción
 

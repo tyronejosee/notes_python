@@ -1,13 +1,9 @@
 # gevent
 
-Desarrollador(es): Denis Bilenko
-
-Lanzamiento: Septiembre 19, 2009
-
-Tipo: Framework Web
-
-Licencia: MIT
-
+-Desarrollador(es): Denis Bilenko
+- Lanzamiento: Septiembre 19, 2009
+- Tipo: Framework Web
+- Licencia: MIT
 - [gevent Website](http://www.gevent.org/)
 - [gevent GitHub](https://github.com/gevent/gevent)
 - **[gevent para el desarrollador de Python en funcionamiento](https://sdiehl.github.io/gevent-tutorial/)**

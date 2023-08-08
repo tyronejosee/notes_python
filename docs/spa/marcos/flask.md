@@ -1,13 +1,9 @@
 # Flask
 
-Desarrollador(es): Armin Ronacher
-
-Lanzamiento: Abril 1, 2010
-
-Tipo: Framework Web
-
-Licencia: BSD
-
+- Desarrollador(es): Armin Ronacher
+- Lanzamiento: Abril 1, 2010
+- Tipo: Framework Web
+- Licencia: BSD
 - [Flask Website](https://palletsprojects.com/p/flask/)
 - [Flask GitHub](https://github.com/pallets/flask)
 

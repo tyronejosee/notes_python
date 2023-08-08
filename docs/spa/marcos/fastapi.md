@@ -1,13 +1,9 @@
 # FastAPI
 
-Desarrollador(es): Sebastián Ramírez
-
-Lanzamiento: Diciembre 5, 2018
-
-Tipo: Framework Web
-
-Licencia: MIT
-
+- Desarrollador(es): Sebastián Ramírez
+- Lanzamiento: Diciembre 5, 2018
+- Tipo: Framework Web
+- Licencia: MIT
 - [FastAPI Website](https://fastapi.tiangolo.com/)
 - [FastAPI GitHub](https://github.com/tiangolo/fastapi)
 
