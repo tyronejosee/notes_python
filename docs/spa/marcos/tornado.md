@@ -1,9 +1,9 @@
 # Tornado
 
-- Desarrollador(es): Denis Bilenko
-- Lanzamiento: Septiembre 19, 2009
+- Desarrollador(es): FriendFeed
+- Lanzamiento: Marzo, 2009.
 - Tipo: Framework Web
-- Licencia: MIT
+- Licencia: Apache License 2.0
 - **[Tornado - Sitio web oficial](https://www.tornadoweb.org/)**
 - **[Tutorial paso a paso sobre Python Tornado](https://phrase.com/blog/posts/tornado-web-framework-i18n/)**
 - **[Tornado Python Framework](https://www.youtube.com/watch?v=-gJ21qzpieA)**
