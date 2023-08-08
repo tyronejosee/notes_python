@@ -4,19 +4,16 @@ Autor(es): Adrian Holovaty, Simon Willison
 
 Desarrollador(es): Django Software Foundation
 
-Lanzamiento Inicial: Julio, 21, 2005
-
-Escrito en: Python
-
-Tamaño: 8.9 MB
+Lanzamiento: Julio 21, 2005
 
 Tipo: Framework Web
 
 Licencia: 3-clause BSD
 
 www.djangoproject.com
-
 github.com/django/django
+
+## Introducción
 
 **Django** (pronunciado [JANG-goh]; a veces estilizado como **django**) es un [marco de trabajo web](https://es.wikipedia.org/wiki/Marco_de_trabajo_web) [libre y de código abierto](https://es.wikipedia.org/wiki/Software_libre_y_de_c%C3%B3digo_abierto) basado en [Python](https://es.wikipedia.org/wiki/Python) que sigue el patrón arquitectónico de modelo-vista-controlador (MVC). Es mantenido por la [Fundación de Software Django](https://es.wikipedia.org/wiki/Fundaci%C3%B3n_de_Software_Django) (DSF), una organización independiente establecida en Estados Unidos como una entidad sin fines de lucro 501(c)(3).
 
