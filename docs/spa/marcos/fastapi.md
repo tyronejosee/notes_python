@@ -2,9 +2,7 @@
 
 Desarrollador(es): Sebastián Ramírez
 
-Lanzamiento Inicial: December 5, 2018
-
-Escrito en: Python
+Lanzamiento: Diciembre 5, 2018
 
 Tipo: Framework Web
 
@@ -29,7 +27,7 @@ Grandes empresas como Uber y Netflix lo utilizan para desarrollar algunas de sus
 
 ## Ejemplo
 
-El siguiente código muestra una aplicación web simple que muestra "[Hola Mundo](https://es.wikipedia.org/wiki/Hola_mundo)!" cuando se visita:[[10]](https://es.wikipedia.org/wiki/FastAPI#cite_note-10)
+El siguiente código muestra una aplicación web simple que muestra "¡Hola Mundo!" cuando se visita:
 
 ```python
 **from** **fastapi** **import** FastAPI

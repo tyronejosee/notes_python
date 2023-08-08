@@ -2,16 +2,13 @@
 
 Desarrollador(es): Armin Ronacher
 
-Lanzamiento Inicial: Abril 1, 2010
-
-Escrito en: Python
+Lanzamiento: Abril 1, 2010
 
 Tipo: Framework Web
 
 Licencia: BSD
 
 - [Flask Website](https://palletsprojects.com/p/flask/)
-
 - [Flask GitHub](https://github.com/pallets/flask)
 
 ## Introducción
