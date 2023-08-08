@@ -71,19 +71,6 @@ Django se puede ejecutar en conjunto con [Apache](https://es.wikipedia.org/wiki/
 
 Django también se puede ejecutar junto con [Jython](https://es.wikipedia.org/wiki/Jython) en cualquier servidor de aplicaciones [Java EE](https://es.wikipedia.org/wiki/Java_EE), como [GlassFish](https://es.wikipedia.org/wiki/GlassFish) o [JBoss](https://es.wikipedia.org/wiki/JBoss). En este caso, debe instalarse django-jython para proporcionar controladores [JDBC](https://es.wikipedia.org/wiki/JDBC) para la conectividad con bases de datos, que también puede brindar funcionalidad para compilar Django en un archivo .war adecuado para implementación.
 
-## DjangoCon
-
-Existe una conferencia semianual para desarrolladores y usuarios de Django, llamada "DjangoCon", que se ha celebrado desde septiembre de 2008. DjangoCon se lleva a cabo anualmente en Europa, en mayo o junio; mientras que otra se realiza en Estados Unidos en agosto o septiembre, en varias ciudades. DjangoCon 2012 tuvo lugar en Washington, D.C., del 3 al 8 de septiembre. DjangoCon 2013 se llevó a cabo en Chicago en el Hyatt Regency Hotel y las sesiones de trabajo posteriores (Sprints) se organizaron en Digital Bootcamp, un centro de capacitación en informática. DjangoCon US 2014 regresó a Portland, Oregón, del 30 de agosto al 6 de septiembre. DjangoCon US 2015 se celebró en Austin, Texas, del 6 al 11 de septiembre en el AT&T Executive Center. DjangoCon US 2016 se realizó en Filadelfia, Pensilvania, en The Wharton School de la Universidad de Pensilvania, del 17 al 22 de julio. DjangoCon US 2017 se llevó a cabo en Spokane, Washington; en 2018, DjangoCon US tuvo lugar en San Diego, California. DjangoCon US 2019 se realizó nuevamente en San Diego, California, del 22 al 27 de septiembre. DjangoCon 2021 se llevó a cabo de manera virtual y en 2022, DjangoCon US regresó a San Diego del 16 al 21 de octubre.
-
-Por lo general, las mini-conferencias de Django se celebran cada año como parte de la conferencia australiana de Python, 'PyCon AU'. Estas mini-conferencias se han realizado previamente en:
-
-- Hobart, Australia, en julio de 2013.
-- Brisbane, Australia, en agosto de 2014 y 2015.
-- Melbourne, Australia, en agosto de 2016 y 2017.
-- Sídney, Australia, en agosto de 2018 y 2019.
-
-Django ha generado grupos de usuarios y reuniones en todo el mundo, siendo el grupo más notable la organización Django Girls, que comenzó en Polonia pero que ahora ha tenido eventos en 91 países.
-
 ## Adaptaciones a otros lenguajes
 
 Los programadores han adaptado el diseño del motor de plantillas de Django de Python a otros lenguajes, proporcionando un buen soporte multiplataforma. Algunas de estas opciones son adaptaciones directas, mientras que otras, aunque están inspiradas en Django y mantienen sus conceptos, toman la libertad de apartarse del diseño original de Django:
