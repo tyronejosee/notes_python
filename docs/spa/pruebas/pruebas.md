@@ -1,5 +1,12 @@
 # Pruebas (Testing)
 
+- Desarrollador(es): Nikolay Kim
+- Lanzamiento: Mayo 1, 2005
+- Licencia: Apache 2.0
+- Tipo: Framework Web
+- [AIOHTTP Website](https://docs.aiohttp.org/en/stable/)
+- [AIOHTTP GitHub](https://github.com/aio-libs/aiohttp)
+
 Una clave para construir software que cumpla con los requisitos sin defectos es la realización de pruebas. Las pruebas de software ayudan a los desarrolladores a asegurarse de que están construyendo el software correcto. Cuando las pruebas se ejecutan como parte del proceso de desarrollo (a menudo con herramientas de integración continua), aumentan la confianza y evitan regresiones en el código.
 
 ## Recursos

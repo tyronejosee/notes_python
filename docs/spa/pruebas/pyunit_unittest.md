@@ -1,5 +1,12 @@
 # PyUnit / Unittest
 
+- Desarrollador(es): Nikolay Kim
+- Lanzamiento: Mayo 1, 2005
+- Licencia: Apache 2.0
+- Tipo: Framework Web
+- [AIOHTTP Website](https://docs.aiohttp.org/en/stable/)
+- [AIOHTTP GitHub](https://github.com/aio-libs/aiohttp)
+
 PyUnit es una forma sencilla de crear programas y pruebas unitarias con Python. (Es importante tener en cuenta que en la documentación de python.org, se utiliza el nombre "unittest", que también es el nombre del módulo).
 
 Visita los siguientes recursos para obtener más información:
