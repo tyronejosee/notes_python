@@ -19,42 +19,39 @@
 
 ## 🔃 Flujos de Control
 
-- [Condicionales](flujos/condicionales.md)
-- [Bucles](flujos/bucles.md)
-  - [While](flujos/bucles.md)
-  - [For](flujos/bucles.md)
-- [Excepciones](flujos/excepciones.md)
-- [Sentencias](flujos/excepciones.md)
-  - [Break](flujos/excepciones.md)
-  - [Continue](flujos/excepciones.md)
-  - [Pass](flujos/excepciones.md)
+- [Condicionales](basicos/condicionales.md)
+- [Bucles](basicos/bucles.md)
+  - [While](basicos/while.md)
+  - [For](basicos/for.md)
+- [Excepciones](basicos/excepciones.md)
+- [Sentencias](basicos)
+  - [Break](basicos/break.md)
+  - [Continue](basicos/continue.md)
+  - [Pass](basicos/pass.md)
 
 ## 🔢 Tipos de Datos
 
-- [Números](tipos_datos/numeros.md)
-- [Cadenas](tipos_datos/cadenas.md)
-- [Listas](tipos_datos/listas.md)
-- [Tuplas](tipos_datos/tuplas.md)
-- [Conjuntos](tipos_datos/conjuntos.md)
-- [Diccionarios](tipos_datos/diccionarios.md)
+- [Números](basicos/numeros.md)
+- [Cadenas](basicos/cadenas.md)
+- [Listas](basicos/listas.md)
+- [Tuplas](basicos/tuplas.md)
+- [Conjuntos](basicos/conjuntos.md)
+- [Diccionarios](basicos/diccionarios.md)
 
 ## ⚙️ Funciones
 
-- [Funciones](funciones/funciones.md)
-- [Incorporadas](funciones/incorporadas.md)
-- [Recursión](funciones/funciones.md)
-- [Lambda](funciones/funciones.md)
-- [Alcance](funciones/funciones.md)
-- [Global](funciones/funciones.md)
-- [Modulos](funciones/funciones.md)
+- [Funciones](basicos/funciones.md)
+- [Incorporadas](basicos/funciones_incorporadas.md)
+- [Lambda](avanzados/lambdas.md)
+- [Modulos](basicos/modulos.md)
 
 ## 🧭 Programación Orientada a Objetos (POO)
 
-- [Conceptos](poo/conceptos.md)
-- [Clases y Objetos](poo/clases_objetos.md)
-- [Constructor](poo/contructor.md)
-- [Herencia](poo/herencia.md)
-- [Abstracción](poo/abstraccion.md)
+- [Conceptos](avanzados/conceptos.md)
+- [Clases y Objetos](avanzados/clases_objetos.md)
+- [Constructor](avanzados/contructor.md)
+- [Herencia](avanzados/herencia.md)
+- [Abstracción](avanzados/abstraccion.md)
 
 ## 🔬 Avanzados
 
@@ -77,24 +74,33 @@
 
 ## 🎲 Algoritmos
 
-- [Búsqueda](algoritmos/busqueda.md)
-- [Ordenamiento](algoritmos/ordenamiento.md)
-- [División y Conquista](algoritmos/division_conquista.md)
-- [Metodología Voraz](algoritmos/metologia_voraz.md)
-- [Recursión](algoritmos/recursion.md)
-- [Retroceso](algoritmos/retroceso.md)
-- [Programación Dinámica](algoritmos/programacion_dinamica.md)
-- [Búsqueda de Patrones](algoritmos/busqueda_patrones.md)
-- [Matemáticos](algoritmos/matematicos.md)
-- [Geométricos](algoritmos/geometricos.md)
-- [Bitwise](algoritmos/bitwise.md)
-- [Aleatorios](algoritmos/aleatorios.md)
-- [Ramificación y Acotación](algoritmos/ramificacion_acotacion.md)
+- [Búsqueda](estructuras/busqueda.md)
+- [Ordenamiento](estructuras/ordenamiento.md)
+- [División y Conquista](estructuras/division_conquista.md)
+- [Metodología Voraz](estructuras/metologia_voraz.md)
+- [Recursión](estructuras/recursion.md)
+- [Retroceso](estructuras/retroceso.md)
+- [Programación Dinámica](estructuras/programacion_dinamica.md)
+- [Búsqueda de Patrones](estructuras/busqueda_patrones.md)
+- [Matemáticos](estructuras/matematicos.md)
+- [Geométricos](estructuras/geometricos.md)
+- [Bitwise](estructuras/bitwise.md)
+- [Aleatorios](estructuras/aleatorios.md)
+- [Ramificación y Acotación](estructuras/ramificacion_acotacion.md)
 
 ## 🛠️ Marcos de Trabajo (Framework)
 
-- [Frameworks](marcos_trabajo/frameworks.md)
-- [FastAPI](marcos_trabajo)
+- [Frameworks](marcos/frameworks.md)
+- [Síncrono](marcos/sincrono.md)
+- [Asíncrono](marcos/asincrono.md)
+- [Django](marcos/django.md)
+- [Flask](marcos/flask.md)
+- [FastAPI](marcos/fastapi.md)
+- [aiohttp](marcos/aiohttp.md)
+- [gevent](marcos/gevent.md)
+- [Pyramid](marcos/gevent.md)
+- [Sanic](marcos/sanic.md)
+- [Tornado](marcos/tornado.md)
 
 ## ✅ Pruebas (Testing)
 
@@ -106,3 +112,15 @@
 - [nose](pruebas/nose.md)
 - [pytest](pruebas/pytest.md)
 - [unittest/pyUnit](pruebas/pyunit_unittest.md)
+
+## Enlaces de Interés
+
+- [Javatpoint](https://www.javatpoint.com/)
+- [W3schools](https://www.w3schools.com/)
+- [Roadmap](https://roadmap.sh/)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/)
+- [Programiz](https://www.programiz.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [ChatGPT](http://chat.openai.com/)
+- [Notion](https://www.notion.so/)
+- [Figma](https://www.figma.com/)

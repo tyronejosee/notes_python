@@ -1,9 +1,9 @@
 <p align="center">
-  <a href="https://github.com/tyronejosee/docs_python#gh-light-mode-only" target="_blank">
-    <img src="./assets/logo_light.svg" alt="logo-light" width="400">
+  <a href="https://github.com/tyronejosee/docs_python#gh-light-mode-only" target="blank">
+    <img src="./assets/logo_light.svg" alt="logo-light" width="300">
   </a>
-  <a href="https://github.com/tyronejosee/docs_python#gh-dark-mode-only" target="_blank">
-    <img src="./assets/logo_dark.svg" alt="logo-dark" width="400">
+  <a href="https://github.com/tyronejosee/docs_python#gh-dark-mode-only" target="blank">
+    <img src="./assets/logo_dark.svg" alt="logo-dark" width="300">
   </a>
 </p>
 
@@ -25,10 +25,10 @@ Para obtener un sólido entendimiento de este lenguaje, te invito a explorar det
 
 <p align="center">
   <a href="https://github.com/tyronejosee/docs_python/blob/main/docs/spa/index.md#gh-light-mode-only" target="_blank">
-    <img src="./assets/buttom_index_light.svg" alt="logo-light" width="150">
+    <img src="./assets/buttom_index_light.svg" alt="logo-light" width="100">
   </a>
   <a href="https://github.com/tyronejosee/docs_python/blob/main/docs/spa/index.md#gh-dark-mode-only" target="_blank">
-    <img src="./assets/buttom_index_dark.svg" alt="logo-dark" width="150">
+    <img src="./assets/buttom_index_dark.svg" alt="logo-dark" width="100">
   </a>
 </p>
 
@@ -41,15 +41,3 @@ Este repositorio fue creado como una recopilación de recursos que han sido de g
 - La estructura del repositorio está organizada en una tabla de contenidos.
 - Se han utilizado etiquetas de vínculos para mejorar la experiencia de búsqueda y navegación.
 - Encontrarás enlaces a recursos adicionales, que complementarán tu conocimiento.
-
-## Enlaces de Interés
-
-- [Javatpoint](https://www.javatpoint.com/)
-- [W3schools](https://www.w3schools.com/)
-- [Roadmap](https://roadmap.sh/)
-- [GeeksforGeeks](https://www.geeksforgeeks.org/)
-- [Programiz](https://www.programiz.com/)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [ChatGPT](http://chat.openai.com/)
-- [Notion](https://www.notion.so/)
-- [Figma](https://www.figma.com/)
