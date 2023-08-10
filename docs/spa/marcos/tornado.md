@@ -2,7 +2,7 @@
 
 - Desarrollador(es): FriendFeed
 - Lanzamiento: Marzo, 2009.
-- Tipo: Framework Web
+- Tipo: Web Framework
 - Licencia: Apache License 2.0
 - **[Tornado - Sitio web oficial](https://www.tornadoweb.org/)**
 - **[Tutorial paso a paso sobre Python Tornado](https://phrase.com/blog/posts/tornado-web-framework-i18n/)**
