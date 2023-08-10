@@ -3,12 +3,9 @@
 - Desarrollador(es): Nikolay Kim
 - Lanzamiento: Mayo 1, 2005
 - Licencia: Apache 2.0
-- Tipo: Framework Web
+- Tipo: Web Framework
 - [AIOHTTP Website](https://docs.aiohttp.org/en/stable/)
 - [AIOHTTP GitHub](https://github.com/aio-libs/aiohttp)
-
-## Recursos
-
 - [Python Asyncio, Requests, Aiohttp | Realizar llamadas API más rápidas](https://www.youtube.com/watch?v=nFn4_nA_yk8)
 - [Creación de una API RESTful con Python y aiohttp](https://tutorialedge.net/python/create-rest-api-python-aiohttp/)
 
@@ -35,20 +32,3 @@ AIOHTTP está construido sobre la biblioteca estándar de Python llamada "asynci
 - Pruebas y depuración: AIOHTTP ofrece herramientas para probar y depurar aplicaciones web de manera eficiente.
 
 AIOHTTP es especialmente útil cuando se trata de construir aplicaciones web y servicios que necesitan manejar una gran cantidad de solicitudes concurrentes, como aplicaciones en tiempo real, servicios de transmisión, APIs, chat en tiempo real, entre otros. Su enfoque en la programación asíncrona y la capacidad de aprovechar el multiprocesamiento y la multiprogramación hacen que AIOHTTP sea una opción poderosa para estas situaciones.
-
-## Ejemplo
-
-El siguiente código muestra una aplicación web simple que muestra "¡Hola Mundo!" cuando se visita:
-
-```python
-from aiohttp import web
-
-async def hello(request):
-    return web.Response(text="¡Hola Mundo!")
-
-app = web.Application()
-app.router.add_get('/', hello)
-
-if __name__ == '__main__':
-    web.run_app(app)
-```
