@@ -2,7 +2,7 @@
 
 - Desarrollador(es): Sebastián Ramírez
 - Lanzamiento: Diciembre 5, 2018
-- Tipo: Framework Web
+- Tipo: Web Framework
 - Licencia: MIT
 - [FastAPI Website](https://fastapi.tiangolo.com/)
 - [FastAPI GitHub](https://github.com/tiangolo/fastapi)
@@ -16,22 +16,5 @@ FastAPI soporta completamente la programación [asincrónica](https://es.wikiped
 ## Adopción y Uso en el Mundo Real
 
 FastAPI fue el tercer framework web más querido en la Encuesta de Desarrolladores de Stack Overflow 2021.
-
 T. Danka enfatizó su valor para aplicaciones de ciencia de datos.
-
 Grandes empresas como Uber y Netflix lo utilizan para desarrollar algunas de sus aplicaciones.
-
-## Ejemplo
-
-El siguiente código muestra una aplicación web simple que muestra "¡Hola Mundo!" cuando se visita:
-
-```python
-**from** **fastapi** **import** FastAPI
-
-app = FastAPI()
-
-@app.get("/")
-**def** read_root():
-    **return** "Hola Mundo!"
-
-```
