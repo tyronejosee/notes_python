@@ -21,6 +21,8 @@
 
 - [Condicionales](flujos/condicionales.md)
 - [Bucles](flujos/bucles.md)
+  - [While](flujos/bucles.md)
+  - [For](flujos/bucles.md)
 - [Excepciones](flujos/excepciones.md)
 - [Sentencias](flujos/excepciones.md)
   - [Break](flujos/excepciones.md)
