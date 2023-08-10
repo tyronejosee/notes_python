@@ -2,7 +2,7 @@
 
 - Desarrollador(es): Denis Bilenko
 - Lanzamiento: Septiembre 19, 2009
-- Tipo: Framework Web
+- Tipo: Web Framework
 - Licencia: MIT
 - [gevent Website](http://www.gevent.org/)
 - [gevent GitHub](https://github.com/gevent/gevent)
