@@ -9,12 +9,20 @@
 
 ## Introducción
 
-**FastAPI** es un moderno framework para construir [APIs](https://es.wikipedia.org/wiki/Interfaz_de_programaci%C3%B3n_de_aplicaciones) [RESTful](https://es.wikipedia.org/wiki/Transferencia_de_estado_representacional) en [Python](https://es.wikipedia.org/wiki/Python_(lenguaje_de_programaci%C3%B3n)). Fue lanzado por primera vez en 2018 y ha ganado rápidamente popularidad entre los desarrolladores debido a su facilidad de uso, velocidad y robustez. FastAPI se basa en Pydantic y utiliza indicadores de tipo para [validar](https://es.wikipedia.org/wiki/Validaci%C3%B3n_de_datos), [serializar](https://es.wikipedia.org/wiki/Serializaci%C3%B3n) y deserializar datos. También genera automáticamente documentación [OpenAPI](https://es.wikipedia.org/wiki/OpenAPI) para las APIs construidas con él.[[3]](https://es.wikipedia.org/wiki/FastAPI#cite_note-3)
+FastAPI es un moderno y eficiente marco web de Python diseñado para facilitar la creación de APIs de manera rápida y sencilla. Con una sintaxis declarativa y un enfoque en la tipificación estática, FastAPI permite a los desarrolladores construir aplicaciones web y APIs robustas con una menor cantidad de código, manteniendo un alto rendimiento y una excelente documentación automática.
 
-FastAPI soporta completamente la programación [asincrónica](https://es.wikipedia.org/wiki/Programaci%C3%B3n_as%C3%ADncrona) y puede ejecutarse en servidores [Gunicorn](https://es.wikipedia.org/wiki/Gunicorn) y [ASGI](https://es.wikipedia.org/wiki/Interfaz_de_pasarela_del_servidor_as%C3%ADncrono) como Uvicorn e Hypercorn,[[4]](https://es.wikipedia.org/wiki/FastAPI#cite_note-4) lo que lo convierte en una buena elección para entornos de producción. Para mejorar la amigabilidad para los desarrolladores, el soporte del editor se tuvo en cuenta desde los primeros días del proyecto.[[5]](https://es.wikipedia.org/wiki/FastAPI#cite_note-5)
+## Historia
 
-## Adopción y Uso en el Mundo Real
+FastAPI fue creado por Sebastián Ramírez y se inspiró en el marco web de Python llamado "Starlette". Se lanzó inicialmente en diciembre de 2018 y desde entonces ha ganado una gran popularidad en la comunidad de desarrollo de Python debido a su enfoque en la velocidad y la facilidad de uso.
 
-FastAPI fue el tercer framework web más querido en la Encuesta de Desarrolladores de Stack Overflow 2021.
-T. Danka enfatizó su valor para aplicaciones de ciencia de datos.
-Grandes empresas como Uber y Netflix lo utilizan para desarrollar algunas de sus aplicaciones.
+## Características principales
+
+- Alta velocidad: FastAPI está diseñado para ser extremadamente rápido en términos de rendimiento de ejecución.
+- Documentación automática: Genera automáticamente documentación interactiva Swagger y ReDoc para las APIs creadas, lo que facilita su comprensión y uso.
+- Tipado estático: Utiliza anotaciones de tipos estáticos de Python para validar las entradas y salidas de las APIs en tiempo de compilación.
+- Sintaxis declarativa: Permite definir las rutas, parámetros y respuestas de las APIs de manera declarativa, reduciendo la complejidad del código.
+- Compatibilidad con estándares web: Admite estándares web modernos como OAuth2, JSON Web Tokens (JWT) y CORS.
+- Integración con bases de datos: Ofrece soporte para integrar bases de datos como SQLAlchemy y otros motores de almacenamiento.
+- Carga asincrónica: Permite el manejo de solicitudes asincrónicas para un rendimiento óptimo en aplicaciones concurrentes.
+- Seguridad: Proporciona características de seguridad integradas para proteger las APIs contra vulnerabilidades comunes.
+Extensibilidad: Facilita la incorporación de complementos y extensiones para agregar funcionalidad adicional a las aplicaciones.
