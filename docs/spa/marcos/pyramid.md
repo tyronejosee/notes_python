@@ -2,7 +2,7 @@
 
 - Desarrollador(es): Comunidad
 - Lanzamiento: Septiembre, 2005
-- Tipo: Framework Web
+- Tipo: Web Framework
 - Licencia: repoze
 - [Pyramid Website](https://trypyramid.com/)
 - **[Documentación de Pyramid](https://trypyramid.com/documentation.html)**
