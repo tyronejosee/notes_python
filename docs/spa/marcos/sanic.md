@@ -2,7 +2,7 @@
 
 - Desarrollador(es): Ahmet Bakan, Tom Christie
 - Lanzamiento: Marzo, 2016
-- Tipo: Framework Web
+- Tipo: Web Framework
 - Licencia: MIT
 - **[Sitio web oficial de Sanic](https://sanic.dev/en/)**
 - **[Introducción al marco de trabajo web Sanic - Python](https://www.geeksforgeeks.org/introduction-to-sanic-web-framework-python/)**
