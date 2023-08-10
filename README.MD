@@ -1,8 +1,8 @@
 <p align="center">
-  <a href="https://github.com/tyronejosee/docs_python#gh-light-mode-only" target="blank">
+  <a href="https://github.com/tyronejosee/docs_python#gh-light-mode-only" target="_blank">
     <img src="./assets/logo_light.svg" alt="logo-light" width="300">
   </a>
-  <a href="https://github.com/tyronejosee/docs_python#gh-dark-mode-only" target="blank">
+  <a href="https://github.com/tyronejosee/docs_python#gh-dark-mode-only" target="_blank">
     <img src="./assets/logo_dark.svg" alt="logo-dark" width="300">
   </a>
 </p>
@@ -25,10 +25,10 @@ Para obtener un sólido entendimiento de este lenguaje, te invito a explorar det
 
 <p align="center">
   <a href="https://github.com/tyronejosee/docs_python/blob/main/docs/spa/index.md#gh-light-mode-only" target="_blank">
-    <img src="./assets/buttom_index_light.svg" alt="logo-light" width="100">
+    <img src="./assets/buttom_index_light.svg" alt="logo-light" width="200">
   </a>
   <a href="https://github.com/tyronejosee/docs_python/blob/main/docs/spa/index.md#gh-dark-mode-only" target="_blank">
-    <img src="./assets/buttom_index_dark.svg" alt="logo-dark" width="100">
+    <img src="./assets/buttom_index_dark.svg" alt="logo-dark" width="200">
   </a>
 </p>
 
