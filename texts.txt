@@ -1,0 +1,4 @@
+
+[promp librerias]
+
+Crea una Seccion de tdqm en python, primero dame una introducción clara y concisa, su funcionalidad, propósito, etc. Crea una segunda segunda sección con una lista de dependencias para su correcto funcionamiento. Crea una tercera sección en formato clave valor de Casos de uso reales. Crea una cuarta sección con los ejemplos de uso. dame los enlaces al sitio web oficial, y un segundo enlaces a la documentacion oficial, y un tercer enlaces si existiese un repositorio.
