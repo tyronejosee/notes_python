@@ -6,7 +6,7 @@
 - **Licencia:** MIT
 - [FastAPI: Website](https://fastapi.tiangolo.com/)
 - [FastAPI: Documentación](https://fastapi.tiangolo.com/tutorial/)
-- [FastAPI: GitHub](https://github.com/tiangolo/fastapi)
+- [FastAPI: Repositorio](https://github.com/tiangolo/fastapi)
 
 ## Introducción
 
