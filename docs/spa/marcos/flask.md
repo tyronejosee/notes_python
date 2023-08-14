@@ -1,55 +1,30 @@
 # Flask
 
-- Desarrollador(es): Armin Ronacher
-- Lanzamiento: Abril 1, 2010
-- Tipo: Web Framework
-- Licencia: BSD
-- [Flask Website](https://palletsprojects.com/p/flask/)
-- [Flask GitHub](https://github.com/pallets/flask)
+- **Desarrollador(es):** Armin Ronacher
+- **Lanzamiento:** Abril 1, 2010
+- **Tipo:** Web Framework
+- **Licencia:** BSD
+- [Flask: Website](https://flask.palletsprojects.com//)
+- [Flask: Documentación](https://flask.palletsprojects.com/docs/)
+- [Flask: Repositorio](https://github.com/pallets/flask)
 
 ## Introducción
 
-**Flask** es un micro marco de trabajo web escrito en Python. Se clasifica como un microframework porque no requiere herramientas o bibliotecas particulares. No tiene una capa de abstracción de base de datos, validación de formularios ni ningún otro componente donde las bibliotecas de terceros preexistentes proporcionan funciones comunes. Sin embargo, Flask admite extensiones que pueden agregar características de la aplicación como si estuvieran implementadas en Flask mismo. Existen extensiones para mapeadores objeto-relacional, validación de formularios, manejo de carga, diversas tecnologías de autenticación abierta y varias herramientas comunes relacionadas con marcos de trabajo.
-
-Las aplicaciones que utilizan el marco de trabajo Flask incluyen Pinterest y LinkedIn.
+Flask, un microframework web en Python, ofrece una solución versátil y minimalista para la construcción ágil de aplicaciones web. Su funcionalidad se centra en proporcionar las herramientas esenciales para el desarrollo web, permitiendo a los desarrolladores crear aplicaciones desde simples hasta más complejas. A pesar de su enfoque simplificado, Flask es flexible y extensible, lo que permite personalizar proyectos de acuerdo a las necesidades específicas. El propósito de Flask es facilitar el desarrollo web rápido y eficiente, al mismo tiempo que brinda la libertad de elegir las bibliotecas y extensiones adecuadas para cada proyecto.
 
 ## Historia
 
-Flask fue creado por Armin Ronacher de Pocoo, un grupo internacional de entusiastas de Python formado en 2004. Según Ronacher, la idea originalmente fue una broma del Día de los Inocentes lo suficientemente popular como para convertirse en una aplicación seria. El nombre es un juego de palabras con el marco de trabajo anterior Bottle. Cuando Ronacher y Georg Brandl crearon un sistema de tablón de anuncios escrito en Python en 2004, se desarrollaron los proyectos Pocoo Werkzeug y Jinja.
-
-En abril de 2016, el equipo de Pocoo fue disuelto y el desarrollo de Flask y las bibliotecas relacionadas pasó al recién formado proyecto Pallets. Desde 2018, los datos y objetos relacionados con Flask se pueden renderizar con Bootstrap.
-
-Flask se ha vuelto popular entre los entusiastas de Python. A partir de octubre de 2020, tiene el segundo mayor número de estrellas en GitHub entre los marcos de trabajo de desarrollo web de Python, ligeramente detrás de Django, y fue votado como el marco de trabajo web más popular en la Encuesta de Desarrolladores de Python 2018, 2019, 2020 y 2021.
-
-## Componentes
-
-El microframework Flask es parte de los Proyectos Pallets (anteriormente Pocoo) y se basa en varios otros de ellos, todos bajo una licencia BSD.
-
-### Werkzeug
-
-Werkzeug (en alemán, "herramienta") es una biblioteca de utilidades para el lenguaje de programación Python para aplicaciones de la Interfaz de Pasarela del Servidor Web (WSGI). Werkzeug puede instanciar objetos para solicitudes, respuestas y funciones de utilidad. Se puede utilizar como base para un marco de trabajo personalizado y admite Python 2.7 y 3.5 y versiones posteriores.
-
-### Jinja
-
-Jinja, también de Ronacher, es un motor de plantillas para el lenguaje de programación Python. Al igual que el marco de trabajo web Django, maneja plantillas en un entorno seguro (sandbox).
-
-### MarkupSafe
-
-MarkupSafe es una biblioteca de manejo de cadenas para el lenguaje de programación Python. El tipo de objeto MarkupSafe extiende el tipo de cadena de Python y marca su contenido como "seguro"; al combinar MarkupSafe con cadenas regulares, las cadenas no marcadas se escapan automáticamente, evitando la doble escape de cadenas ya marcadas.
-
-### ItsDangerous
-
-ItsDangerous es una biblioteca segura de serialización de datos para el lenguaje de programación Python. Se utiliza para almacenar la sesión de una aplicación Flask en una cookie sin permitir que los usuarios manipulen el contenido de la sesión.
+Flask, concebido en 2010 por Armin Ronacher, emerge como una alternativa a los frameworks web más complejos. Inspirado por su experiencia en proyectos web y otros microframeworks, Ronacher desarrolló Flask con el objetivo de ofrecer una base simple para aplicaciones web en Python. La idea principal era proporcionar una estructura mínima que permitiera a los desarrolladores trabajar de manera eficiente y personalizable. A lo largo de los años, Flask ha ganado reconocimiento por su enfoque flexible y su curva de aprendizaje suave, atrayendo a una comunidad activa y diversos proyectos en todo el mundo.
 
 ## Características
 
-- Servidor de desarrollo y depurador
-- Soporte integrado para pruebas unitarias
-- Despacho de solicitudes RESTful
-- Usa la plantilla Jinja
-- Soporte para cookies seguras (sesiones del lado del cliente)
-- 100% compatible con WSGI 1.0
-- Basado en Unicode
-- Documentación completa
-- Compatibilidad con Google App Engine
-- Extensiones disponibles para ampliar la funcionalidad
+- **Microframework:** Tamaño compacto y enfoque minimalista.
+- **Flexibilidad:** Elección de herramientas y extensiones según las necesidades.
+- **Rutas y Vistas:** Enrutamiento simple para manejar solicitudes HTTP.
+- **Plantillas Jinja2:** Uso de Jinja2 para generar contenido dinámico.
+- **Extensible:** Admite extensiones para funcionalidades adicionales.
+- **Desarrollo Rápido:** Facilita la construcción rápida de aplicaciones web.
+- **Curva de Aprendizaje Suave:** Fácil de aprender y comenzar a usar.
+- **Comunidad Activa:** Amplia comunidad de usuarios y extensiones disponibles.
+- **Documentación Clara:** Documentación bien estructurada y ejemplos útiles.
+- **Pythonic:** Se adhiere a los principios y convenciones de diseño de Python.
