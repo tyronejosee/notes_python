@@ -1,15 +1,15 @@
 <p align="center">
   <a href="https://github.com/tyronejosee/docs_python#gh-light-mode-only" target="_blank">
-    <img src="./assets/logo_light.svg" alt="logo-light" width="300">
+    <img src="./assets/logo_light.svg" alt="logo-light" width="400">
   </a>
   <a href="https://github.com/tyronejosee/docs_python#gh-dark-mode-only" target="_blank">
-    <img src="./assets/logo_dark.svg" alt="logo-dark" width="300">
+    <img src="./assets/logo_dark.svg" alt="logo-dark" width="400">
   </a>
 </p>
 
 <p align="center">
-  Docs: Python <br>
-  Conceptos claves que debes considerar.
+  <b>Docs: Python</b> <br>
+  Una recopilación de recursos y documentación de Python.
 <p>
 
 <p align="center">
@@ -25,10 +25,10 @@ Para obtener un sólido entendimiento de este lenguaje, te invito a explorar det
 
 <p align="center">
   <a href="https://github.com/tyronejosee/docs_python/blob/main/docs/spa/index.md#gh-light-mode-only" target="_blank">
-    <img src="./assets/buttom_index_light.svg" alt="logo-light" width="200">
+    <img src="./assets/buttom_index_light.svg" alt="logo-light" width="150">
   </a>
   <a href="https://github.com/tyronejosee/docs_python/blob/main/docs/spa/index.md#gh-dark-mode-only" target="_blank">
-    <img src="./assets/buttom_index_dark.svg" alt="logo-dark" width="200">
+    <img src="./assets/buttom_index_dark.svg" alt="logo-dark" width="150">
   </a>
 </p>
 
