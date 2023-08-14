@@ -1,27 +1,30 @@
 # Pyramid
 
-- Desarrollador(es): Comunidad
-- Lanzamiento: Septiembre, 2005
-- Tipo: Web Framework
-- Licencia: repoze
-- [Pyramid Website](https://trypyramid.com/)
-- **[Documentación de Pyramid](https://trypyramid.com/documentation.html)**
-- **[Introducción al marco de trabajo Pyramid](https://www.tutorialspoint.com/python_web_development_libraries/python_web_development_libraries_pyramid_framework.htm)**
+- **Desarrollador(es):** Comunidad
+- **Lanzamiento:** Septiembre, 2005
+- **Tipo:** Web Framework
+- **Licencia:** repoze
+- [Pyramid: Website](https://trypyramid.com/)
+- [Pyramid: Documentación](https://docs.pylonsproject.org/projects/pyramid/en/latest/)
+- [Pyramid: Repositorio](https://github.com/Pylons/pyramid)
 
 ## Introducción
 
-Pyramid es un framework web de alto rendimiento y flexible para construir aplicaciones web en Python. Diseñado para ser modular y adaptable, Pyramid permite a los desarrolladores elegir las herramientas y componentes que mejor se adapten a sus necesidades, lo que facilita la creación de aplicaciones desde pequeñas y simples hasta grandes y complejas. Con un enfoque en la simplicidad, Pyramid ofrece una amplia gama de características y opciones para desarrolladores de todos los niveles de experiencia, lo que lo convierte en una elección versátil y poderosa para el desarrollo de aplicaciones web.
+Pyramid es un framework web en Python que destaca por su flexibilidad y enfoque modular. Diseñado para ofrecer una plataforma versátil de desarrollo, Pyramid brinda una amplia gama de herramientas para la construcción de aplicaciones web, desde pequeños proyectos hasta sistemas más complejos. Su funcionalidad abarca desde enrutamiento y manejo de vistas hasta autenticación y autorización. El propósito de Pyramid es proporcionar a los desarrolladores un conjunto de componentes y opciones para crear aplicaciones web de manera eficiente y personalizada, permitiendo la elección de las tecnologías más adecuadas para cada proyecto.
 
 ## Historia
 
-Pyramid, anteriormente conocido como "Pylons", se originó como un proyecto comunitario para abordar las deficiencias en los frameworks web existentes en Python. Su objetivo era proporcionar una estructura flexible y adaptable que permitiera a los desarrolladores crear aplicaciones web de manera más eficiente y efectiva. A lo largo de los años, Pyramid ha evolucionado y madurado, manteniendo su compromiso con la modularidad y la flexibilidad, al tiempo que se ha convertido en una opción popular entre los desarrolladores de Python para la construcción de aplicaciones web robustas y escalables.
+Pyramid, anteriormente conocido como "Pylons", nació en 2005 como un proyecto liderado por Philip Jenvey y luego continuado por Ben Bangert. Inicialmente, Pylons se dividía en dos partes: "Pylons Framework" y "Pylons Project". Con el tiempo, el "Pylons Framework" se convirtió en Pyramid, un marco web más modular y flexible que conserva su esencia original. La filosofía de Pyramid se basa en proporcionar opciones, permitiendo a los desarrolladores elegir cómo estructurar y construir sus aplicaciones. Esta filosofía modular ha sido fundamental para el crecimiento de Pyramid en la comunidad de desarrollo web en Python.
 
-## Características Principales
+## Características
 
-- Arquitectura modular que permite la elección de componentes y herramientas.
-- Soporte completo para diversos sistemas de autenticación y autorización.
-- Integración con bases de datos a través de herramientas ORM y adaptadores.
-- Enfoque en la simplicidad y la legibilidad del código.
-- Admite la creación de aplicaciones pequeñas y grandes con la misma base.
-- Facilita la adopción de mejores prácticas y patrones de diseño en el desarrollo web.
-- Extensa documentación y comunidad activa que brinda soporte y recursos a los desarrolladores.
+- **Flexibilidad Modular**: Enfoque modular que permite elegir las tecnologías y componentes adecuados para cada proyecto.
+- **Adaptabilidad**: Escalable desde aplicaciones pequeñas hasta sistemas más complejos.
+- **Enrutamiento y Vistas**: Sistema de enrutamiento para direccionar solicitudes a controladores específicos.
+- **Plantillas**: Admite diversos motores de plantillas para generar contenido dinámico.
+- **Autenticación y Autorización**: Funcionalidad integrada para gestionar la autenticación y autorización de usuarios.
+- **Extensible**: Permite agregar características personalizadas a través de extensiones y complementos.
+- **Documentación Completa**: Ofrece documentación detallada y ejemplos para guiar a los desarrolladores.
+- **Filosofía "Lo Que Use"**: Permite a los desarrolladores usar solo las partes que necesitan, evitando la sobrecarga.
+- **Comunidad Activa**: Cuenta con una comunidad activa que contribuye y apoya el desarrollo continuo.
+- **Pythonic**: Se adhiere a las convenciones y principios de diseño de Python.
