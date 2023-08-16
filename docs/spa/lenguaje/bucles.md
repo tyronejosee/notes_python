@@ -1,4 +1,4 @@
-# Bucles en Python
+# Bucles
 
 A continuación, se presentan los bucles disponibles en Python para satisfacer las necesidades de repetición. Python ofrece 3 opciones para ejecutar los bucles. La funcionalidad básica de todas las técnicas es la misma, aunque la sintaxis y la cantidad de tiempo requerido para verificar la condición difieren.
 
@@ -12,7 +12,7 @@ Los siguientes tipos de bucles están disponibles en el lenguaje de programació
 | 2 | Bucle for | Este tipo de bucle ejecuta un bloque de código varias veces y abrevia el código que maneja la variable del bucle. |
 | 3 | Bucles anidados | Podemos iterar un bucle dentro de otro bucle. |
 
-# Declaraciones de control de bucle
+## Declaraciones de Control de Bucle
 
 Las declaraciones utilizadas para controlar los bucles y cambiar el curso de la iteración se llaman declaraciones de control. Todos los objetos producidos dentro del alcance local del bucle se eliminan cuando se completa la ejecución.
 
@@ -26,7 +26,7 @@ Repasemos rápidamente las definiciones de estas declaraciones de control de buc
 | 2 | Declaración continue | Esta instrucción omite la iteración actual del bucle. Las declaraciones que siguen a la declaración continue no se ejecutan una vez que el intérprete de Python llega a la declaración continue. |
 | 3 | Declaración pass | Se utiliza la declaración pass cuando una declaración es sintácticamente necesaria, pero no se debe ejecutar ningún código. |
 
-# El bucle for
+## El bucle for
 
 El bucle for de Python está diseñado para ejecutar repetidamente un bloque de código mientras itera a través de una lista, tupla, diccionario u otros objetos iterables de Python. El proceso de recorrer una secuencia se conoce como iteración.
 
