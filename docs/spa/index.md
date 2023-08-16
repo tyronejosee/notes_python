@@ -105,9 +105,9 @@
 ## ✅ Pruebas (Testing)
 
 - [Pruebas](pruebas/pruebas.md)
-- [Pruebas Unitarias](pruebas/pruebas.md)
-- [Pruebas de Integración](pruebas/pruebas.md)
-- [Pruebas Funcionales](pruebas/pruebas.md)
+- [Pruebas Unitarias](pruebas/)
+- [Pruebas de Integración](pruebas/)
+- [Pruebas Funcionales](pruebas/)
 - [Doctest](pruebas/doctest.md)
 - [nose](pruebas/nose.md)
 - [pytest](pruebas/pytest.md)
