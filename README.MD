@@ -147,7 +147,3 @@ Para obtener un sólido entendimiento de este lenguaje, te invito a explorar det
 - [ChatGPT](http://chat.openai.com/)
 - [Notion](https://www.notion.so/)
 - [Figma](https://www.figma.com/)
-
-## Notas del Autor
-
-Este repositorio fue creado como una recopilación de recursos que han sido de gran utilidad en mi ruta educacional y profesional. Esta colección está basada en documentación confiable de multiples fuentes que he encontrado a lo largo del tiempo, mucha de ella en inglés u otros idiomas. Estaré agregando contenido nuevo según vaya encontrando. Espero encuentres valor y uso práctico a esta información y que te inspire a crear tus propios proyectos.
