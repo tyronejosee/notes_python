@@ -111,6 +111,10 @@ Para obtener un sólido entendimiento de este lenguaje, te invito a explorar det
 - [Aleatorios](docs/spa/estructuras/aleatorios.md)
 - [Ramificación y Acotación](docs/spa/estructuras/ramificacion_acotacion.md)
 
+## Entornos Virtuales
+
+- [Entornos Virtuales](docs/spa/entornos_virtuales/entornos_virtuales.md)
+
 ## 🛠️ Marcos de Trabajo (Framework)
 
 - [Frameworks](docs/spa/marcos/frameworks.md)
