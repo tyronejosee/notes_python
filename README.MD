@@ -42,41 +42,43 @@ Para obtener un sólido entendimiento de este lenguaje, te invito a explorar det
 
 ## 🔃 Flujos de Control
 
-- [Condicionales](docs/spa/basicos/condicionales.md)
-- [Bucles](docs/spa/basicos/bucles.md)
-  - [While](docs/spa/basicos/while.md)
-  - [For](docs/spa/basicos/for.md)
-- [Excepciones](docs/spa/basicos/excepciones.md)
-- [Sentencias](docs/spa/basicos)
-  - [Break](docs/spa/basicos/break.md)
-  - [Continue](docs/spa/basicos/continue.md)
-  - [Pass](docs/spa/basicos/pass.md)
+- [Condicionales](docs/spa/flujos_control/condicionales.md)
+- [Bucles](docs/spa/flujos_control/bucles.md)
+  - [While](docs/spa/flujos_control/while.md)
+  - [For](docs/spa/flujos_control/for.md)
+- [Excepciones](docs/spa/flujos_control/excepciones.md)
+- [Sentencias](docs/spa/flujos_control/sentencias.md)
+  - [Break](docs/spa/flujos_control/break.md)
+  - [Continue](docs/spa/flujos_control/continue.md)
+  - [Pass](docs/spa/flujos_control/pass.md)
 
 ## 🔢 Tipos de Datos
 
-- [Números](docs/spa/basicos/numeros.md)
-- [Cadenas](docs/spa/basicos/cadenas.md)
-- [Listas](docs/spa/basicos/listas.md)
-- [Tuplas](docs/spa/basicos/tuplas.md)
-- [Conjuntos](docs/spa/basicos/conjuntos.md)
-- [Diccionarios](docs/spa/basicos/diccionarios.md)
+- [Números](docs/spa/tipos_datos/numeros.md)
+- [Cadenas](docs/spa/tipos_datos/cadenas.md)
+- [Listas](docs/spa/tipos_datos/listas.md)
+- [Tuplas](docs/spa/tipos_datos/tuplas.md)
+- [Conjuntos](docs/spa/tipos_datos/conjuntos.md)
+- [Diccionarios](docs/spa/tipos_datos/diccionarios.md)
 
 ## ⚙️ Funciones
 
-- [Funciones](docs/spa/basicos/funciones.md)
-- [Incorporadas](docs/spa/basicos/funciones_incorporadas.md)
-- [Lambda](docs/spa/avanzados/lambdas.md)
-- [Modulos](docs/spa/basicos/modulos.md)
+- [Funciones](docs/spa/funciones/funciones.md)
+- [Incorporadas](docs/spa/funciones/funciones_incorporadas.md)
+- [Lambda](docs/spa/funciones/lambdas.md)
+- [Modulos](docs/spa/funciones/modulos.md)
 
 ## 🧭 Programación Orientada a Objetos (POO)
 
-- [Conceptos](docs/spa/avanzados/conceptos.md)
-- [Clases y Objetos](docs/spa/avanzados/clases_objetos.md)
-- [Constructor](docs/spa/avanzados/contructor.md)
-- [Herencia](docs/spa/avanzados/herencia.md)
-- [Abstracción](docs/spa/avanzados/abstraccion.md)
+- [Conceptos](docs/spa/poo/conceptos.md)
+- [Clases y Objetos](docs/spa/poo/clases_objetos.md)
+- [Constructor](docs/spa/poo/constructor.md)
+- [Herencia](docs/spa/poo/herencia.md)
+- [Abstracción](docs/spa/poo/abstraccion.md)
 
 ## 🧭 Paradigmas
+
+- [Paradigmas](docs/spa/paradigmas/paradigmas.md)
 
 ## 🔬 Avanzados
 
@@ -90,29 +92,29 @@ Para obtener un sólido entendimiento de este lenguaje, te invito a explorar det
 
 ## 📊 Estructuras de Datos
 
-- [Arreglos](docs/spa/estructuras/arreglos.md)
-- [Listas Enlazadas](docs/spa/estructuras/listas_enlazadas.md)
-- [Montículos](docs/spa/estructuras/monticulos.md)
-- [Pilas](docs/spa/estructuras/pilas.md)
-- [Colas](docs/spa/estructuras/colas.md)
-- [Hash](docs/spa/estructuras/hash.md)
-- [Árboles](docs/spa/estructuras/arboles.md)
+- [Arreglos](docs/spa/estructuras_datos/arreglos.md)
+- [Listas Enlazadas](docs/spa/estructuras_datos/listas_enlazadas.md)
+- [Montículos](docs/spa/estructuras_datos/monticulos.md)
+- [Pilas](docs/spa/estructuras_datos/pilas.md)
+- [Colas](docs/spa/estructuras_datos/colas.md)
+- [Hash](docs/spa/estructuras_datos/hash.md)
+- [Árboles](docs/spa/estructuras_datos/arboles.md)
 
 ## 🎲 Algoritmos
 
-- [Búsqueda](docs/spa/estructuras/busqueda.md)
-- [Ordenamiento](docs/spa/estructuras/ordenamiento.md)
-- [División y Conquista](docs/spa/estructuras/division_conquista.md)
-- [Metodología Voraz](docs/spa/estructuras/metologia_voraz.md)
-- [Recursión](docs/spa/estructuras/recursion.md)
-- [Retroceso](docs/spa/estructuras/retroceso.md)
-- [Programación Dinámica](docs/spa/estructuras/programacion_dinamica.md)
-- [Búsqueda de Patrones](docs/spa/estructuras/busqueda_patrones.md)
-- [Matemáticos](docs/spa/estructuras/matematicos.md)
-- [Geométricos](docs/spa/estructuras/geometricos.md)
-- [Bitwise](docs/spa/estructuras/bitwise.md)
-- [Aleatorios](docs/spa/estructuras/aleatorios.md)
-- [Ramificación y Acotación](docs/spa/estructuras/ramificacion_acotacion.md)
+- [Búsqueda](docs/spa/algoritmos/busqueda.md)
+- [Ordenamiento](docs/spa/algoritmos/ordenamiento.md)
+- [División y Conquista](docs/spa/algoritmos/division_conquista.md)
+- [Metodología Voraz](docs/spa/algoritmos/metologia_voraz.md)
+- [Recursión](docs/spa/algoritmos/recursion.md)
+- [Retroceso](docs/spa/algoritmos/retroceso.md)
+- [Programación Dinámica](docs/spa/algoritmos/programacion_dinamica.md)
+- [Búsqueda de Patrones](docs/spa/algoritmos/busqueda_patrones.md)
+- [Matemáticos](docs/spa/algoritmos/matematicos.md)
+- [Geométricos](docs/spa/algoritmos/geometricos.md)
+- [Bitwise](docs/spa/algoritmos/bitwise.md)
+- [Aleatorios](docs/spa/algoritmos/aleatorios.md)
+- [Ramificación y Acotación](docs/spa/algoritmos/ramificacion_acotacion.md)
 
 ## Entornos Virtuales
 
@@ -120,17 +122,17 @@ Para obtener un sólido entendimiento de este lenguaje, te invito a explorar det
 
 ## 🛠️ Frameworks
 
-- [Frameworks](docs/spa/marcos/frameworks.md)
-- [Síncrono](docs/spa/marcos/sincrono.md)
-- [Asíncrono](docs/spa/marcos/asincrono.md)
-- [Django](docs/spa/marcos/django.md)
-- [Flask](docs/spa/marcos/flask.md)
-- [FastAPI](docs/spa/marcos/fastapi.md)
-- [aiohttp](docs/spa/marcos/aiohttp.md)
-- [gevent](docs/spa/marcos/gevent.md)
-- [Pyramid](docs/spa/marcos/gevent.md)
-- [Sanic](docs/spa/marcos/sanic.md)
-- [Tornado](docs/spa/marcos/tornado.md)
+- [Frameworks](docs/spa/frameworks/frameworks.md)
+- [Síncrono](docs/spa/frameworks/sincrono.md)
+- [Asíncrono](docs/spa/frameworks/asincrono.md)
+- [Django](docs/spa/frameworks/django.md)
+- [Flask](docs/spa/frameworks/flask.md)
+- [FastAPI](docs/spa/frameworks/fastapi.md)
+- [aiohttp](docs/spa/frameworks/aiohttp.md)
+- [gevent](docs/spa/frameworks/gevent.md)
+- [Pyramid](docs/spa/frameworks/gevent.md)
+- [Sanic](docs/spa/frameworks/sanic.md)
+- [Tornado](docs/spa/frameworks/tornado.md)
 
 ## ✅ Pruebas (Testing)
 
