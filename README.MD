@@ -76,8 +76,11 @@ Para obtener un sólido entendimiento de este lenguaje, te invito a explorar det
 - [Herencia](docs/spa/avanzados/herencia.md)
 - [Abstracción](docs/spa/avanzados/abstraccion.md)
 
+## 🧭 Paradigmas
+
 ## 🔬 Avanzados
 
+- [Comprensión de Listas](docs/spa/avanzados/iteradores.md)
 - [Iteradores](docs/spa/avanzados/iteradores.md)
 - [Generadores](docs/spa/avanzados/generadores.md)
 - [Cierres](docs/spa/avanzados/cierres.md)
