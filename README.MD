@@ -115,7 +115,7 @@ Para obtener un sólido entendimiento de este lenguaje, te invito a explorar det
 
 - [Entornos Virtuales](docs/spa/entornos_virtuales/entornos_virtuales.md)
 
-## 🛠️ Marcos de Trabajo (Framework)
+## 🛠️ Frameworks
 
 - [Frameworks](docs/spa/marcos/frameworks.md)
 - [Síncrono](docs/spa/marcos/sincrono.md)
@@ -140,14 +140,8 @@ Para obtener un sólido entendimiento de este lenguaje, te invito a explorar det
 - [pytest](docs/spa/pruebas/pytest.md)
 - [unittest/pyUnit](docs/spa/pruebas/pyunit_unittest.md)
 
-## Enlaces de Interés
+## Recursos
 
-- [Javatpoint](https://www.javatpoint.com/)
-- [W3schools](https://www.w3schools.com/)
-- [Roadmap](https://roadmap.sh/)
-- [GeeksforGeeks](https://www.geeksforgeeks.org/)
-- [Programiz](https://www.programiz.com/)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [ChatGPT](http://chat.openai.com/)
-- [Notion](https://www.notion.so/)
-- [Figma](https://www.figma.com/)
+- [Páginas](docs/spa/recursos/paginas.md)
+- [Creadores](docs/spa/recursos/creadores.md)
+- [Recursos](docs/spa/recursos/recursos.md)
