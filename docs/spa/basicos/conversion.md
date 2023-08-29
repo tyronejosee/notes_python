@@ -1,10 +1,8 @@
 # Conversión de Tipos (Casting)
 
-En este tutorial, aprenderemos cómo se realiza la conversión de tipos en Python.
+En este tutorial, aprenderemos cómo se realiza la conversión de tipos o casting en Python.
 
-Nos encontramos con diferentes tipos de operaciones aritméticas en las que se involucran múltiples tipos de datos y luego se obtienen resultados en consecuencia.
-
-Aquí discutiremos ambos:
+Nos encontramos con diferentes tipos de operaciones aritméticas en las que se involucran múltiples tipos de datos y luego se obtienen resultados en consecuencia. Aquí discutiremos ambos:
 
 1. Conversión de tipo implícito
 2. Conversión de tipo explícito
@@ -17,56 +15,43 @@ Durante la conversión de tipo implícito, el usuario no necesita mencionar ning
 
 El siguiente programa ilustra cómo se puede hacer en Python.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Programa para demostrar la conversión de tipo implícito
 
 # Inicializando el valor de a
-
 a = 10
-
 print(a)
-
 print("El tipo de a es ", type(a))
 
+
 # Inicializando el valor de b
-
 b = 4.5
-
 print(b)
-
 print("El tipo de b es ", type(b))
 
+
 # Inicializando el valor de c
-
 c = 4.0
-
 print(c)
-
 print("El tipo de c es ", type(c))
 
+
 # Inicializando el valor de d
-
 d = 5.0
-
 print(d)
-
 print("El tipo de d es ", type(d))
 
+
 # Realizando operaciones aritméticas
-
 res = a * b
-
 print("El producto de a y b es ", res)
-
 add = c + d
-
 print("La suma de c y d es ", add)
-
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 10
@@ -82,7 +67,7 @@ La suma de c y d es 9.0
 
 ```
 
-**Explicación:**
+**Explicación**:
 
 Echemos un vistazo a la explicación de este programa.
 
@@ -99,44 +84,33 @@ En este tipo de conversión, el usuario debe pasar el valor en una función para
 
 int(), float() y str() se utilizan principalmente para la conversión de tipo explícito.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Programa para demostrar la conversión de tipo explícito
 
 # Inicializando el valor de a
-
 a = 10.6
-
 print("El tipo de 'a' antes de la conversión de tipo es ", type(a))
-
 print(int(a))
-
 print("El tipo de 'a' después de la conversión de tipo es", type(a))
 
+
 # Inicializando el valor de b
-
 b = 8.3
-
 print("El tipo de 'b' antes de la conversión de tipo es ", type(b))
-
 print(int(b))
-
 print("El tipo de 'b' después de la conversión de tipo es", type(b))
 
+
 # Inicializando el valor de c
-
 c = 7
-
 print("El tipo de 'c' antes de la conversión de tipo es ", type(c))
-
 print(float(c))
-
 print("El tipo de 'c' después de la conversión de tipo es", type(c))
-
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 El tipo de 'a' antes de la conversión de tipo es  <class 'float'>
@@ -151,7 +125,7 @@ El tipo de 'c' después de la conversión de tipo es <class 'int'>
 
 ```
 
-**Explicación:**
+**Explicación**:
 
 Entendamos lo que hemos hecho en este programa.
 
@@ -161,46 +135,33 @@ Entendamos lo que hemos hecho en este programa.
 
 Finalmente, echemos un vistazo al último programa de este artículo que cubre posibles tipos de conversiones de tipo explícito.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Programa para demostrar la conversión de tipo explícito
 
 # Inicializando el valor de a
-
 a = 10
-
 print("El tipo de 'a' antes de la conversión de tipo es ", type(a))
-
 print(str(a))
-
 print("El tipo de 'a' después de la conversión de tipo es", type(a))
 
+
 # Inicializando el valor de b
-
 b = '8'
-
-print("El tipo de
-
- 'b' antes de la conversión de tipo es ", type(b))
-
+print("El tipo de 'b' antes de la conversión de tipo es ", type(b))
 print(int(b))
-
 print("El tipo de 'b' después de la conversión de tipo es", type(b))
 
+
 # Inicializando el valor de c
-
 c = '7.9'
-
 print("El tipo de 'c' antes de la conversión de tipo es ", type(c))
-
 print(float(c))
-
 print("El tipo de 'c' después de la conversión de tipo es", type(c))
-
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 El tipo de 'a' antes de la conversión de tipo es  <class 'int'>
@@ -212,13 +173,8 @@ El tipo de 'b' después de la conversión de tipo es <class 'str'>
 El tipo de 'c' antes de la conversión de tipo es  <class 'str'>
 7.9
 El tipo de 'c' después de la conversión de tipo es <class 'str'>
-
 ```
 
-**Explicación:**
+**Explicación**:
 
 El enfoque es similar al programa anterior y en este programa, hemos incluido conversiones usando int(), str() y float().
-
-## Conclusión
-
-En este tutorial, aprendimos qué es la conversión de tipos en Python, cuáles son sus tipos y cómo se puede realizar en Python.
