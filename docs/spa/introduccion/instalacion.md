@@ -1,6 +1,6 @@
 # Instalación
 
-# ¿Cómo Instalar Python?
+## ¿Cómo Instalar Python?
 
 Python es un lenguaje de programación popular de alto nivel y uso general. Python es un lenguaje de programación que permite un desarrollo rápido y una integración de sistemas más efectiva. Python tiene dos versiones principales diferentes: Python 2 y Python 3. Ambas son realmente diferentes.
 
@@ -12,13 +12,13 @@ Es necesario tener Python instalado en el sistema para empezar a crear código e
 
 Para convertirse en desarrollador de Python, el primer paso es aprender cómo instalar o actualizar Python en una máquina local o una computadora. En este tutorial, hablaremos sobre la instalación de Python en varios sistemas operativos.
 
-# Instalación en Windows
+## Instalación en Windows
 
-Visita el enlace ***[https://www.python.org](https://www.python.org/)*** para descargar la última versión de [Python](https://www.javatpoint.com/python-tutorial). En este proceso, instalaremos Python **3.11.3** en nuestro [sistema operativo Windows](https://www.javatpoint.com/windows). Cuando hagamos clic en el enlace anterior, nos llevará a la siguiente página.
+Visita el enlace ***[https://www.python.org](https://www.python.org/)*** para descargar la última versión de Python. En este proceso, instalaremos Python **3.11.3** en nuestro sistema operativo Windows. Cuando hagamos clic en el enlace anterior, nos llevará a la siguiente página.
 
 ![https://static.javatpoint.com/python/images/how-to-install-python.png](https://static.javatpoint.com/python/images/how-to-install-python.png)
 
-**Paso - 1: Seleccionar la versión de Python para descargar.**
+**Paso - 1: Seleccionar la Versión de Python para Descargar.**
 
 Haz clic en el botón de descarga para descargar el archivo ejecutable (exe) de Python.
 
@@ -28,7 +28,7 @@ Si deseas descargar una versión específica de Python, entonces puedes desplaza
 
 ![https://static.javatpoint.com/python/images/how-to-install-python3.png](https://static.javatpoint.com/python/images/how-to-install-python3.png)
 
-**Paso - 2: Haz clic en Instalar Ahora**
+**Paso - 2: Haz clic en Instalar Ahora.**
 
 Haz doble clic en el archivo ejecutable que has descargado.
 
@@ -42,7 +42,7 @@ Aquí, en las opciones avanzadas, marca las casillas de "Instalar Python 3.11 pa
 
 ![https://static.javatpoint.com/python/images/how-to-install-python5.png](https://static.javatpoint.com/python/images/how-to-install-python5.png)
 
-**Paso - 3 Proceso de Instalación**
+**Paso - 3 Proceso de Instalación.**
 
 ![https://static.javatpoint.com/python/images/how-to-install-python6.png](https://static.javatpoint.com/python/images/how-to-install-python6.png)
 
@@ -50,7 +50,7 @@ La configuración está en progreso. Todas las bibliotecas, paquetes y otros arc
 
 ![https://static.javatpoint.com/python/images/how-to-install-python7.png](https://static.javatpoint.com/python/images/how-to-install-python7.png)
 
-**Paso - 4: Verificar la Instalación de Python**
+**Paso - 4: Verificar la Instalación de Python.**
 
 Para verificar si Python está instalado en nuestro sistema, debemos hacer lo siguiente.
 
@@ -63,7 +63,7 @@ Para verificar si Python está instalado en nuestro sistema, debemos hacer lo si
 
 Estamos listos para trabajar con Python.
 
-**Paso - 5: Abrir el Entorno de Desarrollo (idle)**
+**Paso - 5: Abrir el Entorno de Desarrollo (IDLE).**
 
 Ahora, para trabajar en nuestro primer programa en Python, iremos al intérprete interactivo (idle). Para abrirlo, ve a "Inicio" y escribe "idle". Luego, haz clic en "Abrir" para empezar a trabajar en idle.
 
