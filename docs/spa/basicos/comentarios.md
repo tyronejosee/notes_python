@@ -27,14 +27,14 @@ En Python, hay 3 tipos de comentarios. Se describen a continuación:
 
 Los comentarios de una sola línea en Python han demostrado ser eficaces para proporcionar descripciones rápidas para parámetros, definiciones de funciones y expresiones. Un comentario de una sola línea en Python es aquel que tiene un hashtag (#) al principio y continúa hasta el final de la línea. Si el comentario continúa en la siguiente línea, se agrega un hashtag a la línea siguiente y se reanuda la conversación. Considere el siguiente fragmento de código, que muestra cómo usar un comentario de una sola línea:
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Este código es para mostrar un ejemplo de un comentario de una sola línea
 print('Esta declaración no tiene un hashtag delante')
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Esta declaración no tiene un hashtag delante
@@ -50,13 +50,13 @@ El compilador de Python ignora esta línea.
 
 Todo lo que sigue después del hashtag se omite. Por lo tanto, podemos poner el programa mencionado anteriormente en una sola línea de la siguiente manera:
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 print('Esto no es un comentario')  # este código es para mostrar un ejemplo de un comentario de una sola línea
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Esto no es un comentario
@@ -68,11 +68,11 @@ La salida de este programa será idéntica al ejemplo anterior. La computadora p
 
 Python no proporciona la facilidad de comentarios de varias líneas. Sin embargo, hay varias formas de crear comentarios de varias líneas.
 
-**Con Varios Hashtags (#):**
+**Con Varios Hashtags (#)**:
 
 En Python, podemos usar varios hashtags (#) para construir varias líneas de comentarios. Cada línea con un hashtag (#) antes de ella se considerará un comentario de una sola línea.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # esto es
@@ -82,11 +82,11 @@ En Python, podemos usar varios hashtags (#) para construir varias líneas de com
 
 En este caso, cada línea se considera un comentario y todas se omiten.
 
-**Usando Literales de Cadena:**
+**Usando Literales de Cadena**:
 
 Debido a que Python pasa por alto las expresiones de cadena que no se asignan a una variable, podemos utilizarlas como comentarios.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 'esto es un comentario que se extiende a varias líneas'
@@ -98,7 +98,7 @@ Podemos observar que al ejecutar este código no habrá ninguna salida; por lo t
 
 Las cadenas encerradas en triple comillas que vienen inmediatamente después de la función definida se llaman docstring de Python. Está diseñado para vincular la documentación desarrollada para módulos, métodos, clases y funciones de Python. Se coloca justo debajo de la función, módulo o clase para explicar qué hacen. El docstring luego es fácilmente accesible en Python utilizando el atributo **doc**.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Código para mostrar cómo usamos docstrings en Python
@@ -109,7 +109,7 @@ return x + y
 print(add.__doc__)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Esta función suma los valores de x e y
