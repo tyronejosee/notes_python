@@ -4,18 +4,17 @@ El término "IDE" hace referencia a "Entorno de Desarrollo Integrado", que es un
 
 Está especialmente diseñado para el desarrollo de software e incluye varias herramientas que se utilizan en la creación y pruebas del software.
 
-A continuación, se presentan algunos IDEs de Python:
-
-- [PyCharm](https://www.javatpoint.com/python-ides#PyCharm)
-- [Spyder](https://www.javatpoint.com/python-ides#Spyder)
-- [PyDev](https://www.javatpoint.com/python-ides#PyDev)
-- [Atom](https://www.javatpoint.com/python-ides#Atom)
-- [Wing](https://www.javatpoint.com/python-ides#Wing)
-- [Jupyter Notebook](https://www.javatpoint.com/python-ides#JupyterNotebook)
-- [Thonny](https://www.javatpoint.com/python-ides#Thonny)
-- [Rodeo](https://www.javatpoint.com/python-ides#Rodeo)
-- [Microsoft Visual Studio](https://www.javatpoint.com/python-ides#MicrosoftVisualStudio)
-- [Eric](https://www.javatpoint.com/python-ides#Eric)
+- [Entornos de Desarrollo Integrado (IDEs)](#entornos-de-desarrollo-integrado-ides)
+  - [PyCharm](#pycharm)
+  - [Spyder](#spyder)
+  - [PyDev](#pydev)
+  - [Atom](#atom)
+  - [Wing](#wing)
+  - [Jupyter Notebook](#jupyter-notebook)
+  - [Thonny](#thonny)
+  - [Rodeo](#rodeo)
+  - [Visual Studio](#visual-studio)
+  - [Eric Python](#eric-python)
 
 ## PyCharm
 
@@ -110,7 +109,7 @@ Ofrece autocompletado de código y capacidad multiplataforma.
 - Permite funciones para comparar datos, interactuar, trazar e inspeccionar datos.
 - Autocompletado de código, resaltado de sintaxis, navegador de archivos visual, etc.
 
-## Microsoft Visual Studio
+## Visual Studio
 
 Microsoft Visual Studio es un editor de código de código abierto que está especialmente diseñado para el desarrollo y depuración de proyectos web y en la nube más recientes. Tiene su propio mercado de extensiones.
 
