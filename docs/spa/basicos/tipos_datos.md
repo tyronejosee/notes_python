@@ -2,7 +2,7 @@
 
 Cada valor tiene un tipo de dato, y las variables pueden contener valores. Python es un lenguaje poderosamente compuesto; por lo tanto, no es necesario definir el tipo de variable al declararla. El intérprete enlaza implícitamente el valor a su tipo.
 
-**Sintaxis:**
+**Sintaxis**:
 
 ```python
 a = 5
@@ -14,7 +14,7 @@ Podemos verificar el tipo de una variable utilizada en el programa gracias a Pyt
 
 Consideremos la siguiente ilustración al definir y verificar los valores de varios tipos de datos.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 a = 10
@@ -26,7 +26,7 @@ print(type(b))
 print(type(c))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 <class 'int'>
@@ -40,11 +40,11 @@ Una variable puede contener una variedad de valores. Por otro lado, la identific
 
 Python especifica el método de almacenamiento para cada uno de los tipos de datos estándar que proporciona. A continuación se presenta una lista de los tipos de datos definidos en Python.
 
-1. [Números](https://www.javatpoint.com/python-data-types#numbers)
-2. [Tipos de secuencia](https://www.javatpoint.com/python-data-types#SequenceType)
-3. [Booleano](https://www.javatpoint.com/python-data-types#Boolean)
-4. [Conjunto](https://www.javatpoint.com/python-data-types#Set)
-5. [Diccionario](https://www.javatpoint.com/python-data-types#dictionary)
+1. Números
+2. Tipos de secuencia
+3. Booleano
+4. Conjunto
+5. Diccionario
 
 ![https://static.javatpoint.com/python/images/python-data-types.png](https://static.javatpoint.com/python/images/python-data-types.png)
 
@@ -56,7 +56,7 @@ Los valores numéricos se almacenan en números. Los valores enteros, de punto f
 
 Cuando se asigna un número a una variable, Python genera objetos de tipo Number.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 a = 5
@@ -70,7 +70,7 @@ print("El tipo de c es", type(c))
 print("c es un número complejo", isinstance(1+3j, complex))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 El tipo de a es <class 'int'>
@@ -81,9 +81,9 @@ c es un número complejo: True
 
 Python admite tres tipos de datos numéricos:
 
-- **Int:** Puede ser cualquier número entero de cualquier longitud, como 10, 2, 29, -20, -150, etc. En Python, un entero puede tener la longitud que desees. Su valor pertenece al tipo `int`.
-- **Float:** Almacena números de punto flotante como 1.9, 9.902, 15.2, etc. Puede ser preciso hasta 15 decimales.
-- **Complejo:** Un número complejo contiene un par ordenado, es decir, x + yi, donde x e y representan las partes reales e imaginarias respectivamente. Los números complejos son como 2.14j, 2.0 + 2.3j, etc.
+- **Int**: Puede ser cualquier número entero de cualquier longitud, como 10, 2, 29, -20, -150, etc. En Python, un entero puede tener la longitud que desees. Su valor pertenece al tipo `int`.
+- **Float**: Almacena números de punto flotante como 1.9, 9.902, 15.2, etc. Puede ser preciso hasta 15 decimales.
+- **Complejo**: Un número complejo contiene un par ordenado, es decir, x + yi, donde x e y representan las partes reales e imaginarias respectivamente. Los números complejos son como 2.14j, 2.0 + 2.3j, etc.
 
 ### Tipos de Secuencia
 
@@ -99,7 +99,7 @@ Como la operación `"Python" * 2` devuelve `"PythonPython"`, el operador `*` se 
 
 El siguiente ejemplo muestra el uso de cadenas.
 
-**Ejemplo 1:**
+**Ejemplo**:
 
 ```python
 cadena = "cadena usando comillas dobles"
@@ -110,7 +110,7 @@ de varias líneas'''
 print(s)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 cadena usando comillas dobles
@@ -120,7 +120,7 @@ de varias líneas
 
 Veamos la siguiente ilustración sobre el manejo de cadenas.
 
-**Ejemplo 2:**
+**Ejemplo**:
 
 ```python
 str1 = 'hola javatpoint' # cadena str1
@@ -132,7 +132,7 @@ print (str1 * 2) # imprimiendo la cadena dos veces
 print (str1 + str2) # imprimiendo la concatenación de str1 y str2
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 ho
@@ -147,7 +147,7 @@ Las listas en Python son similares a los arrays en C, pero las listas pueden con
 
 Para acceder a los datos de la lista, podemos usar los operadores de división [:]. Al igual que funcionan con las cadenas, la lista se maneja mediante el operador de concatenación (+) y el operador de repetición (*).
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 lista1 = [1, "hola", "Python", 2]
@@ -168,12 +168,10 @@ print(lista1[0:2])
 print(lista1 + lista1)
 
 # Repetición de lista usando el operador *
-print(lista
-
-1 * 3)
+print(lista1 * 3)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 <class 'list'>
@@ -190,7 +188,7 @@ En muchos sentidos, una tupla es como una lista. Las tuplas, al igual que las li
 
 Debido a que no podemos alterar el tamaño o el valor de los elementos en una tupla, es una estructura de datos de solo lectura.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 tupla = ("hola", "Python", 2)
@@ -203,7 +201,6 @@ print(tupla)
 
 # División de la tupla
 print(tupla[1:])
-
 print(tupla[0:1])
 
 # Concatenación de tupla usando el operador +
@@ -216,7 +213,7 @@ print(tupla * 3)
 tupla[2] = "hola"
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 <class 'tuple'>
@@ -238,7 +235,7 @@ Un diccionario es un conjunto de pares clave-valor organizados sin ningún orden
 
 Los elementos del diccionario se separan con comas (,) y se encierran entre llaves {}.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 d = {1: 'Jimmy', 2: 'Alex', 3: 'John', 4: 'Mike'}
@@ -257,7 +254,7 @@ print(d.keys())
 print(d.values())
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 {1: 'Jimmy', 2: 'Alex', 3: 'John', 4: 'Mike'}
@@ -271,7 +268,7 @@ dict_values(['Jimmy', 'Alex', 'John', 'Mike'])
 
 Verdadero (True) y Falso (False) son los dos valores predeterminados para el tipo de datos Booleano. Estos valores se utilizan para evaluar la veracidad o falsedad de una afirmación dada. Esto se indica en la clase Booleana. Falso se puede representar con el 0 o la letra "F", mientras que Verdadero se puede representar con cualquier valor que no sea cero.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Programa de Python para verificar el tipo booleano
@@ -280,7 +277,7 @@ print(type(False))
 print(false)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 <class 'bool'>
@@ -292,7 +289,7 @@ NameError: name 'false' is not defined
 
 El tipo de datos de conjunto de Python es una colección no ordenada. Es iterable, mutable (puede cambiar después de su creación) y tiene elementos únicos. Los elementos de un conjunto no tienen un orden establecido; puede devolver los elementos en un orden modificado. Para crear el conjunto se pasa una secuencia de elementos entre llaves {} y separados por comas, o se utiliza la función incorporada `set()`. Puede contener diferentes tipos de valores.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Creando un conjunto vacío
@@ -312,7 +309,7 @@ conjunto2.remove(2)
 print(conjunto2)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 {3, 'Python', 'James', 2}
