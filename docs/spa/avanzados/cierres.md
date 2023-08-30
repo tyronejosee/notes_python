@@ -4,19 +4,16 @@ Un lenguaje como Python tiene abundantes conceptos interesantes que están desti
 
 En este tutorial, aprenderemos sobre los cierres en Python. Pero antes de eso, repasemos las funciones anidadas y veamos cómo pueden actuar como un requisito previo para comprender este tema.
 
-Así que empecemos:
-
 ## Programa 1
 
 El programa que se muestra a continuación ilustra el concepto de funciones anidadas y variables no locales.
 
+**Ejemplo**:
+
 ```python
 # Función externa
-
 def function_1(txt):
-
     # Función interna
-
     def function_2():
         print(txt)
 
@@ -25,13 +22,13 @@ def function_1(txt):
 function_1('Python en JavaTpoint')
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Python en JavaTpoint
 ```
 
-**Explicación:**
+**Explicación**:
 
 Vamos a entender qué hemos hecho en este programa:
 
@@ -43,15 +40,12 @@ Vamos a entender qué hemos hecho en este programa:
 
 Ahora, veamos cómo los cierres pueden ayudar a simplificar nuestro trabajo y mejorar nuestro programa.
 
-El siguiente programa ilustra lo mismo:
+**Ejemplo**:
 
 ```python
 # Función externa
-
 def function_1(txt):
-
     # Función interna
-
     def function_2():
         print(txt)
 
@@ -62,13 +56,13 @@ function_3 = function_1('Aprendamos un lenguaje de programación.')
 function_3()
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Aprendamos un lenguaje de programación.
 ```
 
-**Explicación:**
+**Explicación**:
 
 Vamos a entender qué hemos hecho en este programa:
 
@@ -76,7 +70,7 @@ Vamos a entender qué hemos hecho en este programa:
 2. Como se puede ver, el valor de 'function_2' se devuelve en el programa anterior y luego hemos pasado un valor de cadena en la función_1 y lo hemos asignado a function_3.
 3. Al ejecutar este programa, se muestra la salida deseada.
 
-### Observación
+**Observación**:
 
 Basándonos en la observación anterior, podemos concluir que:
 
@@ -85,7 +79,7 @@ Basándonos en la observación anterior, podemos concluir que:
 3. Es un registro en el que cada variable de una función se asigna con el valor o la referencia al nombre cuando se creó el cierre.
 4. Actúa como una ayuda para obtener o acceder a las variables con la ayuda de copias de cierre.
 
-### Cuándo Podemos Usar un Cierre
+**Cuándo Podemos Usar un Cierre**:
 
 Podemos usar un cierre en las siguientes condiciones:
 
@@ -93,7 +87,7 @@ Podemos usar un cierre en las siguientes condiciones:
 2. La función debe hacer referencia a un valor en la función encerrada.
 3. La función encerradora debe devolver la función anidada.
 
-### Algunas Características Adicionales
+**Algunas Características Adicionales**:
 
 Las características de los cierres son:
 
@@ -102,30 +96,26 @@ Las características de los cierres son:
 
 ## Programa 3
 
-Finalmente, echemos un vistazo a otro programa interesante que utiliza un cierre.
+Finalmente, echemos un vistazo a otro programa interesante que utiliza un cierre. El programa muestra la situación en la que podemos usar un cierre en lugar de una clase.
 
-El programa muestra la situación en la que podemos usar un cierre en lugar de una clase.
+**Ejemplo**:
 
 ```python
 def add_num(n):
-
     def addition(x):
         return x + n
 
     return addition
 
 add_2 = add_num(2)
-
 add_8 = add_num(8)
 
 print(add_2(4))
-
 print(add_2(8))
-
 print(add_8(add_2(7)))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 6
@@ -133,7 +123,7 @@ print(add_8(add_2(7)))
 17
 ```
 
-**Explicación:**
+**Explicación**:
 
 Vamos a entender qué hemos hecho en el programa anterior:
 
@@ -141,7 +131,3 @@ Vamos a entender qué hemos hecho en el programa anterior:
 2. Esta función debe devolver el valor x + n.
 3. En el siguiente conjunto de declaraciones, hemos utilizado diferentes formas de sumar dos números.
 4. Al ejecutar el programa, se muestra el resultado requerido.
-
-## Conclusión
-
-Así que, en este tutorial, hemos aprendido qué son los cierres y cuándo podemos usarlos para que nuestro programa sea más efectivo.
