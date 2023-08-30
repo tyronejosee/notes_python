@@ -12,7 +12,7 @@ Crear iteradores puede ser un proceso largo. Es por eso que el generador juega u
 
 En Python, crear un generador no es difícil en absoluto. Es similar a la función típica definida por la palabra clave `def`, pero en lugar de `return`, utiliza la palabra clave `yield`. También podemos decir que si el cuerpo de cualquier función contiene una instrucción `yield`, automáticamente se convierte en una función generadora.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 def simple():
@@ -25,7 +25,7 @@ for i in simple():
     print(i)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 0
@@ -45,7 +45,7 @@ La instrucción `return`, en cambio, devuelve un valor y termina toda la funció
 
 Podemos usar múltiples declaraciones `yield` en la función generadora.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 def multiple_yield():
@@ -64,7 +64,7 @@ print(next(obj))
 print(next(obj))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Primer String
@@ -84,7 +84,7 @@ Podemos crear fácilmente una expresión generadora sin utilizar una función de
 
 La representación de una expresión generadora se asemeja a la comprensión de listas de Python. La única diferencia es que los paréntesis redondos se utilizan en lugar de corchetes cuadrados. La expresión generadora solo calcula un elemento a la vez, mientras que la comprensión de listas calcula la lista completa.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 lista = [1, 2, 3, 4, 5, 6, 7]
@@ -99,7 +99,7 @@ print(a)
 print(z)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 <generator object <genexpr> at 0x01BA3CD8>
@@ -108,7 +108,7 @@ print(z)
 
 En el programa anterior, la comprensión de listas devuelve la lista de cubos de los elementos, mientras que la expresión generadora devuelve una referencia del valor calculado. En lugar de aplicar un bucle `for`, también podemos llamar a `next()` en el objeto generador.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 lista = [1, 2, 3, 4, 5, 6]
@@ -121,7 +121,7 @@ print(next(z))
 print(next(z))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 1
@@ -130,22 +130,23 @@ print(next(z))
 64
 ```
 
-**Nota:** Cuando llamamos a `next()`, Python llama a `__next__()` en la función a la que se lo hemos pasado como parámetro.
+**Nota**: Cuando llamamos a `next()`, Python llama a `__next__()` en la función a la que se lo hemos pasado como parámetro.
 
 En el programa anterior, hemos utilizado la función `next()`, que devuelve el siguiente elemento de la lista.
 
-**Ejemplo:** Escribir un programa para imprimir la tabla del número dado utilizando el generador.
+**Ejemplo**: Escribir un programa para imprimir la tabla del número dado utilizando el generador.
 
 ```python
 def table(n):
     for i in range(1, 11):
         yield n * i
 
+
 for i in table(15):
     print(i)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 15
@@ -166,29 +167,31 @@ En el ejemplo anterior, una función generadora se itera utilizando un bucle `fo
 
 Hay varias ventajas de los generadores. Algunas de ellas son las siguientes:
 
-### 1. Fáciles de Implementar
+**1. Fáciles de Implementar**:
 
 Los generadores son fáciles de implementar en comparación con los iteradores. En el iterador, tenemos que implementar las funciones `__iter__()` y `__next__()`.
 
-### 2. Eficientes en el Uso de Memoria
+**2. Eficientes en el Uso de Memoria**:
 
 Para muchas secuencias, los generadores utilizan la memoria de manera eficiente. La función generadora calcula el valor y suspende su ejecución, mientras que la función normal devuelve una secuencia de la lista, lo que primero crea toda la secuencia en la memoria antes de devolver el resultado. Se reanuda la función para la llamada progresiva. Un generador de sucesión infinita es un gran ejemplo de optimización de memoria.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 import sys
 
+
 # Comprensión de listas
 nums_squared_list = [i * 2 for i in range(1000)]
 print(sys.getsizeof("Memoria en Bytes:", nums_squared_list))
+
 
 # Expresión generadora
 nums_squared_gc = (i ** 2 for i in range(1000))
 print(sys.getsizeof("Memoria en Bytes:", nums_squared_gc))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Memoria en Bytes: 4508
@@ -197,39 +200,43 @@ Memoria en Bytes: 56
 
 Podemos observar en la salida anterior que la comprensión de listas está utilizando 4508 bytes de memoria, mientras que la expresión generadora está utilizando solo 56 bytes de memoria. Esto significa que los objetos generadores son mucho más eficientes que la compresión de listas.
 
-### 3. Creación de Conductos con Generadores
+**3. Creación de Conductos con Generadores**:
 
 El conducto de información brinda la facilidad de procesar grandes conjuntos de datos o flujos de información sin utilizar memoria adicional de la computadora.
 
 Imaginemos que tenemos un archivo de registro de un restaurante famoso. El archivo de registro tiene una columna (cuarto segmento) que registra la cantidad de hamburguesas vendidas cada hora y queremos totalizarlo para obtener la cantidad total de hamburguesas vendidas en 4 años. En ese caso, el generador puede crear un conducto utilizando una serie de operaciones.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 with open('sells.log') as file:
     burger_col = (line[3] for line in file)
+
     per_hour = (int(x) for x in burger_col if x != 'N/A')
+
     print("Total de hamburguesas vendidas =", sum(per_hour))
 ```
 
-### 4. Generar Secuencias Infinitas
+**4. Generar Secuencias Infinitas**:
 
 Los generadores pueden generar elementos infinitos. Las secuencias infinitas no pueden caber en la memoria y, como los generadores producen solo un elemento a la vez.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 def infinite_sequence():
     num = 0
+
     while True:
         yield num
         num += 1
+
 
 for i in infinite_sequence():
     print(i)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 0
