@@ -58,7 +58,7 @@ Los operadores de asignación se utilizan para asignar el valor de una expresió
 
 Los operadores a nivel de bits o bitwise procesan los valores de dos operandos bit a bit. Considera el siguiente ejemplo.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 if a = 7
