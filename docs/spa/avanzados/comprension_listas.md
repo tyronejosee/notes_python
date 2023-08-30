@@ -2,7 +2,7 @@
 
 En este tutorial, estamos discutiendo la comprensión de listas en Python. Python es conocido por ayudarnos a producir código elegante, simple de escribir y que se lee casi como inglés. La comprensión de listas es una de las características más distintivas del lenguaje, lo que nos permite desarrollar funcionalidades sofisticadas con solo una línea de código. Por otro lado, muchos programadores de Python luchan por utilizar completamente los aspectos más complejos de la comprensión de listas. A veces, los programadores pueden abusar de ellas, lo que resulta en código menos eficiente y difícil de leer.
 
-**Ejemplo:**
+**Ejemplo**:
 
 Aquí presentamos un ejemplo básico de comprensión de listas en Python. El código es el siguiente:
 
@@ -14,7 +14,7 @@ newlist = [x for x in Person if "i" in x]
 print(newlist)
 ```
 
-**Salida:**
+**Salida**:
 
 Ahora compilamos el código anterior en Python y, después de una compilación exitosa, lo ejecutamos. Entonces, la salida es la siguiente:
 
@@ -22,7 +22,7 @@ Ahora compilamos el código anterior en Python y, después de una compilación e
 ['Piyali', 'Hiya', 'Rudrashish', 'Lipi']
 ```
 
-**Sintaxis:**
+**Sintaxis**:
 
 La sintaxis de la comprensión de listas en Python es la siguiente:
 
@@ -32,15 +32,13 @@ newlist = [expresion for elemento in iterable if condicion == True]
 
 Aquí mostramos el uso básico de la comprensión de listas.
 
-**Código del programa:**
+**Ejemplo**:
 
 Ahora presentamos ejemplos de código sin utilizar comprensión de listas; ¿cómo podemos elevar al cuadrado cada número de una lista utilizando solo un bucle `for` en Python? El código es el siguiente:
 
 ```python
 # Usando un bucle `for` para iterar a través de los elementos en la lista
-
 numbers = [3, 5, 1, 7, 3, 9]
-
 num = []
 
 for n in numbers:
@@ -49,7 +47,7 @@ for n in numbers:
 print(num)
 ```
 
-**Salida:**
+**Salida**:
 
 Ahora compilamos el código anterior en Python y, después de una compilación exitosa, lo ejecutamos. Entonces, la salida es la siguiente:
 
@@ -59,21 +57,19 @@ Ahora compilamos el código anterior en Python y, después de una compilación e
 
 Esto se puede lograr con una sola línea de código utilizando la comprensión de listas.
 
-**Código del programa:**
+**Ejemplo**:
 
 Ahora presentamos ejemplos de código de comprensión de listas en Python para elevar al cuadrado cada número de una lista. El código es el siguiente:
 
 ```python
 # Usando la comprensión de listas para iterar a través de los elementos de la lista
-
 numbers = [3, 5, 1, 7, 3, 9]
-
 num = [n**2 for n in numbers]
 
 print(num)
 ```
 
-**Salida:**
+**Salida**:
 
 Ahora compilamos el código anterior en Python y, después de una compilación exitosa, lo ejecutamos. Entonces, la salida es la siguiente:
 
@@ -85,23 +81,23 @@ Ahora compilamos el código anterior en Python y, después de una compilación e
 
 Hay muchas ventajas o beneficios de utilizar la comprensión de listas en Python. Las ventajas son las siguientes:
 
-**1. Loops y maps:**
+**1. Loops y maps**:
 
 Los bucles y los mapas se consideran típicamente más "Pythonic" que la comprensión de listas. Pero en lugar de aceptar esa opinión como verdad absoluta, vale la pena considerar las ventajas de utilizar la comprensión de listas en Python en comparación con las alternativas. Aprenderemos sobre un par de casos en los que las alternativas son opciones preferibles más adelante.
 
-**2. Una sola herramienta para múltiples usos:**
+**2. Una sola herramienta para múltiples usos**:
 
 Una de las ventajas esenciales de utilizar la comprensión de listas en Python es que es una sola herramienta que se puede utilizar en diversas situaciones. No necesitamos adoptar un enfoque nuevo para cada caso. La comprensión de listas se puede aprovechar tanto para el mapeo o filtrado como para la generación básica de listas.
 
-**3. No depende de parámetros apropiados:**
+**3. No depende de parámetros apropiados**:
 
 La comprensión de listas se considera "Pythonic", ya que Python enfatiza herramientas simples y efectivas que se pueden utilizar en muchas situaciones. Como beneficio adicional, no tendremos que recordar el orden adecuado de los parámetros al usar la comprensión de listas en Python, como lo haríamos al llamar a `map()`.
 
-**4. Fácil de usar:**
+**4. Fácil de usar**:
 
 La comprensión de listas es más fácil de leer y entender que los bucles, ya que es más declarativa. Con los bucles, debemos centrarnos en cómo se construye exactamente la lista. Debemos crear manualmente una lista vacía, iterar sobre las entradas de la lista y agregar cada una al final de la lista. En cambio, al utilizar la comprensión de listas en Python, podemos centrarnos en lo que queremos poner en la lista y permitir que Python maneje la generación de la lista.
 
-**Código del programa:**
+**Ejemplo**:
 
 ```python
 # Importar el módulo para hacer un seguimiento del tiempo
@@ -133,7 +129,7 @@ end = time.time()
 print('Tiempo tomado por la comprensión de listas:', (end - start))
 ```
 
-**Salida:**
+**Salida**:
 
 Ahora compilamos el código anterior en Python y, después de una compilación exitosa, lo ejecutamos. Entonces, la salida es la siguiente:
 
@@ -142,13 +138,13 @@ Tiempo tomado por el bucle `for`: 7.005999803543091
 Tiempo tomado por la comprensión de listas: 2.822999954223633
 ```
 
-# Uso de la comprensión de listas para iterar a través de una cadena de caracteres
+## Uso de la Comprensión de Listas para Iterar a Través de una Cadena de Caracteres
 
 La comprensión de listas también se puede utilizar en el caso de cadenas de caracteres,
 
 ya que son iterables.
 
-**Código del programa:**
+**Ejemplo**:
 
 Ahora presentamos ejemplos de uso de la comprensión de listas en Python para iterar una cadena de caracteres dada en el código. El código es el siguiente:
 
@@ -158,17 +154,17 @@ letters = [alpha for alpha in 'javatpoint']
 print(letters)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 ['j', 'a', 'v', 'a', 't', 'p', 'o', 'i', 'n', 't']
 ```
 
-# Uso de condiciones en la comprensión de listas
+## Uso de Condiciones en la Comprensión de Listas
 
 Las declaraciones condicionales se pueden utilizar en la comprensión de listas para modificar listas existentes (u otras tuplas). Crearemos una lista con operadores matemáticos, números y un rango de valores.
 
-**Código del programa:**
+**Ejemplo**:
 
 ```python
 number_list = [num for num in range(30) if num % 2 != 0]
@@ -176,7 +172,7 @@ number_list = [num for num in range(30) if num % 2 != 0]
 print(number_list)
 ```
 
-**Salida:**
+**Salida**:
 
 Ahora compilamos el código anterior en Python y, después de una compilación exitosa, lo ejecutamos. Entonces, la salida es la siguiente:
 
@@ -184,9 +180,11 @@ Ahora compilamos el código anterior en Python y, después de una compilación e
 [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29]
 ```
 
-# Suma de elementos impares a la lista:
+## Suma de Elementos Impares a la Lista
 
 Aquí sumamos los elementos impares de la lista dada. Es un ejemplo de comprensión de listas en Python. El código es el siguiente:
+
+**Ejemplo**:
 
 ```python
 def Sum(n):
@@ -202,7 +200,7 @@ newList = [Sum(i) for i in List if i & 1]
 print(newList)
 ```
 
-**Salida:**
+**Salida**:
 
 Ahora compilamos el código anterior en Python y, después de una compilación exitosa, lo ejecutamos. Entonces, la salida es la siguiente:
 
@@ -210,14 +208,15 @@ Ahora compilamos el código anterior en Python y, después de una compilación e
 [11, 15, 10, 16, 6, 17, 10]
 ```
 
-# Comprensiones de listas anidadas
+## Comprensiones de Listas Anidadas
 
 Las comprensiones de listas anidadas son similares a los bucles `for` anidados, ya que son una comprensión de lista dentro de otra comprensión de lista. El programa que implementa el bucle anidado es el siguiente:
 
-**Código del programa:**
+**Ejemplo**:
 
 ```python
 nested_list = []
+
 for _ in range(3):
     # Agregar una sublista vacía dentro de la lista
     nested_list.append([])
@@ -227,7 +226,7 @@ for _ in range(3):
 print(nested_list)
 ```
 
-**Salida:**
+**Salida**:
 
 Ahora compilamos el código anterior en Python y, después de una compilación exitosa, lo ejecutamos. Entonces, la salida es la siguiente:
 
@@ -237,7 +236,7 @@ Ahora compilamos el código anterior en Python y, después de una compilación e
 
 El mismo resultado se puede lograr con menos líneas de código utilizando comprensiones de listas anidadas.
 
-**Código del programa:**
+**Ejemplo**:
 
 El código para la comprensión de listas anidadas es el siguiente:
 
@@ -248,7 +247,7 @@ nested_list = [[_ + __ for _ in range(5)] for __ in range(3)]
 print(nested_list)
 ```
 
-**Salida:**
+**Salida**:
 
 Ahora compilamos el código anterior en Python y, después de una compilación exitosa, lo ejecutamos. Entonces, la salida es la siguiente:
 
