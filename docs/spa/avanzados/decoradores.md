@@ -13,7 +13,7 @@ Antes de comprender el **decorador**, debemos conocer algunos conceptos importan
 
 Python tiene una característica muy interesante, que es que todo se trata como un objeto, incluso las clases o cualquier variable que definamos en Python también se asume como un objeto. Las funciones son objetos de primera clase en Python porque pueden hacer referencia, pasarse a una variable y devolverse desde otras funciones también. A continuación se muestra un ejemplo:
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 def func1(msg): # aquí creamos una función y pasamos el parámetro
@@ -24,7 +24,7 @@ func2 = func1 # aquí copiamos los datos de la función 1 en la función 2
 func2("Hola, bienvenido a la función") # aquí imprimimos los datos de la función 2
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Hola, bienvenido a la función
@@ -40,22 +40,25 @@ En el programa anterior, cuando ejecutamos el código, da la misma salida para a
 
 Python proporciona la capacidad de definir una función dentro de otra función. Este tipo de funciones se llaman funciones internas. Considera el siguiente ejemplo:
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 def func(): # aquí creamos una función y pasamos el parámetro
     print("Estamos en la primera función") # aquí imprimimos los datos de la función
+
     def func1(): # aquí creamos una función y pasamos el parámetro
         print("Esta es la primera función secundaria") # aquí imprimimos los datos de la función 1
+
     def func2(): # aquí creamos una función y pasamos el parámetro
         print("Esta es la segunda función secundaria") # aquí imprimimos los datos de la función # 2
+
     func1()
     func2()
 
 func()
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Estamos en la primera función
@@ -67,7 +70,7 @@ En el programa anterior, no importa cómo se declaren las funciones secundarias.
 
 Una función que acepta otra función como argumento también se llama **función de orden superior**.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 def add(x): # aquí creamos una función add y pasamos el parámetro
@@ -84,7 +87,7 @@ print(operator(sub, 10)) # aquí imprimimos la operación de sustracción con 10
 print(operator(add, 20)) # aquí imprimimos la operación de suma con 20
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 9
@@ -95,19 +98,20 @@ En el programa anterior, hemos pasado la función `sub()` y la función `add()` 
 
 Una función puede devolver otra función.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 def hello(): # aquí creamos una función llamada hello
     def hi(): # aquí creamos una función llamada hi
         print("Hola") # aquí imprimimos la salida de la función
+
     return hi # aquí devolvemos la salida de la función
 
 new = hello()
 new()
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Hola
@@ -119,7 +123,7 @@ En el programa anterior, la función `hi()` está anidada dentro de la función 
 
 Veamos un ejemplo para comprender la función decoradora con parámetros:
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 def divide(x, y): # aquí creamos una función y pasamos los parámetros
@@ -136,7 +140,7 @@ divide1 = outer_div(divide)
 divide1(2, 4)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 2.0
@@ -146,7 +150,7 @@ divide1(2, 4)
 
 En el programa anterior, hemos decorado `out_div()`, que es un poco voluminoso. En lugar de usar el método anterior, Python permite **usar el decorador de manera más fácil con el símbolo @**. A veces se llama sintaxis "pie”.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 def outer_div(func): # aquí creamos una función y pasamos el parámetro
@@ -162,7 +166,7 @@ def divide(x, y): # aquí creamos una función y pasamos los parámetros
     print(x / y)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 2.0
@@ -170,11 +174,9 @@ def divide(x, y): # aquí creamos una función y pasamos los parámetros
 
 ### Reutilización del Decorador
 
-También podemos
+También podemos reutilizar el decorador llamando de nuevo a esa función decoradora. Creemos un decorador en su propio módulo que se puede utilizar en muchas otras funciones. Creamos un archivo llamado `mod_decorator.py` con el siguiente código:
 
-reutilizar el decorador llamando de nuevo a esa función decoradora. Creemos un decorador en su propio módulo que se puede utilizar en muchas otras funciones. Creamos un archivo llamado `mod_decorator.py` con el siguiente código:
-
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 def do_twice(func): # aquí creamos una función y pasamos el parámetro
@@ -186,7 +188,7 @@ def do_twice(func): # aquí creamos una función y pasamos el parámetro
 
 Podemos importar mod_decorator.py en otro archivo.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 from decorator import do_twice
@@ -198,7 +200,7 @@ def say_hello():
 say_hello()
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Hola ahí
@@ -209,7 +211,7 @@ Hola ahí
 
 Queremos pasar algunos argumentos en la función. Hagámoslo en el siguiente código:
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 from decorator import do_twice
@@ -221,7 +223,7 @@ def display(name):
 display()
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 TypeError: display() missing 1 required positional argument: 'name'
@@ -229,19 +231,20 @@ TypeError: display() missing 1 required positional argument: 'name'
 
 Como se puede ver, la función no aceptó el argumento. Ejecutar este código genera un error. Podemos solucionar este error usando ***args** y ****kwargs** en la función interna del decorador. Modifiquemos **decorator.py** de la siguiente manera:
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 def do_twice(func):
     def wrapper_function(*args, **kwargs):
         func(*args, **kwargs)
         func(*args, **kwargs)
+
     return wrapper_function
 ```
 
 Ahora **wrapper_function()** puede aceptar cualquier número de argumentos y pasarlos a la función.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 from decorator import do_twice
@@ -253,7 +256,7 @@ def display(name):
 display("John")
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Hola John
@@ -270,12 +273,13 @@ from decorator import do_twice
 @do_twice
 def return_greeting(name):
     print("Hemos creado un saludo")
+
     return f"Hola {name}"
 
 hi_adam = return_greeting("Adam")
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Hemos creado un saludo
@@ -290,7 +294,7 @@ Entendamos los decoradores elegantes mediante el siguiente tema:
 
 Python proporciona dos formas de decorar una clase. En primer lugar, podemos decorar el método dentro de una clase; existen decoradores incorporados como **@classmethod, @staticmethod** y **@property** en Python. Los decoradores **@classmethod** y **@staticmethod** definen métodos dentro de una clase que no están conectados a ninguna otra instancia de la clase. El **@property** se utiliza generalmente para modificar los métodos get y set de los atributos de una clase. Entendámoslo mediante el siguiente ejemplo:
 
-**Ejemplo 1:**
+**Ejemplo 1**:
 
 **decorador @property** - Al usarlo, podemos utilizar la función de clase como un atributo. Considera el siguiente código:
 
@@ -305,12 +309,13 @@ class Student: # aquí creamos una clase llamada Estudiante
         return self.name + " obtuvo una calificación de " + self.grade
 
 stu = Student("John", "B")
+
 print("Nombre del estudiante:", stu.name)
 print("Calificación del estudiante:", stu.grade)
 print(stu.display)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Nombre del estudiante: John
@@ -318,11 +323,11 @@ Calificación del estudiante: B
 John obtuvo una calificación de B
 ```
 
-**Ejemplo 2:**
+**Ejemplo 2**:
 
 **decorador @staticmethod** - El **@staticmethod** se utiliza para definir un método estático en la clase. Se llama utilizando el nombre de la clase y también mediante una instancia de la clase.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 class Person: # aquí creamos una clase llamada Estudiante
@@ -335,7 +340,7 @@ per.hello()
 Person.hello()
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Hola Peter
@@ -350,7 +355,7 @@ Una clase singleton solo tiene una instancia. Hay muchos singletons en Python, c
 
 Podemos usar múltiples decoradores apilándolos uno encima del otro. Considera el siguiente ejemplo:
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 @function1
@@ -365,7 +370,7 @@ En el código anterior, hemos utilizado el decorador anidado apilándolos uno en
 
 Siempre es útil pasar argumentos en un decorador. El decorador puede ejecutarse varias veces según el valor dado del argumento. Consideremos el siguiente ejemplo:
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 import functools # aquí estamos importando functools a nuestro programa
@@ -386,7 +391,7 @@ def function1(name):
     print(f"{name}")
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 JavatPoint
@@ -401,13 +406,12 @@ En el ejemplo anterior, **@repeat** se refiere a un objeto de función que se pu
 El código anterior puede parecer complejo, pero es el patrón de decorador más comúnmente utilizado, donde hemos utilizado una definición adicional **def** que maneja los argumentos del decorador.
 
 > **Nota:** El decorador con argumento no se utiliza con frecuencia en la programación, pero proporciona flexibilidad. Se puede usar con o sin argumentos.
-> 
 
 ### Decoradores con Estado
 
 Los decoradores con estado se utilizan para realizar un seguimiento del estado del decorador. Consideremos el ejemplo en el que creamos un decorador que cuenta cuántas veces se ha llamado la función.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 import functools # aquí estamos importando functools a nuestro programa
@@ -429,7 +433,7 @@ say_hello()
 say_hello()
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Llamada 1 de 'say_hello'
@@ -446,7 +450,7 @@ Las clases son la mejor manera de mantener el estado. En esta sección, aprender
 
 Para hacer que una clase sea invocable, implementamos el método especial **call()**.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 import functools # aquí estamos importando functools a nuestro programa
@@ -462,16 +466,18 @@ class Count_Calls: # aquí estamos creando una clase para obtener el recuento de
         print(f"Llamada {self.num_calls} de {self.func.__name__!r}")
         return self.func(*args, **kwargs)
 
+
 @Count_Calls
 def say_hello(): # aquí estamos definiendo una función y pasando el parámetro
     print("Di Hola")
+
 
 say_hello()
 say_hello()
 say_hello()
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Llamada 1 de 'say_hello'
