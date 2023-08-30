@@ -9,11 +9,8 @@ Cada vez que seleccionas el comando correspondiente en el menú de Herramientas,
 ![https://static.javatpoint.com/python/images/taking-input-from-console-in-python.png](https://static.javatpoint.com/python/images/taking-input-from-console-in-python.png)
 
 Simplemente presiona la tecla Enter después de escribir tu comando en este campo para que se ejecute.
-
 Es necesario comprender los fundamentos de la consola de Python para programar en este lenguaje.
-
 Los tres símbolos de mayor que (>>>) sirven como el indicador predeterminado de la consola de Python.
-
 Solo después de ejecutar el primer comando, tenemos la opción de escribir el siguiente comando en la consola. Después del indicador, podemos ingresar comandos en Python en la Consola de Python.
 
 ## Aceptando Entrada Desde la Consola
@@ -22,7 +19,7 @@ El usuario ha ingresado los valores en la consola, y el programa utiliza esos va
 
 Utilizamos una función incorporada llamada input() para obtener la entrada del usuario.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Mostrar entrada
@@ -40,7 +37,7 @@ El siguiente código acepta dos entradas (entero/flotante) desde la consola y la
 
 La conversión de tipo es una técnica utilizada para cambiar los tipos de datos variables a un tipo de datos específico para que los usuarios puedan realizar una acción. Este artículo examinará varias técnicas de conversión de tipo.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Mostrar entrada
@@ -55,7 +52,7 @@ print(n1 + n2)
 
 El siguiente programa funcionará para convertir la entrada a un número de punto flotante.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Mostrar entrada
@@ -70,7 +67,7 @@ print(n1 + n2)
 
 Ya sea que la entrada sea un número de punto flotante o un entero, se puede convertir a una cadena. Para hacer la conversión, utilizamos la palabra clave str.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Mostrar entrada
