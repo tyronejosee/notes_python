@@ -2,10 +2,10 @@
 
 Los gestores de paquetes te permiten administrar las dependencias (código externo escrito por ti o por alguien más) que tu proyecto necesita para funcionar correctamente.
 
-**`PyPI`** y **`Pip`** son los más comunes, pero también hay algunas otras opciones disponibles:
+`PyPI` y `Pip` son los más comunes, pero también hay algunas otras opciones disponibles:
 
-- **[Poetry](https://python-poetry.org/)**: Gestiona dependencias mediante aislamiento.
-- **[PIPX](https://github.com/pypa/pipx)**: Despliegue de aplicaciones basado en aislamiento, de modo que no afecta el sistema o las bibliotecas PIP del usuario. Te permite probar herramientas individuales de línea de comandos de Python sin afectar otras dependencias.
+- [Poetry](https://python-poetry.org/): Gestiona dependencias mediante aislamiento.
+- [PIPX](https://github.com/pypa/pipx): Despliegue de aplicaciones basado en aislamiento, de modo que no afecta el sistema o las bibliotecas PIP del usuario. Te permite probar herramientas individuales de línea de comandos de Python sin afectar otras dependencias.
 
 ## PyPI
 
@@ -13,9 +13,9 @@ PyPI, pronunciado típicamente como "pai-pi-ai", es un repositorio que contiene 
 
 Visita los siguientes recursos para obtener más información:
 
-- **[Sitio web oficial de PyPI](https://pypi.org/)**
-- **[Comenzando con Pip y PyPI en Python](https://www.youtube.com/watch?v=bPSfNKvhooA)**
-- **[Cómo publicar un paquete Python de código abierto en PyPI](https://realpython.com/pypi-publish-python-package/)**
+- [Sitio web oficial de PyPI](https://pypi.org/)
+- [Comenzando con Pip y PyPI en Python](https://www.youtube.com/watch?v=bPSfNKvhooA)
+- [Cómo publicar un paquete Python de código abierto en PyPI](https://realpython.com/pypi-publish-python-package/)
 
 ## Pip
 
@@ -23,8 +23,8 @@ El gestor de paquetes estándar para Python es pip. Te permite instalar y admini
 
 Visita los siguientes recursos para obtener más información:
 
-- **[Usar pip de Python para administrar las dependencias de tus proyectos](https://realpython.com/what-is-pip/)**
-- **[Introducción a PIP de Python](https://www.w3schools.com/python/python_pip.asp)**
+- [Usar pip de Python para administrar las dependencias de tus proyectos](https://realpython.com/what-is-pip/)
+- [Introducción a PIP de Python](https://www.w3schools.com/python/python_pip.asp)
 
 ## Conda
 
@@ -34,4 +34,4 @@ Conda, como gestor de paquetes, te ayuda a encontrar e instalar paquetes. Si nec
 
 Visita los siguientes recursos para obtener más información:
 
-- **[Documentación de Conda](https://docs.conda.io/en/latest/)**
+- [Documentación de Conda](https://docs.conda.io/en/latest/)
