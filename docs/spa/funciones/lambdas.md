@@ -2,11 +2,11 @@
 
 En este tutorial, estudiaremos las funciones anónimas, comúnmente llamadas funciones lambda. Entenderemos qué son, cómo ejecutarlas y su sintaxis.
 
-## ¿Qué son las Funciones Lambda en Python?
+## ¿Qué son las Funciones Lambda?
 
 Las funciones lambda en Python son funciones anónimas, lo que implica que no tienen un nombre. La palabra clave `def` se necesita para crear una función típica en Python, como ya sabemos. También podemos usar la palabra clave `lambda` en Python para definir una función sin nombre.
 
-**Sintaxis:**
+**Sintaxis**:
 
 ```python
 lambda argumentos: expresión
@@ -16,11 +16,11 @@ Esta función acepta cualquier cantidad de argumentos pero solo evalúa y devuel
 
 Las funciones lambda se pueden utilizar siempre que se necesiten argumentos de función. Además de otras formas de formulaciones en funciones, tiene una variedad de aplicaciones en ciertos dominios de codificación. Es importante recordar que, según la sintaxis, las funciones lambda están limitadas a una sola instrucción.
 
-### Ejemplo de Función Lambda en Python
+### Ejemplo de Función Lambda
 
 A continuación se muestra un ejemplo de una función lambda que suma 4 al número de entrada.
 
-**Código:**
+**Ejemplo**:
 
 ```python
 # Código para demostrar cómo podemos usar una función lambda
@@ -28,7 +28,7 @@ add = lambda num: num + 4
 print(add(6))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 10
@@ -38,7 +38,7 @@ La función lambda es `lambda num: num+4` en el programa dado. El parámetro es 
 
 No hay una etiqueta para esta función. Genera un objeto de función asociado con el identificador `add`. Ahora podemos referirnos a ella como una función estándar. La declaración lambda, `lambda num: num+4`, es casi lo mismo que:
 
-**Código:**
+**Ejemplo**:
 
 ```python
 def add(num):
@@ -46,7 +46,7 @@ def add(num):
 print(add(6))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 10
@@ -56,7 +56,7 @@ print(add(6))
 
 Echemos un vistazo a este ejemplo para ver cómo una función definida de manera convencional con `def` difiere de una función definida usando la palabra clave `lambda`. Este programa calcula el recíproco de un número dado:
 
-**Código:**
+**Ejemplo**:
 
 ```python
 # Código de Python para mostrar el recíproco del número dado para resaltar la diferencia entre def() y lambda().
@@ -72,7 +72,7 @@ print("Palabra clave def:", reciprocal(6))
 print("Palabra clave lambda:", lambda_reciprocal(6))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Palabra clave def: 0.16666666666666666
@@ -93,7 +93,7 @@ La función se llama para cada elemento de la lista y se devuelve un nuevo itera
 
 Aquí hay una ilustración simple del uso del método `filter()` para devolver solo los números impares de una lista.
 
-**Código:**
+**Ejemplo**:
 
 ```python
 # Código para filtrar números impares de una lista dada
@@ -104,7 +104,7 @@ lista_impares = list(filter(lambda num: num % 2 != 0, lista_))
 print(lista_impares)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 [55, 75, 13, 63]
@@ -118,7 +118,7 @@ La función se ejecuta para todos los elementos de la lista, y se genera una nue
 
 En este ejemplo, se utiliza el método `map()` para elevar al cuadrado todas las entradas de una lista.
 
-**Código:**
+**Ejemplo**:
 
 ```python
 # Código para calcular el cuadrado de cada número de una lista utilizando la función "map()"
@@ -129,7 +129,7 @@ lista_cuadrados = list(map(lambda num: num ** 2, lista_numeros))
 print(lista_cuadrados)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 [4, 16, 25, 1, 9, 49, 64, 81, 100]
@@ -139,7 +139,7 @@ print(lista_cuadrados)
 
 Aplicaremos la función lambda combinada con la comprensión de listas y la palabra clave lambda con un bucle `for` en este ejemplo. Intentaremos imprimir el cuadrado de los números en el rango del 0 al 11.
 
-**Código:**
+**Ejemplo**:
 
 ```python
 # Código para calcular el cuadrado de cada número de una lista utilizando la comprensión de listas
@@ -149,7 +149,7 @@ for square in cuadrados:
     print(square(), end=" ")
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 0 1 4 9 16 25 36 49 64 81 100
@@ -159,7 +159,7 @@ for square in cuadrados:
 
 Utilizaremos la función lambda con el bloque if-else.
 
-**Código:**
+**Ejemplo**:
 
 ```python
 # Código para usar la función lambda con if-else
@@ -168,7 +168,7 @@ Minimo = lambda x, y: x if (x < y) else y
 print(Minimo(35, 74))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 35
@@ -178,7 +178,7 @@ print(Minimo(35, 74))
 
 No se permiten múltiples expresiones en las funciones lambda, pero podemos construir 2 o más funciones lambda y luego llamar a la segunda expresión lambda como argumento de la primera. Veamos cómo usar lambda para encontrar el tercer elemento máximo.
 
-**Código:**
+**Ejemplo**:
 
 ```python
 # Código para imprimir el tercer número máximo de la lista dada utilizando la función lambda
@@ -194,7 +194,7 @@ resultado = tercer_mayor(mi_lista, ordenar_lista)
 print(resultado)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 [6, 54, 5]
