@@ -6,11 +6,10 @@ En este tutorial, aprenderemos sobre el decorador property o propiedad en Python
 
 Lo entenderemos con un ejemplo: Supongamos que tenemos una clase Empleado que tiene tres propiedades: **nombre, apellido** y **nombre_del_departamento**. También tenemos otra función **email()** que genera una dirección de correo electrónico para un empleado utilizando su nombre y **apellido**. Veamos el siguiente código.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 class Estudiante:
-
     def __init__(self, nombre, apellido, nombre_completo):
         self.nombre = nombre
         self.apellido = apellido
@@ -32,7 +31,7 @@ print("Nombre del departamento es:", obj.nombre_del_departamento)
 print(obj.email())
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Nombre es: Bruce
@@ -54,7 +53,7 @@ print(obj.email())
 
 Cambiando el **nombre** a Natasha e imprimiendo **nombre_del_departamento** y **email** nos dará la siguiente salida.
 
-**Salida:**
+**Salida**:
 
 ```bash
 Nombre del departamento es: Bruce Banner
@@ -63,7 +62,7 @@ Natasha.Banner@avenger.com
 
 Podemos ver que el nombre ha cambiado y el correo electrónico cambia automáticamente. Sin embargo, **nombre_del_departamento** no cambia a pesar de usar el atributo **nombre** porque **email()** es una función llamada cuando queremos que se devuelva el correo electrónico, mientras que **nombre** se establece en el momento de la inicialización del objeto. Podemos resolver este problema creando otra función para **nombre_del_departamento** que creamos para **email()**.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 class Empleado:
@@ -94,7 +93,7 @@ print(obj.nombre_del_departamento())
 print(obj.email())
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Nombre es: Bruce
@@ -112,11 +111,10 @@ Obtenemos **nombre_del_departamento** cambiado y el correo electrónico actualiz
 
 El decorador de propiedad devuelve los atributos de propiedad de una clase a partir del getter y el setter declarados y los elimina como parámetros. Usaremos el decorador @property para resolver este problema. Veamos el ejemplo anterior utilizando el decorador @property.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 class Empleado:
-
     def __init__(self, nombre, apellido):
         self.nombre = nombre
         self.apellido = apellido
@@ -144,7 +142,7 @@ print("Nombre del departamento es:", obj.nombre_del_departamento)
 print("Correo electrónico es:", obj.email())
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Nombre es: Bruce
@@ -156,7 +154,7 @@ Nombre del departamento es: Natasha Banner
 Correo electrónico es: Natasha.Banner@avenger.com
 ```
 
-**Explicación:**
+**Explicación**:
 
 En el código anterior, se utiliza el decorador @property en la función **nombre_del_departamento**, y ahora esta función se convierte en un atributo y también puede funcionar como un getter debido al decorador @property.
 
@@ -166,11 +164,10 @@ La función a la que se aplica el decorador @property se conoce como el getter. 
 
 Como su nombre sugiere, el método setter establece el valor de los atributos y el método deleter elimina los atributos de la memoria. Implementemos un método setter y getter para el atributo **nombre_del_departamento**.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 class Estudiante:
-
     def __init__(self, nombre, edad):
         self.nombre = nombre
         self._edad = edad
@@ -219,7 +216,7 @@ s1.nombre = ''
 print(s1.nombre)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 21
@@ -233,15 +230,14 @@ Traceback (most recent call last):
 ValueError: Por favor, ingrese una cadena válida
 ```
 
-**Explicación:**
+**Explicación**:
 
 En el código anterior, hemos creado la clase **Estudiante** donde hemos pasado **nombre** y **edad** en el constructor. Primero, creamos el método **edad()** que aplica el decorador @property; este obtendrá la edad y la devolverá. Luego creamos el método setter para **edad** donde verificamos si el usuario ingresó un valor negativo y si es así, lanzamos un error. Luego creamos el método deleter para **edad**. Lo mismo hemos hecho con los atributos **nombre**. En el método setter, verificamos si el usuario ingresa el nombre como una cadena vacía, lanzamos un error; de lo contrario, establecemos el nombre dado.
 
-**Ejemplo 2:**
+**Ejemplo 2**:
 
 ```python
 class Empleado:
-
     def __init__(self, nombre, apellido):
         self.nombre = nombre
         self.apellido = apellido
@@ -289,7 +285,7 @@ print('Nuevo nombre completo de obj es:', obj.nombre_del_departamento)
 del obj.nombre_del_departamento
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Nombre completo es: Steve Rogers
@@ -306,13 +302,13 @@ En el código anterior, hemos creado el getter, setter y deleter utilizando el d
 
 Podemos usar la función **property()** para crear getters, setters y deleters en lugar del decorador @property. La sintaxis es la siguiente:
 
-**Sintaxis:**
+**Sintaxis**:
 
 ```python
 property(fget=None, fset=None, fdel=None, doc)
 ```
 
-**Parámetros:**
+**Parámetros**:
 
 - **fget() -** Se usa para obtener el valor del atributo, similar a los getters.
 - **fset() -** Se usa para establecer el valor del atributo, similar a los setters.
@@ -323,11 +319,10 @@ La función retorna un atributo de propiedad a partir del getter, setter y delet
 
 Veamos el siguiente ejemplo.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 class Empleado:
-
     def __init__(self, nombre, apellido):
         self.nombre = nombre
         self.apellido = apellido
@@ -377,7 +372,7 @@ print('Nuevo nombre completo de obj es:', obj.nombre_completo)
 del obj.nombre_completo
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Nombre completo es: Nick Fury
@@ -394,14 +389,6 @@ También podemos implementar estos métodos usando una sola línea de código.
 
 ## Consejos Importantes
 
-No necesitamos crear los tres métodos para cada
-
-propiedad en el código. Podemos definir propiedades de solo lectura incluyendo solo un método getter. También podemos evitar el método deleter y usar solo los métodos getter y setter. Podemos evitar el método setter si queremos establecer el atributo cuando se crea la instancia o si debe modificarse dentro de la clase.
+No necesitamos crear los tres métodos para cada propiedad en el código. Podemos definir propiedades de solo lectura incluyendo solo un método getter. También podemos evitar el método deleter y usar solo los métodos getter y setter. Podemos evitar el método setter si queremos establecer el atributo cuando se crea la instancia o si debe modificarse dentro de la clase.
 
 Los usuarios son libres de elegir cualquier método según su contexto de trabajo.
-
-## Conclusión
-
-Este tutorial ha cubierto los decoradores de propiedad y sus ejemplos en detalle. El método **property()** ayuda a crear métodos getter, setter y deleter. Podemos definir las propiedades con la sintaxis del decorador @property, que es más compatible y sencilla. Se considera la forma "pythonic" de definir los métodos getter, setter y deleter.
-
-Usando las propiedades, podemos modificar la implementación interna de la clase sin afectarla. Los métodos getter, setter y deleter ayudan a evitar el acceso o modificación directa de los datos.
