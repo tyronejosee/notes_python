@@ -4,7 +4,7 @@
 
 `break` se utiliza comúnmente en casos en los que necesitamos interrumpir el bucle para una condición dada. La sintaxis de la sentencia `break` en Python es la siguiente:
 
-**Sintaxis:**
+**Sintaxis**:
 
 ```python
 # Declaración del bucle
@@ -13,7 +13,7 @@ break
 
 ## Ejemplo 1: Sentencia break con bucle for
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Ejemplo de sentencia break
@@ -30,7 +30,7 @@ for item in mi_lista:
 print("Encontrado en la posición", contador)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Elemento encontrado
@@ -41,7 +41,7 @@ En el ejemplo anterior, se itera una lista usando un bucle `for`. Cuando se encu
 
 ## Ejemplo 2: Salir del bucle prematuramente
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Ejemplo de sentencia break
@@ -55,7 +55,7 @@ for char in mi_str:
     print(char)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 p
@@ -68,7 +68,7 @@ Cuando se encuentra el carácter en la lista de caracteres, se ejecuta `break` y
 
 ## Ejemplo 3: Sentencia break con bucle while
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Ejemplo de sentencia break
@@ -84,7 +84,7 @@ while True:
 print("Salimos del bucle while")
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 0 1 2 3 4 5 6 7 8 9 Salimos del bucle while
@@ -94,7 +94,7 @@ Es lo mismo que los programas anteriores. El bucle `while` se inicializa como ve
 
 ## Ejemplo 4: Sentencia break con bucles anidados
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Ejemplo de sentencia break
@@ -119,7 +119,7 @@ while True:
 print("Programa finalizado exitosamente.")
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 2 X 1 = 2
