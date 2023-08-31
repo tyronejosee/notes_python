@@ -2,12 +2,12 @@
 
 Un iterador en Python es un objeto que se utiliza para recorrer objetos iterables como listas, tuplas, diccionarios y conjuntos. El objeto iterador en Python se inicializa utilizando el método `iter()` y se utiliza el método `next()` para la iteración.
 
-1. **iter():** El método iter() se llama para la inicialización de un iterador. Esto devuelve un objeto iterador.
-2. **next():** El método next devuelve el siguiente valor del objeto iterable. Cuando utilizamos un bucle for para recorrer cualquier objeto iterable, internamente se utiliza el método iter() para obtener un objeto iterador, que luego utiliza el método next() para iterar sobre los elementos. Este método genera una excepción de StopIteration para señalar el final de la iteración.
+1. **iter()**: El método iter() se llama para la inicialización de un iterador. Esto devuelve un objeto iterador.
+2. **next()**: El método next devuelve el siguiente valor del objeto iterable. Cuando utilizamos un bucle for para recorrer cualquier objeto iterable, internamente se utiliza el método iter() para obtener un objeto iterador, que luego utiliza el método next() para iterar sobre los elementos. Este método genera una excepción de StopIteration para señalar el final de la iteración.
 
-## Ejemplo de iter() en Python
+## Ejemplo de iter()
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 cadena = "GFG"
@@ -19,7 +19,7 @@ print(next(iterador_ch))
 print(next(iterador_ch))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 G
@@ -31,7 +31,7 @@ G
 
 A continuación se muestra un sencillo iterador en Python que crea un tipo de iterador que recorre desde 10 hasta un límite dado. Por ejemplo, si el límite es 15, imprimirá 10 11 12 13 14 15. Y si el límite es 5, no imprimirá nada.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Un sencillo programa en Python para demostrar
@@ -41,7 +41,6 @@ A continuación se muestra un sencillo iterador en Python que crea un tipo de it
 # Un tipo iterable definido por el usuario
 
 class Test:
-
     # Constructor
     def __init__(self, limite):
         self.limit = limite
@@ -75,7 +74,7 @@ for i in Test(5):
     print(i)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 10
@@ -88,36 +87,32 @@ for i in Test(5):
 
 ### Iterando sobre iterables incorporados utilizando el método iter()
 
-En las siguientes iteraciones, el estado de la iteración y la variable del iterador se gestionan internamente (no podemos verlo) utilizando un objeto iterador para recorrer los iterables incorporados como **[list](https://www.geeksforgeeks.org/python-lists/)**, **[tuple](https://www.geeksforgeeks.org/python-tuples/)**, **[dict](https://www.geeksforgeeks.org/python-dictionary/)**, etc.
+En las siguientes iteraciones, el estado de la iteración y la variable del iterador se gestionan internamente (no podemos verlo) utilizando un objeto iterador para recorrer los iterables incorporados como list, tuple, dict, etc.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Ejemplos de iteradores incorporados
 
 # Iterando sobre una lista
-
 print("Iteración de lista")
 l = ["geeks", "for", "geeks"]
 for i in l:
     print(i)
 
 # Iterando sobre una tupla (inmutable)
-
 print("\\nIteración de tupla")
 t = ("geeks", "for", "geeks")
 for i in t:
     print(i)
 
 # Iterando sobre una cadena
-
 print("\\nIteración de cadena")
 s = "Geeks"
 for i in s:
     print(i)
 
 # Iterando sobre un diccionario
-
 print("\\nIteración de diccionario")
 d = dict()
 d['xyz'] = 123
@@ -126,7 +121,7 @@ for i in d:
     print("%s %d" % (i, d[i]))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Iteración de lista
@@ -155,13 +150,13 @@ abc 345
 
 Los objetos iterables y los objetos iteradores en Python son diferentes. La principal diferencia entre ellos es que un objeto iterable en Python no puede guardar el estado de la iteración, mientras que los iteradores sí pueden guardar el estado de la iteración actual.
 
-**Nota:** Cada iterador también es un objeto iterable, pero no todo objeto iterable es un iterador en Python.
+**Nota**: Cada iterador también es un objeto iterable, pero no todo objeto iterable es un iterador en Python.
 
 ### Iterando sobre un Objeto Iterable
 
 Iterando sobre cada elemento del objeto iterable.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 tupla = ('a', 'b', 'c', 'd', 'e')
@@ -170,7 +165,7 @@ for elemento in tupla:
     print(elemento)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 a
@@ -182,7 +177,7 @@ e
 
 ### Iterando sobre un Iterador
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 tupla = ('a', 'b', 'c', 'd', 'e')
@@ -208,7 +203,7 @@ print(next(tup_iter))
 print(next(tup_iter))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Dentro del bucle:
@@ -220,17 +215,16 @@ d
 e
 ```
 
-### Obteniendo un error de StopIteration al utilizar un iterador
+### Obteniendo un Error de StopIteration al Utilizar un Iterador
 
 En Python, los objetos iterables se pueden iterar varias veces, pero los iteradores generan un error de StopIteration cuando ya se han iterado todos los elementos.
 
 En este ejemplo, estamos intentando obtener el siguiente elemento del iterador después de completar el bucle for. Dado que el iterador ya está agotado, se genera una excepción StopIteration. En cambio, utilizando un objeto iterable, podemos iterar varias veces utilizando un bucle for o podemos obtener elementos utilizando la indexación.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 iterable = (1, 2, 3, 4)
-
 iterator_obj = iter(iterable)
 
 print("Bucle iterable 1:")
@@ -258,7 +252,7 @@ print("\\nIterador: Fuera del bucle")
 print(next(iterator_obj))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Bucle iterable 1:
