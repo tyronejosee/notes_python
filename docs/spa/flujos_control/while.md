@@ -2,18 +2,17 @@
 
 En la programación, los bucles están diseñados para ejecutar un bloque de código especificado repetidamente. Aprenderemos cómo construir un bucle "while" en Python, la sintaxis de un bucle "while", los controles de bucle como "break" y "continue", y otros ejercicios en este tutorial.
 
-# Introducción a los Bucles "While" en Python
+## Introducción a los Bucles "while"
 
 La iteración de un bloque de código en el bucle "while" de Python se ejecuta siempre que la condición dada, es decir, la expresión_condicional, sea verdadera.
 
 Si no sabemos cuántas veces ejecutaremos la iteración de antemano, podemos escribir un bucle indefinido.
 
-**Sintaxis del Bucle "While" en Python**
+**Sintaxis**:
 
 ```python
 while expresión_condicional:
-
-Bloque de código del "while"
+    Bloque de código del "while"
 ```
 
 La condición dada, es decir, la expresión_condicional, se evalúa inicialmente en el bucle "while" de Python. Luego, si la expresión condicional devuelve un valor booleano Verdadero, se ejecutan las declaraciones del bucle "while". La expresión condicional se verifica nuevamente cuando se ejecuta por completo el bloque de código. Este procedimiento se repite hasta que la expresión condicional devuelva el valor booleano Falso.
@@ -22,11 +21,11 @@ La condición dada, es decir, la expresión_condicional, se evalúa inicialmente
 - El bloque de código comienza cuando una declaración está sangrada y termina con la primera declaración sin sangría.
 - Cualquier número distinto de cero en Python se interpreta como booleano Verdadero. Falso se interpreta como None y 0.
 
-# Ejemplo de Bucle "While" en Python
+## Ejemplo de Bucle "while"
 
 Aquí sumaremos los cuadrados de los primeros 15 números naturales usando un bucle "while".
 
-**Código**
+**Ejemplo**:
 
 ```python
 # Programa en Python de ejemplo para mostrar el uso del bucle "while"
@@ -36,23 +35,18 @@ num = 15
 # inicializando la suma y un contador para la iteración
 
 suma = 0
-
 c = 1
 
 while c <= num:  # especificando la condición del bucle
-
     # comenzando el bloque de código
-
     suma = c**2 + suma
-
     c = c + 1  # incrementando el contador
 
 # imprimir la suma final
-
 print("La suma de los cuadrados es", suma)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 La suma de los cuadrados es 1240
@@ -64,24 +58,22 @@ A continuación, un punto crucial (que a menudo se olvida). Debemos incrementar 
 
 Finalmente, imprimimos el resultado usando la declaración print.
 
-# Ejercicios de Bucle "While" en Python
+## Ejercicios de Bucle "while"
 
-### Números Primos y Bucle "While" en Python
+### Números Primos y Bucle "While"
 
 Usando un bucle "while", construiremos un programa en Python para verificar si el entero dado es un número primo o no.
 
-**Código**
+**Ejemplo**:
 
 ```python
 num = [34, 12, 54, 23, 75, 34, 11]
 
 def numero_primo(numero):
-
     condicion = 0
     iteracion = 2
 
     while iteracion <= numero / 2:
-
         if numero % iteracion == 0:
             condicion = 1
             break
@@ -97,7 +89,7 @@ for i in num:
     numero_primo(i)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 34 no es un número PRIMO
@@ -109,11 +101,11 @@ for i in num:
 11 es un número PRIMO
 ```
 
-### Tabla de Multiplicar usando el Bucle "While"
+### Tabla de Multiplicar Usando el Bucle "while"
 
 En este ejemplo, usaremos el bucle "while" para imprimir la tabla de multiplicar de un número dado.
 
-**Código**
+**Ejemplo**:
 
 ```python
 num = 21
@@ -124,14 +116,12 @@ contador = 1
 print("La Tabla de Multiplicar de:", num)
 
 while contador <= 10:  # especificando la condición
-
     resultado = num * contador
     print(num, 'x', contador, '=', resultado)
-
     contador += 1  # expresión para incrementar el contador
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 La Tabla de Multiplicar de: 21
@@ -147,28 +137,24 @@ La Tabla de Multiplicar de: 21
 21 x 10 = 210
 ```
 
-### Bucle "While" en Python con una Lista
+### Bucle "While" con una Lista
 
 Usaremos un bucle "while" en Python para elevar al cuadrado cada número de una lista.
 
-**Código**
+**Ejemplo**:
 
 ```python
 # Programa en Python para elevar al cuadrado cada número de una lista
 
 # inicializando una lista
-
 lista = [3, 5, 1, 4, 6]
-
 cuadrados = []
 
 # programando un bucle "while"
-
 while lista:  # hasta que la lista no esté vacía, esta expresión dará verdadero (True), después falso (False)
     cuadrados.append((lista.pop())**2)
 
 # imprimir los cuadrados
-
 print(cuadrados)
 ```
 
@@ -180,13 +166,13 @@ print(cuadrados)
 
 En el ejemplo anterior, ejecutamos un bucle "while" sobre una lista dada de enteros que se ejecutará repetidamente siempre que se encuentre un elemento en la lista.
 
-# Bucle "While" con Múltiples Condiciones en Python
+## Bucle "While" con Múltiples Condiciones
 
 Necesitaremos utilizar operadores lógicos para combinar dos o más expresiones que especifican condiciones en un solo bucle "while". Esto instruye a Python a analizar colectivamente todas las expresiones dadas de condiciones.
 
 Podemos construir un bucle "while" con múltiples condiciones en este ejemplo. Hemos dado dos condiciones y la palabra clave "and", lo que significa que hasta que ambas condiciones den verdadero (True), el bucle ejecutará las declaraciones.
 
-**Código**
+**Ejemplo**:
 
 ```python
 num1 = 17
@@ -198,7 +184,7 @@ while num1 > 5 and num2 < -5:  # múltiples condiciones en un solo bucle "while"
     print((num1, num2))
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 (15, -9)
@@ -208,7 +194,7 @@ while num1 > 5 and num2 < -5:  # múltiples condiciones en un solo bucle "while"
 
 Veamos otro ejemplo de múltiples condiciones con el operador OR.
 
-**Código**
+**Ejemplo**:
 
 ```python
 num1 = 17
@@ -220,7 +206,7 @@ while num1 > 5 or num2 < -5:
     print((num1, num2))
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 (15, -9)
@@ -233,7 +219,7 @@ while num1 > 5 or num2 < -5:
 
 También podemos agrupar múltiples expresiones lógicas en el bucle "while", como se muestra en este ejemplo.
 
-**Código**
+**Ejemplo**:
 
 ```python
 num1 = 9
@@ -246,7 +232,7 @@ while (contador < num1 or contador < num2) and not contador >= valor_maximo:  # 
     contador += 1
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 Número de iteraciones: 0
@@ -255,7 +241,7 @@ Número de iteraciones: 2
 Número de iteraciones: 3
 ```
 
-# Bucle "While" de una Sola Declaración
+## Bucle "while" de una Sola Declaración
 
 Similar a la sintaxis de la declaración "if", si nuestra cláusula "while" consiste en una sola declaración, puede escribirse en la misma línea que la palabra clave "while".
 
@@ -269,15 +255,15 @@ contador = 1
 while contador: print('Bucles While en Python')
 ```
 
-# Declaraciones de Control de Bucle
+## Declaraciones de Control de Bucle
 
 Ahora discutiremos en detalle las declaraciones de control de bucle. Veremos un ejemplo de cada declaración de control.
 
-### Declaración "Continue"
+### Declaración "continue"
 
 Devuelve el control del intérprete de Python al inicio del bucle.
 
-**Código**
+**Ejemplo**:
 
 ```python
 # Programa en Python para mostrar cómo usar la declaración "continue" en el control de bucles
@@ -285,10 +271,8 @@ Devuelve el control del intérprete de Python al inicio del bucle.
 # Iniciando el bucle
 
 for caracter in "Bucles While":
-
     if caracter == "o" or caracter == "i" or caracter == "e":
         continue
-
     print('Letra actual:', caracter)
 ```
 
@@ -305,26 +289,23 @@ Letra actual: p
 Letra actual: s
 ```
 
-### Declaración "Break"
+### Declaración "break"
 
 Detiene la ejecución del bucle cuando se alcanza la declaración "break".
 
-**Código**
+**Ejemplo**:
 
 ```python
 # Programa en Python para mostrar cómo usar la declaración "break"
 
 # Iniciando el bucle
-
 for caracter in "Bucles Python":
-
     if caracter == 'n':
         break
-
     print('Letra actual:', caracter)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 Letra actual:  P
@@ -334,23 +315,22 @@ Letra actual:  h
 Letra actual:  o
 ```
 
-### Declaración "Pass"
+### Declaración "pass"
 
 Las declaraciones "pass" se utilizan para crear bucles vacíos. La declaración "pass" también se utiliza para clases, funciones y declaraciones de control vacías.
 
-**Código**
+**Ejemplo**:
 
 ```python
 # Programa en Python para mostrar cómo usar la declaración "pass"
 
 for caracter in "Bucles While":
-
     pass
 
 print('Última letra:', caracter)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 Última letra: e
