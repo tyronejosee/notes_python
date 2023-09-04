@@ -12,7 +12,7 @@ Supongamos que una clase es un prototipo de un edificio. Un edificio contiene to
 
 En Python, se puede crear una clase utilizando la palabra clave `class`, seguida del nombre de la clase. La sintaxis para crear una clase es la siguiente.
 
-**Sintaxis:**
+**Sintaxis**:
 
 ```python
 class NombreClase:
@@ -21,13 +21,10 @@ class NombreClase:
 
 En Python, debemos tener en cuenta que cada clase está asociada a una cadena de documentación a la que se puede acceder utilizando `<nombre-de-clase>.__doc__`. Una clase contiene un conjunto de declaraciones que incluye la definición de campos, constructor, funciones, etc.
 
-**Ejemplo:**
-
-**Código:**
+**Ejemplo**:
 
 ```python
 class Persona:
-
     def __init__(self, nombre, edad):
         # Este es el método constructor que se llama al crear un nuevo objeto Persona
         # Toma dos parámetros, nombre y edad, y los inicializa como atributos del objeto
@@ -45,18 +42,17 @@ Nombre y edad son las dos propiedades de la clase Persona. Además, tiene una fu
 
 Un objeto es una instancia particular de una clase con características y funciones únicas. Después de que se ha establecido una clase, se pueden crear objetos basados en ella. Se puede crear un objeto de una clase en Python utilizando el constructor de la clase. Los atributos del objeto se inicializan en el constructor, que es un procedimiento especial con el nombre `__init__`.
 
-**Sintaxis:**
+**Sintaxis**:
 
 ```python
 # Declarar un objeto de una clase
 nombre_objeto = Nombre_Clase(argumentos)
 ```
 
-**Código:**
+**Ejemplo**:
 
 ```python
 class Persona:
-
     def __init__(self, nombre, edad):
         self.nombre = nombre
         self.edad = edad
@@ -66,11 +62,10 @@ class Persona:
 
 # Crear una nueva instancia de la clase Persona y asignarla a la variable persona1
 persona1 = Persona("Ayan", 25)
-
 persona1.saludar()
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 "Hola, mi nombre es Ayan"
@@ -80,7 +75,7 @@ persona1.saludar()
 
 El parámetro self hace referencia a la instancia actual de la clase y accede a las variables de la clase. Podemos usar cualquier nombre en lugar de self, pero debe ser el primer parámetro de cualquier función que pertenezca a la clase.
 
-## Método **init**
+## Método init
 
 Para crear una instancia de una clase en Python, se llama a una función específica llamada `__init__`. Aunque se utiliza para establecer los atributos del objeto, a menudo se le llama constructor.
 
@@ -90,11 +85,10 @@ El argumento self es el único requerido por el método `__init__`. Este argumen
 
 Todas las instancias de una clase comparten variables de clase. Estas variables funcionan de forma independiente de cualquier método de clase y se pueden acceder utilizando el nombre de la clase. Aquí tienes un ejemplo:
 
-**Código:**
+**Ejemplo**:
 
 ```python
 class Persona:
-
     contador = 0  # Esta es una variable de clase
 
     def __init__(self, nombre, edad):
@@ -109,7 +103,7 @@ persona2 = Persona("Bobby", 30)
 print(Persona.contador)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 2
@@ -117,11 +111,10 @@ print(Persona.contador)
 
 En cambio, las variables de instancia son específicas de cada instancia de una clase. Se especifican utilizando el argumento self en el método `__init__`. Aquí tienes un ejemplo.
 
-**Código:**
+**Ejemplo**:
 
 ```python
 class Persona:
-
     def __init__(self, nombre, edad):
         self.nombre = nombre  # Esta es una variable de instancia
         self.edad = edad
@@ -133,7 +126,7 @@ print(persona1.nombre)
 print(persona2.edad)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Ayan
