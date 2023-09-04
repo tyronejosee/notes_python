@@ -8,7 +8,7 @@ En Python, una clase derivada puede heredar una clase base simplemente mencionan
 
 ![https://static.javatpoint.com/python/images/python-inheritance.png](https://static.javatpoint.com/python/images/python-inheritance.png)
 
-**Sintaxis:**
+**Sintaxis**:
 
 ```python
 class clase_derivada(clase_base):
@@ -17,7 +17,7 @@ class clase_derivada(clase_base):
 
 Una clase puede heredar múltiples clases mencionándolas todas dentro de los paréntesis. Considera la siguiente sintaxis.
 
-**Sintaxis:**
+**Sintaxis**:
 
 ```python
 class clase_derivada(clase_base_1, clase_base_2, ..., clase_base_n):
@@ -28,21 +28,24 @@ class clase_derivada(clase_base_1, clase_base_2, ..., clase_base_n):
 
 ```python
 class Animal:
+    
     def speak(self):
         print("Animal hablando")
 
-# La clase hija Perro hereda la clase base Animal
 
+# La clase hija Perro hereda la clase base Animal
 class Perro(Animal):
+
     def ladrar(self):
         print("El perro ladra")
+
 
 d = Perro()
 d.ladrar()
 d.speak()
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 El perro ladra
@@ -57,38 +60,47 @@ La herencia de múltiples niveles es posible en Python al igual que en otros len
 
 La sintaxis de la herencia de múltiples niveles se muestra a continuación.
 
-**Sintaxis:**
+**Sintaxis**:
 
 ```python
 class clase1:
     <bloque_de_código>
 
+
 class clase2(clase1):
     <bloque_de_código>
 
+
 class clase3(clase2):
     <bloque_de_código>
+
 
 .
 .
 ```
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 class Animal:
+
     def speak(self):
         print("Animal hablando")
 
+
 # La clase hija Perro hereda la clase base Animal
 class Perro(Animal):
+
     def ladrar(self):
         print("El perro ladra")
 
+
 # La clase hija PerroHijo hereda otra clase hija Perro
 class PerroHijo(Perro):
+
     def comer(self):
         print("Comiendo pan...")
+
 
 d = PerroHijo()
 d.ladrar()
@@ -96,7 +108,7 @@ d.speak()
 d.comer()
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 El perro ladra
@@ -112,42 +124,50 @@ Python nos proporciona la flexibilidad de heredar múltiples clases base en la c
 
 La sintaxis para realizar la herencia múltiple se muestra a continuación.
 
-**Sintaxis:**
+**Sintaxis**:
 
 ```python
 class Base1:
     <bloque_de_código>
 
+
 class Base2:
     <bloque_de_código>
 
-.
 
 .
-
 .
+.
+
 
 class BaseN:
     <bloque_de_código>
+
 
 class Derivada(Base1, Base2, ..., BaseN):
     <bloque_de_código>
 ```
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 class Calculo1:
+
     def suma(self, a, b):
         return a + b
 
+
 class Calculo2:
+
     def multiplicacion(self, a, b):
         return a * b
 
+
 class Derivada(Calculo1, Calculo2):
+
     def dividir(self, a, b):
         return a / b
+
 
 d = Derivada()
 print(d.suma(10, 20))
@@ -155,7 +175,7 @@ print(d.multiplicacion(10, 20))
 print(d.dividir(10, 20))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 30
@@ -167,22 +187,26 @@ print(d.dividir(10, 20))
 
 El método issubclass(sub, sup) se utiliza para verificar las relaciones entre las clases especificadas. Devuelve verdadero si la primera clase es una subclase de la segunda clase, y falso en caso contrario.
 
-Considera el siguiente ejemplo.
-
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 class Calculo1:
+
     def suma(self, a, b):
         return a + b
 
+
 class Calculo2:
+
     def multiplicacion(self, a, b):
         return a * b
 
+
 class Derivada(Calculo1, Calculo2):
+
     def dividir(self, a, b):
         return a / b
+
 
 d = Derivada()
 
@@ -190,7 +214,7 @@ print(issubclass(Derivada, Calculo2))
 print(issubclass(Calculo1, Calculo2))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 True
@@ -203,27 +227,30 @@ El método isinstance() se utiliza para verificar la relación entre los objetos
 
 Considera el siguiente ejemplo.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 class Calculo1:
     def suma(self, a, b):
         return a + b
 
+
 class Calculo2:
     def multiplicacion(self, a, b):
         return a * b
 
+
 class Derivada(Calculo1, Calculo2):
     def dividir(self, a, b):
         return a / b
+
 
 d = Derivada()
 
 print(isinstance(d, Derivada))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 True
@@ -233,21 +260,20 @@ True
 
 Podemos proporcionar una implementación específica del método de la clase padre en nuestra clase hija. Cuando se define el método de la clase padre en la clase hija con una implementación específica, se llama a este concepto anulación de métodos. Podemos necesitar realizar la anulación de métodos en el escenario en el que se necesita una definición diferente de un método de la clase padre en la clase hija.
 
-Considera el siguiente ejemplo para realizar la anulación de métodos en Python.
-
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 class Animal:
     def speak(self):
         print("Animal hablando")
 
+
 class Perro(Animal):
     def speak(self):
         print("El perro ladra
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 El perro ladra
@@ -261,15 +287,18 @@ class Banco:
     def obtener_tasa_interes(self):
         return 10
 
+
 class SBI(Banco):
 
     def obtener_tasa_interes(self):
         return 7
 
+
 class ICICI(Banco):
 
     def obtener_tasa_interes(self):
         return 8
+
 
 b1 = Banco()
 b2 = SBI()
@@ -280,7 +309,7 @@ print("Tasa de interés de SBI:", b2.obtener_tasa_interes())
 print("Tasa de interés de ICICI:", b3.obtener_tasa_interes())
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Tasa de interés del banco: 10
@@ -292,13 +321,10 @@ Tasa de interés de ICICI: 8
 
 La abstracción es un aspecto importante de la programación orientada a objetos. En Python, también podemos realizar ocultamiento de datos agregando el doble guion bajo (__) como prefijo al atributo que se desea ocultar. Después de esto, el atributo no será visible fuera de la clase a través del objeto.
 
-Considera el siguiente ejemplo.
-
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 class Empleado:
-
     __count = 0
 
     def __init__(self):
@@ -306,6 +332,7 @@ class Empleado:
 
     def mostrar(self):
         print("El número de empleados es", Empleado.__count)
+
 
 emp = Empleado()
 emp2 = Empleado()
@@ -316,7 +343,7 @@ finally:
     emp.mostrar()
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 El número de empleados es 2
