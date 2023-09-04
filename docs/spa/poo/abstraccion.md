@@ -16,10 +16,12 @@ En Python, se puede lograr la abstracción mediante el uso de clases abstractas 
 
 Una clase que consta de uno o más métodos abstractos se llama clase abstracta. Los métodos abstractos no contienen su implementación. Una clase abstracta puede ser heredada por la subclase y el método abstracto obtiene su definición en la subclase. Las clases de abstracción están destinadas a ser el diseño de otras clases. Una clase abstracta puede ser útil cuando estamos diseñando funciones grandes. Una clase abstracta también es útil para proporcionar la interfaz estándar para diferentes implementaciones de componentes. Python proporciona el módulo **abc** para usar la abstracción en el programa de Python. Veamos la siguiente sintaxis.
 
-**Sintaxis:**
+**Sintaxis**:
 
 ```python
 from abc import ABC
+
+
 class NombreClase(ABC):
 ```
 
@@ -33,34 +35,39 @@ Una clase base abstracta es la aplicación común de la interfaz para un conjunt
 
 A diferencia de otros lenguajes de alto nivel, Python no proporciona la clase abstracta en sí. Necesitamos importar el módulo **abc**, que proporciona la base para definir clases base abstractas (ABC). La ABC funciona decorando los métodos de la clase base como abstractos. Registra las clases concretas como la implementación de la base abstracta. Usamos el decorador **@abstractmethod** para definir un método abstracto o si no proporcionamos la definición del método, se convierte automáticamente en el método abstracto. Veamos el siguiente ejemplo.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Programa de Python que demuestra
-
 # El funcionamiento de la clase base abstracta
 from abc import ABC, abstractmethod
+
 
 class Car(ABC):
     @abstractmethod
     def mileage(self):
         pass
 
+
 class Tesla(Car):
     def mileage(self):
         print("El rendimiento es de 30 km/h")
+
 
 class Suzuki(Car):
     def mileage(self):
         print("El rendimiento es de 25 km/h")
 
+
 class Duster(Car):
     def mileage(self):
         print("El rendimiento es de 24 km/h")
 
+
 class Renault(Car):
     def mileage(self):
         print("El rendimiento es de 27 km/h")
+
 
 # Código del controlador
 t = Tesla()
@@ -76,7 +83,7 @@ d = Duster()
 d.mileage()
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 El rendimiento es de 30 km/h
@@ -85,40 +92,45 @@ El rendimiento es de 25 km/h
 El rendimiento es de 24 km/h
 ```
 
-**Explicación:**
+**Explicación**:
 
 En el código anterior, hemos importado el módulo **abc** para crear la clase base abstracta. Creamos la clase Car que hereda de la clase ABC y definimos un método abstracto llamado "mileage" (rendimiento). Luego, heredamos la clase base en tres subclases diferentes e implementamos el método abstracto de manera diferente. Creamos los objetos para llamar al método abstracto.
 
 Veamos otro ejemplo.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Programa de Python para definir
-
 # una clase abstracta
 from abc import ABC
+
 
 class Polygon(ABC):
     @abstractmethod
     def sides(self):
         pass
 
+
 class Triangle(Polygon):
     def sides(self):
         print("El triángulo tiene 3 lados")
+
 
 class Pentagon(Polygon):
     def sides(self):
         print("El pentágono tiene 5 lados")
 
+
 class Hexagon(Polygon):
     def sides(self):
         print("El hexágono tiene 6 lados")
 
+
 class Square(Polygon):
     def sides(self):
         print("El cuadrado tiene 4 lados")
+
 
 # Código del controlador
 t = Triangle()
@@ -134,7 +146,7 @@ k = Hexagon()
 k.sides()
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 El triángulo tiene 3 lados
@@ -143,7 +155,7 @@ El pentágono tiene 5 lados
 El hexágono tiene 6 lados
 ```
 
-**Explicación:**
+**Explicación**:
 
 En el código anterior, hemos definido la clase base abstracta llamada Polygon y también hemos definido el método abstracto. Esta clase base es heredada por varias subclases. Implementamos el método abstracto en cada subclase. Creamos el objeto de las subclases e invocamos el método **sides()**. Se pone en juego la implementación oculta del método **sides()** dentro de cada subclase. El método abstracto **sides()**, definido en la clase base abstracta, nunca se invoca.
 
