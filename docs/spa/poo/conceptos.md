@@ -1,4 +1,4 @@
-# Programación Orientada a Objetos
+# Programación Orientada a Objetos (POO)
 
 ## Conceptos
 
@@ -20,7 +20,7 @@ Los principales principios del sistema de programación orientada a objetos son 
 
 La clase se puede definir como una colección de objetos. Es una entidad lógica que tiene atributos y métodos específicos. Por ejemplo, si tienes una clase de empleados, debería contener un atributo y un método, como una dirección de correo electrónico, nombre, edad, salario, etc.
 
-**Sintaxis:**
+**Sintaxis**:
 
 ```python
 class NombreClase:
@@ -38,7 +38,7 @@ Todo en Python es un objeto y casi todo tiene atributos y métodos. Todas las fu
 
 Cuando definimos una clase, necesitamos crear un objeto para asignarle memoria. Considera el siguiente ejemplo.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 class Coche:
@@ -53,7 +53,7 @@ c1 = Coche("Toyota", 2016)
 c1.mostrar()
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Toyota 2016
