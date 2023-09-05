@@ -68,6 +68,10 @@ Para obtener un sólido entendimiento de este lenguaje, te invito a explorar det
 - [Lambda](docs/spa/funciones/lambdas.md)
 - [Modulos](docs/spa/funciones/modulos.md)
 
+## 🧭 Paradigmas
+
+- [Paradigmas](docs/spa/paradigmas/paradigmas.md)
+
 ## 🧭 Programación Orientada a Objetos (POO)
 
 - [Conceptos](docs/spa/poo/conceptos.md)
@@ -75,10 +79,6 @@ Para obtener un sólido entendimiento de este lenguaje, te invito a explorar det
 - [Constructor](docs/spa/poo/constructor.md)
 - [Herencia](docs/spa/poo/herencia.md)
 - [Abstracción](docs/spa/poo/abstraccion.md)
-
-## 🧭 Paradigmas
-
-- [Paradigmas](docs/spa/paradigmas/paradigmas.md)
 
 ## 🔬 Avanzados
 
