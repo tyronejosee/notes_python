@@ -1,11 +1,7 @@
 # Páginas
 
-- [Javatpoint](https://www.javatpoint.com/)
-- [W3schools](https://www.w3schools.com/)
-- [Roadmap](https://roadmap.sh/)
-- [GeeksforGeeks](https://www.geeksforgeeks.org/)
-- [Programiz](https://www.programiz.com/)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [ChatGPT](http://chat.openai.com/)
-- [Notion](https://www.notion.so/)
-- [Figma](https://www.figma.com/)
+- [Javatpoint](https://www.javatpoint.com/python-tutorial)
+- [W3schools](https://www.w3schools.com/python/default.asp)
+- [Roadmap](https://roadmap.sh/python)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/python-programming-language/?ref=ghm)
+- [Programiz](https://www.programiz.com/python-programming)
