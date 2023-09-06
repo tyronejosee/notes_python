@@ -10,7 +10,7 @@ En Python, las cadenas se pueden crear encerrando el carácter o la secuencia de
 
 Considera el siguiente ejemplo en Python para crear una cadena.
 
-**Sintaxis:**
+**Sintaxis**:
 
 ```python
 str = "Hola Python!"
@@ -44,7 +44,7 @@ docstrings'''
 print(str3)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Hola Python
@@ -58,9 +58,7 @@ docstrings
 
 Al igual que en otros lenguajes, la indexación de las cadenas de Python comienza desde 0. Por ejemplo, la cadena "HELLO" se indexa como se muestra en la siguiente figura.
 
-![https://static.javatpoint.com/python/images/strings-indexing-and-splitting.png](https://static.javatpoint.com/python/images/strings-indexing-and-splitting.png)
-
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 str = "HELLO"
@@ -75,7 +73,7 @@ print(str[4])
 print(str[6])
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 H
@@ -88,11 +86,9 @@ IndexError: string index out of range
 
 Como se muestra en Python, el operador de segmento [] se utiliza para acceder a los caracteres individuales de la cadena. Sin embargo, podemos usar el operador : (dos puntos) en Python para acceder a la subcadena de la cadena dada. Considera el siguiente ejemplo.
 
-![https://static.javatpoint.com/python/images/strings-indexing-and-splitting2.png](https://static.javatpoint.com/python/images/strings-indexing-and-splitting2.png)
-
 Aquí, debemos notar que el rango superior dado en el operador de segmento siempre es exclusivo, es decir, si se da str = 'HELLO', entonces str[1:3] incluirá siempre str[1] = 'E', str[2] = 'L' y nada más.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Cadena dada
@@ -114,7 +110,7 @@ print(str[:3])
 print(str[4:7])
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 JAVATPOINT
@@ -126,9 +122,7 @@ TPO
 
 Podemos hacer el corte negativo en la cadena; comienza desde el carácter más a la derecha, que se indica como -1. El segundo índice más a la derecha indica -2, y así sucesivamente. Considera la siguiente imagen.
 
-![https://static.javatpoint.com/python/images/strings-indexing-and-splitting3.png](https://static.javatpoint.com/python/images/strings-indexing-and-splitting3.png)
-
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 str = 'JAVATPOINT'
@@ -145,7 +139,7 @@ print(str[::-1])
 print(str[-12])
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 T
@@ -161,7 +155,7 @@ IndexError: string index out of range
 
 Actualizar el contenido de las cadenas es tan fácil como asignarlo a una nueva cadena. El objeto de cadena no admite la asignación de elementos, es decir, una cadena solo se puede reemplazar con una nueva cadena, ya que su contenido no se puede reemplazar parcialmente. Las cadenas son inmutables en Python.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 str = "HELLO"
@@ -171,7 +165,7 @@ str[0] = "h"
 print(str)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Traceback (most recent call last):
@@ -182,7 +176,7 @@ TypeError: 'str' object does not support item assignment
 
 Sin embargo, en el ejemplo 1, la cadena **str** puede asignarse completamente a un nuevo contenido como se especifica en el siguiente ejemplo.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 str = "HELLO"
@@ -194,7 +188,7 @@ str = "hello"
 print(str)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 HELLO
@@ -205,7 +199,7 @@ hello
 
 Como sabemos, las cadenas son inmutables. No podemos eliminar o eliminar caracteres de la cadena. Pero podemos eliminar toda la cadena usando la palabra clave **del**.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 str = "JAVATPOINT"
@@ -213,7 +207,7 @@ str = "JAVATPOINT"
 del str[1]
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 TypeError: el objeto 'str' no admite eliminación de elementos
@@ -221,7 +215,7 @@ TypeError: el objeto 'str' no admite eliminación de elementos
 
 Ahora, estamos eliminando toda la cadena.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 str1 = "JAVATPOINT"
@@ -231,7 +225,7 @@ del str1
 print(str1)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 NameError: el nombre 'str1' no está definido
@@ -250,7 +244,7 @@ NameError: el nombre 'str1' no está definido
 | r/R | Se utiliza para especificar una cadena sin procesar. Las cadenas sin procesar se usan en casos donde necesitamos imprimir el significado real de los caracteres de escape, como "C://python". Para definir una cadena como una cadena sin procesar, el carácter r o R va seguido de la cadena. |
 | % | Se utiliza para realizar el formateo de cadenas. Utiliza los especificadores de formato utilizados en programación C como %d o %f para mapear sus valores en Python. Discutiremos cómo se realiza el formateo en Python. |
 
-**Ejemplo:**
+**Ejemplo**:
 
 Considera el siguiente ejemplo para entender el uso real de los operadores de Python.
 
@@ -268,7 +262,7 @@ print(r'C://python37')  # imprime C://python37 tal y como está escrito
 print("La cadena str : %s" % (str))  # imprime La cadena str : Hola
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 HolaHolaHola
@@ -287,7 +281,7 @@ La cadena str : Hola
 
 Supongamos que necesitamos escribir el siguiente texto: "Ellos dijeron, 'Hola, ¿qué está pasando?'" - esta declaración puede ser escrita usando comillas simples o comillas dobles, pero generará un **SyntaxError** ya que contiene tanto comillas simples como comillas dobles.
 
-**Ejemplo:**
+**Ejemplo**:
 
 Consideremos el siguiente ejemplo para entender el uso real de los operadores de Python.
 
@@ -297,7 +291,7 @@ str = "Ellos dijeron, \\"Hola, ¿qué está pasando?\\""
 print(str)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 SyntaxError: sintaxis no válida
@@ -307,7 +301,7 @@ Podemos utilizar comillas triples para solucionar este problema, pero Python pro
 
 El símbolo de barra invertida (\) denota la secuencia de escape. La barra invertida puede ir seguida de un carácter especial y se interpreta de manera diferente. Las comillas simples dentro de la cadena deben ser escapadas. Podemos aplicar lo mismo a las comillas dobles.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # usando comillas triples
@@ -320,7 +314,7 @@ print('Ellos dijeron, "¿Qué está pasando?"')
 print("Ellos dijeron, \\"¿Qué está pasando?\\"")
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Ellos dijeron, "¿Qué hay?"
@@ -385,7 +379,7 @@ print("This is the \\n multiline quotes")
 print("This is \\x48\\x45\\x58 representation")
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 C:\\Users\\DEVANSH SHARMA\\Python32\\Lib
@@ -400,7 +394,7 @@ Podemos ignorar la secuencia de escape de la cadena dada utilizando una cadena c
 print(r"C:\\\\Users\\\\DEVANSH SHARMA\\\\Python32")
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 C:\\\\Users\\\\DEVANSH SHARMA\\\\Python32
@@ -424,7 +418,7 @@ print("{1} y {0} son los mejores jugadores".format("Virat", "Rohit"))
 print("{a}, {b}, {c}".format(a="James", b="Peter", c="Ricky"))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Devansh y Abhishek son los mejores amigos
@@ -436,7 +430,7 @@ James, Peter, Ricky
 
 Python nos permite utilizar los especificadores de formato utilizados en la instrucción printf de C. Los especificadores de formato en Python se tratan de la misma manera que en C. Sin embargo, Python proporciona un operador adicional %, que se utiliza como una interfaz entre los especificadores de formato y sus valores. En otras palabras, podemos decir que vincula los especificadores de formato a los valores.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 Integer = 10;
@@ -446,7 +440,7 @@ String = "Devansh"
 print("Hola, soy un entero... Mi valor es %d\\nHola, soy un flotante... Mi valor es %f\\nHola, soy una cadena... Mi valor es %s" % (Integer, Float, String))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Hola, soy un entero... Mi valor es 10
