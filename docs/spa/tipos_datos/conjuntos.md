@@ -8,7 +8,7 @@ A diferencia de otras colecciones en Python, los elementos del conjunto no tiene
 
 El conjunto se puede crear encerrando los elementos inmutables separados por comas entre llaves `{}`. Python también proporciona el método set(), que se puede utilizar para crear el conjunto mediante la secuencia pasada.
 
-**Ejemplo:** Usando llaves
+**Ejemplo**: Usando llaves
 
 ```python
 Dias = {"Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"}
@@ -21,7 +21,7 @@ for i in Dias:
     print(i)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 {'Viernes', 'Martes', 'Lunes', 'Sábado', 'Jueves', 'Domingo', 'Miércoles'}
@@ -36,7 +36,7 @@ Domingo
 Miércoles
 ```
 
-**Ejemplo:** Usando el método set()
+**Ejemplo**: Usando el método set()
 
 ```python
 Dias = set(["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"])
@@ -49,7 +49,7 @@ for i in Dias:
     print(i)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 {'Viernes', 'Miércoles', 'Jueves', 'Sábado', 'Lunes', 'Martes', 'Domingo'}
@@ -66,7 +66,7 @@ Domingo
 
 Puede contener cualquier tipo de elemento, como enteros, flotantes, tuplas, etc. Pero los elementos mutables (lista, diccionario, conjunto) no pueden ser miembros de un conjunto. Considera el siguiente ejemplo.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Creando un conjunto que tiene elementos inmutables
@@ -78,7 +78,7 @@ set2 = {1, 2, 3, ["Javatpoint", 4]}
 print(type(set2))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 <class 'set'>
@@ -97,7 +97,7 @@ En el código anterior, hemos creado dos conjuntos. El conjunto set1 tiene eleme
 
 Crear un conjunto vacío es un poco diferente porque las llaves {} vacías también se utilizan para crear un diccionario. Por lo tanto, Python proporciona el método set() que se utiliza sin argumentos para crear un conjunto vacío.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Las llaves {} vacías crearán un diccionario
@@ -109,7 +109,7 @@ set4 = set()
 print(type(set4))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 <class 'dict'>
@@ -123,7 +123,7 @@ set5 = {1, 2, 4, 4, 5, 8, 9, 9, 10}
 print("Conjunto con elementos únicos:", set5)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Conjunto con elementos únicos: {1, 2, 4, 5, 8, 9, 10}
@@ -135,7 +135,7 @@ En el código anterior, podemos ver que set5 contenía varios elementos duplicad
 
 Python proporciona el método add() y el método update() que se pueden utilizar para agregar elementos particulares al conjunto. El método add() se utiliza para agregar un solo elemento, mientras que el método update() se utiliza para agregar múltiples elementos al conjunto. Considera el siguiente ejemplo.
 
-**Ejemplo:** Usando el método add()
+**Ejemplo**: Usando el método add()
 
 ```python
 Meses = set(["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio"])
@@ -155,7 +155,7 @@ for i in Meses:
     print(i)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Imprimiendo el conjunto original ...
@@ -179,7 +179,7 @@ Enero
 
 Para agregar más de un elemento al conjunto, Python proporciona el método update(). Acepta un iterable como argumento.
 
-**Ejemplo:** Usando la función update()
+**Ejemplo**: Usando la función update()
 
 ```python
 Meses = set(["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio"])
@@ -194,7 +194,7 @@ print("\\nImprimiendo el conjunto modificado ...")
 print(Meses)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Imprimiendo el conjunto original ...
@@ -209,7 +209,7 @@ Imprimiendo el conjunto modificado ...
 
 Python proporciona los métodos **discard()** y **remove()** que se pueden utilizar para eliminar elementos del conjunto. La diferencia entre estas funciones es que si se utiliza la función **discard()** y el elemento no existe en el conjunto, el conjunto permanecerá sin cambios, mientras que el método **remove()** generará un error.
 
-**Ejemplo:** Usando el método discard()
+**Ejemplo**: Usando el método discard()
 
 ```python
 meses = set(["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio"])
@@ -229,7 +229,7 @@ for i in meses:
     print(i)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Imprimiendo el conjunto original ...
@@ -249,7 +249,7 @@ Junio
 
 Python también proporciona el método **remove()** para eliminar un elemento del conjunto. Considera el siguiente ejemplo para eliminar elementos utilizando el método **remove()**.
 
-**Ejemplo:** Usando la función remove()
+**Ejemplo**: Usando la función remove()
 
 ```python
 meses = set(["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio"])
@@ -265,7 +265,7 @@ print("\\nImprimiendo el conjunto modificado ...")
 print(meses)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Imprimiendo el conjunto original ...
@@ -281,6 +281,8 @@ También podemos usar el método **pop()** para eliminar un elemento del conjunt
 
 Considera el siguiente ejemplo para eliminar el elemento del conjunto utilizando el método **pop()**.
 
+**Ejemplo**:
+
 ```python
 meses = set(["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio"])
 
@@ -295,7 +297,7 @@ print("\\nImprimiendo el conjunto modificado ...")
 print(meses)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Imprimiendo el conjunto original ...
@@ -311,7 +313,7 @@ En el código anterior, el último elemento del conjunto **meses** es **Marzo**,
 
 Python proporciona el método **clear()** para eliminar todos los elementos del conjunto.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 meses = set(["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio"])
@@ -326,7 +328,7 @@ print("\\nImprimiendo el conjunto modificado ...")
 print(meses)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Imprimiendo el conjunto original ...
@@ -346,7 +348,7 @@ Si la clave que se va a eliminar del conjunto utilizando discard() no existe en 
 
 Por otro lado, si el elemento que se va a eliminar del conjunto utilizando remove() no existe en el conjunto, Python generará un error.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 meses = set(["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio"])
@@ -367,7 +369,7 @@ print("\\nImprimiendo el conjunto modificado...")
 print(meses)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Imprimiendo el conjunto original ...
@@ -397,7 +399,7 @@ Para combinar dos o más conjuntos en uno solo en Python, utiliza la función un
 
 Considera el siguiente ejemplo para calcular la unión de dos conjuntos.
 
-**Ejemplo:** Utilizando el operador de unión |
+**Ejemplo**: Utilizando el operador de unión |
 
 ```python
 Dias1 = {"Lunes", "Martes", "Miércoles", "Jueves", "Domingo"}
@@ -406,7 +408,7 @@ Dias2 = {"Viernes", "Sábado", "Domingo"}
 print(Dias1 | Dias2)  # imprime la unión de los conjuntos
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 {'Martes', 'Domingo', 'Lunes', 'Viernes', 'Jueves', 'Miércoles', 'Sábado'}
@@ -414,7 +416,7 @@ print(Dias1 | Dias2)  # imprime la unión de los conjuntos
 
 Python también proporciona el método **union()**, que también se puede utilizar para calcular la unión de dos conjuntos. Considera el siguiente ejemplo.
 
-**Ejemplo:** Utilizando el método union()
+**Ejemplo**: Utilizando el método union()
 
 ```python
 Dias1 = {"Lunes", "Martes", "Miércoles", "Jueves"}
@@ -423,7 +425,7 @@ Dias2 = {"Viernes", "Sábado", "Domingo"}
 print(Dias1.union(Dias2))  # imprime la unión de los conjuntos
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 {'Martes', 'Miércoles', 'Viernes', 'Domingo', 'Lunes', 'Jueves', 'Sábado'}
@@ -431,7 +433,7 @@ print(Dias1.union(Dias2))  # imprime la unión de los conjuntos
 
 Ahora, también podemos realizar la unión de más de dos conjuntos utilizando la función union(), por ejemplo:
 
-**Programa:**
+**Sintaxis**:
 
 ```python
 # Crear tres conjuntos
@@ -446,7 +448,7 @@ elementos_comunes = conjunto1.union(conjunto2, conjunto3)
 print(elementos_comunes)
 ```
 
-**Salida:**
+**Salida:**:
 
 ```bash
 {1, 2, 3, 4, 5}
@@ -460,7 +462,7 @@ La intersección de dos conjuntos se puede realizar mediante el operador **and &
 
 ![python-set2.png](Conjuntos%20273ec4d926b94660a32ee7aaeaf2d441/python-set2.png)
 
-**Ejemplo: U**tilizando el operador &
+**Ejemplo**: Utilizando el operador &
 
 ```python
 Dias1 = {"Lunes", "Martes", "Miércoles", "Jueves"}
@@ -698,7 +700,7 @@ for i in Frozenset:
 Frozenset.add(6)  # da un error ya que no se puede cambiar el contenido del frozenset después de su creación
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 <class 'frozenset'>
@@ -719,7 +721,7 @@ AttributeError: 'frozenset' object has no attribute 'add'
 
 Si pasamos un diccionario como secuencia dentro del método frozenset(), tomará solo las claves del diccionario y devolverá un frozenset que contiene las claves del diccionario como sus elementos.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 Diccionario = {"Nombre": "John", "País": "EE. UU.", "ID": 101}
@@ -734,7 +736,7 @@ for i in Frozenset:
     print(i)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 <class 'dict'>
@@ -746,7 +748,7 @@ ID
 
 ### Ejemplo de Programación con Conjuntos
 
-**Ejemplo:** Escribe un programa para eliminar un número dado del conjunto.
+**Ejemplo**: Escribe un programa para eliminar un número dado del conjunto.
 
 ```python
 my_set = {1, 2, 3, 4, 5, 6, 12, 24}
@@ -756,14 +758,14 @@ my_set.discard(n)
 print("Después de eliminar:", my_set)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Ingresa el número que deseas eliminar: 12
 Después de eliminar: {1, 2, 3, 4, 5, 6, 24}
 ```
 
-**Ejemplo:** Escribe un programa para agregar múltiples elementos al conjunto.
+**Ejemplo**: Escribe un programa para agregar múltiples elementos al conjunto.
 
 ```python
 set1 = set([1, 2, 4, "John", "CS"])
@@ -772,13 +774,13 @@ set1.update(["Apple", "Mango", "Grapes"])
 print(set1)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 {1, 2, 4, 'Apple', 'John', 'CS', 'Mango', 'Grapes'}
 ```
 
-**Ejemplo:** Escribe un programa para encontrar la unión entre dos conjuntos.
+**Ejemplo**: Escribe un programa para encontrar la unión entre dos conjuntos.
 
 ```python
 set1 = set(["Peter", "Joseph", 65, 59, 96])
@@ -788,13 +790,13 @@ set3 = set1.union(set2)
 print(set3)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 {96, 65, 2, 'Joseph', 1, 'Peter', 59}
 ```
 
-**Ejemplo:** Escribe un programa para encontrar la intersección entre dos conjuntos.
+**Ejemplo**: Escribe un programa para encontrar la intersección entre dos conjuntos.
 
 ```python
 set1 = {23, 44, 56, 67, 90, 45, "Javatpoint"}
@@ -804,13 +806,13 @@ set3 = set1.intersection(set2)
 print(set3)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 {56, 23}
 ```
 
-**Ejemplo:** Escribe un programa para agregar un elemento al frozenset.
+**Ejemplo**: Escribe un programa para agregar un elemento al frozenset.
 
 ```python
 set1 = {23, 44, 56, 67, 90, 45, "Javatpoint"}
@@ -820,7 +822,7 @@ set3 = set1.intersection(set2)
 print(set3)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 TypeError: 'frozenset' object does not support item assignment
@@ -851,7 +853,7 @@ issuperset = set2 >= set3
 print(issuperset)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 False
