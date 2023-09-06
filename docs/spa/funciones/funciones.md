@@ -19,10 +19,11 @@ Las funciones en Python tienen las siguientes ventajas.
 
 Sin embargo, llamar a las funciones siempre ha sido un inconveniente en un programa de Python.
 
-**Sintaxis:**
+**Sintaxis**:
 
 ```python
 # Un ejemplo de función en Python
+
 def nombre_de_funcion(parametros):
     # bloque de código
 ```
@@ -41,7 +42,7 @@ Los siguientes elementos componen la definición de una función, como se muestr
 
 Definiremos una función que, al llamarla, devolverá el cuadrado del número pasado como argumento.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Código de ejemplo de una función definida por el usuario en Python
@@ -55,7 +56,7 @@ objeto = cuadrado(6)
 print("El cuadrado del número dado es: ", objeto)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 El cuadrado del número dado es:  36
@@ -67,7 +68,7 @@ Una función se define utilizando la palabra clave def y dándole un nombre, esp
 
 Después de que se haya completado la estructura básica de una función, podemos llamarla desde cualquier parte del programa. A continuación, se muestra un ejemplo de cómo usar la función a_function.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Código de ejemplo de cómo llamar a una función en Python
@@ -82,7 +83,7 @@ print("La longitud de la cadena Functions es: ", a_function("Functions"))
 print("La longitud de la cadena Python es: ", a_function("Python"))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 La longitud de la cadena Functions es:  9
@@ -93,7 +94,7 @@ La longitud de la cadena Python es:  6
 
 Todos los parámetros en el lenguaje de programación Python se pasan por referencia. Esto indica que si alteramos el valor de un argumento dentro de una función, la función de llamada también reflejará el cambio. Por ejemplo,
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Código de ejemplo de paso por referencia vs. valor en Python
@@ -112,7 +113,7 @@ my_result = cuadrado(my_list)
 print("Los cuadrados de la lista son: ", my_result)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Los cuadrados de la lista son:  [289, 2704, 64]
@@ -127,11 +128,11 @@ Los siguientes son los tipos de argumentos que podemos utilizar para llamar a un
 3. Argumentos requeridos
 4. Argumentos de longitud variable
 
-### 1) Argumentos Predeterminados
+### 1. Argumentos Predeterminados
 
 Un argumento predeterminado es un tipo de parámetro que toma como entrada un valor predeterminado si no se proporciona ningún valor para el argumento cuando se llama a la función. Los argumentos predeterminados se demuestran en el siguiente ejemplo.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Código de Python para demostrar el uso de argumentos predeterminados
@@ -150,7 +151,7 @@ print("Pasando dos argumentos")
 funcion(50,30)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Pasando solo un argumento
@@ -163,13 +164,13 @@ El número 2 es:
 30
 ```
 
-### 2) Argumentos de Palabras Clave
+### 2. Argumentos de Palabras Clave
 
 Los argumentos de una función llamada están vinculados a argumentos de palabras clave. Al invocar una función con argumentos de palabras clave, el usuario puede indicar a qué parámetro corresponde el valor del argumento mirando la etiqueta del parámetro.
 
 Podemos eliminar ciertos argumentos o disponerlos en un orden diferente, ya que el intérprete de Python conectará las palabras clave proporcionadas para vincular los valores con sus parámetros. Otra forma de usar palabras clave para invocar el método de función() es la siguiente:
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Código de Python para demostrar el uso de argumentos de palabras clave
@@ -188,7 +189,7 @@ print("Usando palabras clave")
 funcion(n2 = 50, n1 = 30)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Sin usar palabras clave
@@ -199,13 +200,13 @@ El número 1 es:  30
 El número 2 es:  50
 ```
 
-### 3) Argumentos Requeridos
+### 3. Argumentos Requeridos
 
 Los argumentos dados a una función al llamarla en una secuencia posicional predefinida son argumentos requeridos. El número de argumentos requeridos en la llamada al método debe ser igual al número de argumentos proporcionados al definir la función.
 
 Debemos enviar dos argumentos a la función function() en el orden correcto, de lo contrario se producirá un error de sintaxis, como se muestra a continuación.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Código de Python para demostrar el uso de argumentos requeridos
@@ -227,7 +228,7 @@ except:
     print("La función necesita dos argumentos posicionales")
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Pasando argumentos en orden incorrecto
@@ -237,16 +238,16 @@ Pasando solo un argumento
 La función necesita dos argumentos posicionales
 ```
 
-### 4) Argumentos de Longitud Variable
+### 4. Argumentos de Longitud Variable
 
 Podemos utilizar caracteres especiales en las funciones de Python para pasar tantos argumentos como queramos en una función. Hay dos tipos de caracteres que podemos utilizar para este propósito:
 
-1. `*args**` - Estos son argumentos sin palabras clave.
-2. `*kwargs**` - Estos son argumentos con palabras clave.
+1. `*args**`: Estos son argumentos sin palabras clave.
+2. `*kwargs**`: Estos son argumentos con palabras clave.
 
 Aquí hay un ejemplo para aclarar los argumentos de longitud variable.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Código de Python para demostrar el uso de argumentos de longitud variable
@@ -274,7 +275,7 @@ objeto = funcion(First = "Python", Second = "Functions", Third = "Tutorial")
 print(objeto)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 ['PYTHON', 'FUNCTIONS', 'TUTORIAL']
@@ -285,7 +286,7 @@ print(objeto)
 
 Escribimos una declaración de retorno en una función para salir de una función y devolver el valor calculado cuando se llama a una función definida.
 
-**Sintaxis:**
+**Sintaxis**:
 
 ```python
 return <expresión que se devolverá como salida>
@@ -293,9 +294,7 @@ return <expresión que se devolverá como salida>
 
 La declaración de retorno, que se proporciona como salida cuando se completa una tarea o función específica, puede tomar la forma de un argumento, una declaración o un valor. Una función declarada devolverá un objeto None si no se escribe una declaración de retorno.
 
-Aquí hay un ejemplo de una declaración de retorno en las funciones de Python.
-
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Código de Python para demostrar el uso de declaraciones de retorno
@@ -317,7 +316,7 @@ print("Sin declaración de retorno")
 print(square(52))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Con declaración de retorno
@@ -336,7 +335,7 @@ Las funciones lambda contienen su propio dominio local único, lo que significa 
 
 Aunque las expresiones lambda parecen ser una representación en una línea de una función, no son como las expresiones en línea en C y C++, que pasan asignaciones de pila de función en ejecución por razones de eficiencia.
 
-**Sintaxis:**
+**Sintaxis**:
 
 Las funciones lambda tienen una sola línea en su sintaxis:
 
@@ -346,7 +345,7 @@ lambda [argumento1 [,argumento2... .argumenton]] : expresión
 
 A continuación se muestra un ejemplo de cómo usar la función lambda:
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Código de Python para demostrar funciones anónimas
@@ -359,7 +358,7 @@ print("El valor de la función es: ", lambda_(20, 30))
 print("El valor de la función es: ", lambda_(40, 50))
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 El valor de la función es:  50
@@ -374,7 +373,7 @@ El tiempo de vida de una variable en la memoria RAM es cuánto tiempo permanece 
 
 Aquí hay un ejemplo sencillo del ámbito de una variable dentro de una función.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Código de Python para demostrar el ámbito y el tiempo de vida de las variables
@@ -389,7 +388,7 @@ numero()
 print("El valor de num fuera de la función:", num)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 El valor de num dentro de la función:  50
@@ -408,7 +407,7 @@ Las funciones se consideran objetos de primera clase en Python. En un lenguaje d
 
 Una función interna o anidada se refiere a una función definida dentro de otra función definida. Las funciones internas pueden acceder a los parámetros del ámbito exterior. Las funciones internas están construidas para protegerse de los cambios que ocurren fuera de la función. Muchos desarrolladores consideran que este proceso es encapsulación.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Código de Python para mostrar cómo acceder a las variables de una función anidada
@@ -426,7 +425,7 @@ def palabra():
 palabra()
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Tutorial de funciones de Python
