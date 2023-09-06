@@ -8,10 +8,12 @@ La programación modular es la práctica de segmentar una tarea de programación
 
 La modularización de nuestro código en una aplicación grande tiene muchos beneficios.
 
-- **Simplificación:** Un módulo a menudo se centra en una área relativamente pequeña del problema general en lugar de la tarea completa. Si nos concentramos solo en un módulo, tendremos un problema de diseño más manejable en el que pensar. El desarrollo del programa ahora es más sencillo y menos propenso a errores.
-- **Flexibilidad:** Los módulos se utilizan con frecuencia para establecer separaciones conceptuales entre diferentes áreas del problema. Si los módulos están construidos de manera que reduzcan la interconexión, es menos probable que los cambios en un módulo afecten otras partes del programa. (Incluso podríamos ser capaces de editar un módulo sin conocer el programa más allá de él). Esto aumenta la probabilidad de que un grupo de múltiples desarrolladores pueda colaborar en un proyecto grande.
-- **Reutilización:** Las funciones creadas en un módulo específico pueden ser fácilmente accedidas por diferentes secciones de la asignación (a través de una API establecida adecuadamente). Como resultado, ya no es necesario duplicar código.
-- **Ámbito:** Los módulos a menudo declaran un espacio de nombres distintos para evitar conflictos de identificadores en varias partes de un programa.
+- **Simplificación**: Un módulo a menudo se centra en una área relativamente pequeña del problema general en lugar de la tarea completa. Si nos concentramos solo en un módulo, tendremos un problema de diseño más manejable en el que pensar. El desarrollo del programa ahora es más sencillo y menos propenso a errores.
+
+- **Flexibilidad**: Los módulos se utilizan con frecuencia para establecer separaciones conceptuales entre diferentes áreas del problema. Si los módulos están construidos de manera que reduzcan la interconexión, es menos probable que los cambios en un módulo afecten otras partes del programa. (Incluso podríamos ser capaces de editar un módulo sin conocer el programa más allá de él). Esto aumenta la probabilidad de que un grupo de múltiples desarrolladores pueda colaborar en un proyecto grande.
+
+- **Reutilización**: Las funciones creadas en un módulo específico pueden ser fácilmente accedidas por diferentes secciones de la asignación (a través de una API establecida adecuadamente). Como resultado, ya no es necesario duplicar código.
+- **Ámbito**: Los módulos a menudo declaran un espacio de nombres distintos para evitar conflictos de identificadores en varias partes de un programa.
 
 En Python, se fomenta la modularización del código mediante el uso de funciones, módulos y paquetes.
 
@@ -33,7 +35,7 @@ En lugar de duplicar sus definiciones en varias aplicaciones, podemos definir nu
 
 Construyamos un módulo. Guarda el archivo como example_module.py después de ingresar lo siguiente.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Aquí, estamos creando un programa simple de Python para mostrar cómo crear un módulo.
@@ -53,7 +55,7 @@ En Python, podemos importar funciones de un módulo a nuestro programa, o como d
 
 Para ello, utilizamos la palabra clave import de Python. En la ventana de Python, agregamos después de la palabra clave import el nombre del módulo que deseamos importar. Importaremos el módulo que definimos anteriormente, example_module.
 
-**Sintaxis:**
+**Sintaxis**:
 
 ```python
 import example_module
@@ -63,7 +65,7 @@ Las funciones que definimos en example_module no se importan de inmediato al pro
 
 Podemos usar el operador punto para utilizar las funciones utilizando el nombre del módulo. Por ejemplo:
 
-**Ejemplo:**
+**Ejemplo:**:
 
 ```python
 # aquí, llamamos al método square del módulo y pasamos el valor 4
@@ -71,7 +73,7 @@ result = example_module.square(4)
 print("Utilizando el método square del módulo, el número es:", result)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Utilizando el método square del módulo, el número es: 16
@@ -87,7 +89,7 @@ Importar un módulo se puede hacer de varias maneras. A continuación se muestra
 
 Usando la palabra clave import de Python y el operador punto, podemos importar un módulo estándar y acceder a las funciones definidas dentro de él. Aquí tienes un ejemplo.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Aquí, estamos creando un programa simple de Python para mostrar cómo importar un módulo estándar
@@ -99,7 +101,7 @@ print("El valor del número euler es", math.e)
 
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 El valor del número euler es 2.718281828459045
@@ -109,7 +111,7 @@ El valor del número euler es 2.718281828459045
 
 Al importar un módulo, también podemos cambiar su nombre. Aquí tienes un ejemplo para mostrarlo.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Aquí, estamos creando un programa simple de Python para mostrar cómo importar un módulo y cambiarle el nombre
@@ -120,7 +122,7 @@ print("El valor del número euler es", mt.e)
 # aquí, estamos imprimiendo el número euler desde el módulo math
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 El valor del número euler es 2.718281828459045
@@ -134,7 +136,7 @@ Ten en cuenta que ahora el ámbito de nuestro programa no incluye el término ma
 
 Podemos importar nombres específicos de un módulo sin importar el módulo completo. Aquí tienes un ejemplo.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Aquí, estamos creando un programa simple de Python para mostrar cómo importar objetos específicos de un módulo
@@ -146,7 +148,7 @@ from math import e
 print("El valor del número euler es", e)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 El valor del número euler es 2.718281828459045
@@ -156,7 +158,7 @@ En este caso, solo se importó la constante e del módulo math.
 
 Evitamos el uso del operador punto (.) en estos casos. De esta manera, podemos importar muchos atributos al mismo tiempo:
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Aquí, estamos creando un programa simple de Python para mostrar cómo importar varios objetos de un módulo
@@ -167,7 +169,7 @@ print("El valor de la constante tau es:", tau)
 print("El valor del número euler es:", e)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 El valor de la constante tau es: 6.283185307179586
@@ -178,7 +180,7 @@ El valor del número euler es: 2.718281828459045
 
 Para importar todos los objetos de un módulo dentro del espacio de nombres actual, utiliza el símbolo * y las palabras clave from e import.
 
-**Sintaxis:**
+**Sintaxis**:
 
 ```python
 from name_of_module import *
@@ -188,7 +190,7 @@ Hay ventajas y desventajas en el uso del símbolo *. No se recomienda usarlo a m
 
 Aquí tienes un ejemplo de lo mismo.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Aquí, estamos importando el módulo math completo usando *
@@ -202,7 +204,7 @@ print("Calculando la tangente de un ángulo:", tan(pi/6))
 # aquí pi también se importa del módulo math
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Calculando la raíz cuadrada: 5.0
@@ -217,7 +219,7 @@ El módulo se busca inicialmente en el directorio de trabajo actual. Luego, Pyth
 
 Aquí tienes un ejemplo para imprimir la ruta.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Aquí, estamos importando el módulo sys
@@ -227,7 +229,7 @@ import sys
 print("La ruta del módulo sys en el sistema es:", sys.path)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 La ruta del módulo sys en el sistema es:
@@ -240,14 +242,14 @@ Podemos utilizar el método dir() para identificar los nombres declarados dentro
 
 Por ejemplo, tenemos los siguientes nombres en el módulo estándar str. Para imprimir los nombres, utilizaremos el método dir() de la siguiente manera:
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Aquí, estamos creando un programa simple de Python para imprimir el directorio de un módulo
 print("Lista de funciones:\\n", dir(str), end=", ")
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 Lista de funciones:
@@ -266,7 +268,7 @@ Por lo tanto, debemos usar la declaración global antes de poder asignar un valo
 
 Por ejemplo, declaramos la variable Number en el espacio de nombres global. Dado que le asignamos un valor a Number dentro de la función, Python considera que Number es una variable local. Si intentamos acceder al valor de la variable local sin declararla global o antes de hacerlo, se producirá un UnboundLocalError.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 Number = 204
@@ -288,7 +290,7 @@ AddNumber()
 print("El número es:", Number)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 El número es: 404
