@@ -52,7 +52,7 @@ print(add(6))
 10
 ```
 
-## ¿Cuál es la Diferencia Entre las Funciones Lambda y def?
+## ¿Cuál es la Diferencia Entre las Funciones lambda y def?
 
 Echemos un vistazo a este ejemplo para ver cómo una función definida de manera convencional con `def` difiere de una función definida usando la palabra clave `lambda`. Este programa calcula el recíproco de un número dado:
 
@@ -85,7 +85,7 @@ Ambas devuelven el recíproco de un número dado sin utilizar lambda. Sin embarg
 
 Usando Lambda: En lugar de una instrucción `return`, las definiciones lambda siempre incluyen una instrucción dada como salida. La belleza de las funciones lambda es su conveniencia. No necesitamos asignar una expresión lambda a una variable porque podemos ponerla en cualquier lugar donde se solicite una función.
 
-## Uso de la Función Lambda con filter()
+## Uso de la Función lambda con filter()
 
 El método `filter()` acepta dos argumentos en Python: una función y un iterable como una lista.
 
@@ -110,7 +110,7 @@ print(lista_impares)
 [55, 75, 13, 63]
 ```
 
-## Uso de la Función Lambda con map()
+## Uso de la Función lambda con map()
 
 Se pasa un método y una lista a la función `map()` de Python.
 
@@ -135,7 +135,7 @@ print(lista_cuadrados)
 [4, 16, 25, 1, 9, 49, 64, 81, 100]
 ```
 
-## Uso de la Función Lambda con List Comprehension
+## Uso de la Función lambda con List Comprehension
 
 Aplicaremos la función lambda combinada con la comprensión de listas y la palabra clave lambda con un bucle `for` en este ejemplo. Intentaremos imprimir el cuadrado de los números en el rango del 0 al 11.
 
@@ -155,7 +155,7 @@ for square in cuadrados:
 0 1 4 9 16 25 36 49 64 81 100
 ```
 
-## Uso de la Función Lambda con if-else
+## Uso de la Función lambda con if-else
 
 Utilizaremos la función lambda con el bloque if-else.
 
@@ -174,7 +174,7 @@ print(Minimo(35, 74))
 35
 ```
 
-## Uso de Lambda con Múltiples Instrucciones
+## Uso de lambda con Múltiples Instrucciones
 
 No se permiten múltiples expresiones en las funciones lambda, pero podemos construir 2 o más funciones lambda y luego llamar a la segunda expresión lambda como argumento de la primera. Veamos cómo usar lambda para encontrar el tercer elemento máximo.
 
