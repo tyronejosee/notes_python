@@ -472,13 +472,13 @@ Dias2 = {"Lunes", "Martes", "Domingo", "Viernes"}
 print(Dias1 & Dias2)  # imprime la intersección de los dos conjuntos
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 {'Martes', 'Lunes'}
 ```
 
-**Ejemplo: U**tilizando el método intersection()
+**Ejemplo:** Utilizando el método intersection()
 
 ```python
 conjunto1 = {"Devansh", "John", "David", "Martin"}
@@ -487,13 +487,13 @@ conjunto2 = {"Steve", "Milan", "David", "Martin"}
 print(conjunto1.intersection(conjunto2))  # imprime la intersección de los dos conjuntos
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 {'Martin', 'David'}
 ```
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 conjunto1 = {1, 2, 3, 4, 5, 6, 7}
@@ -503,7 +503,7 @@ conjunto3 = conjunto1.intersection(conjunto2)
 print(conjunto3)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 {1, 2, 5}
@@ -515,7 +515,7 @@ conjuntos al mismo tiempo.
 
 Por ejemplo:
 
-**Programa:**
+**Sintaxis:**:
 
 ```python
 # Crear tres conjuntos
@@ -530,7 +530,7 @@ elementos_comunes = conjunto1.intersection(conjunto2, conjunto3)
 print(elementos_comunes)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 {3}
@@ -542,7 +542,7 @@ El método **intersection_update()** elimina los elementos del conjunto original
 
 El método **intersection_update()** es diferente del método intersection() ya que modifica el conjunto original eliminando los elementos no deseados, mientras que el método intersection() devuelve un nuevo conjunto.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 a = {"Devansh", "bob", "castle"}
@@ -554,7 +554,7 @@ a.intersection_update(b, c)
 print(a)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 {'castle'}
@@ -568,7 +568,7 @@ La diferencia entre dos conjuntos se puede calcular utilizando el operador de su
 
 Considera el siguiente ejemplo.
 
-**Ejemplo:** Utilizando el operador de sustracción (-)
+**Ejemplo**: Utilizando el operador de sustracción (-)
 
 ```python
 Dias1 = {"Lunes", "Martes", "Miércoles", "Jueves"}
@@ -577,13 +577,13 @@ Dias2 = {"Lunes", "Martes", "Domingo"}
 print(Dias1 - Dias2)  # se imprimirá {"Miércoles", "Jueves"}
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 {'Jueves', 'Miércoles'}
 ```
 
-**Ejemplo:** Utilizando el método difference()
+**Ejemplo**: Utilizando el método difference()
 
 ```python
 Dias1 = {"Lunes", "Martes", "Miércoles", "Jueves"}
@@ -592,7 +592,7 @@ Dias2 = {"Lunes", "Martes", "Domingo"}
 print(Dias1.difference(Dias2))  # imprime la diferencia de los dos conjuntos, Dias1 y Dias2
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 {'Jueves', 'Miércoles'}
@@ -606,7 +606,7 @@ La diferencia simétrica de dos conjuntos se puede calcular utilizando el métod
 
 ![python-set4.png](Conjuntos%20273ec4d926b94660a32ee7aaeaf2d441/python-set4.png)
 
-**Ejemplo:** Utilizando el operador ^
+**Ejemplo**: Utilizando el operador ^
 
 ```python
 a = {1, 2, 3, 4, 5, 6}
@@ -616,13 +616,13 @@ c = a ^ b
 print(c)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 {3, 4, 5, 6, 8, 9, 10}
 ```
 
-**Ejemplo:** Utilizando el método symmetric_difference()
+**Ejemplo**: Utilizando el método symmetric_difference()
 
 ```python
 a = {1, 2, 3, 4, 5, 6}
@@ -632,7 +632,7 @@ c = a.symmetric_difference(b)
 print(c)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 {3, 4, 5, 6, 8, 9, 10}
@@ -651,7 +651,7 @@ Aquí están los operadores de comparación de conjuntos disponibles en Python:
 - `>`: verifica si el conjunto de la izquierda es un superconjunto estricto del conjunto de la derecha (es decir, todos los elementos en el conjunto de la derecha también están en el conjunto de la izquierda, pero el conjunto de la izquierda tiene elementos adicionales).
 - `>=`: verifica si el conjunto de la izquierda es un superconjunto del conjunto de la derecha (es decir, todos los elementos en el conjunto de la derecha también están en el conjunto de la izquierda).
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 Days1 = {"Lunes", "Martes", "Miércoles", "Jueves"}
@@ -668,7 +668,7 @@ print(Days1 < Days2)
 print(Days2 == Days3)
 ```
 
-**Salida:**
+**Salida**:
 
 ```bash
 True
