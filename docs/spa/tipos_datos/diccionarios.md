@@ -15,7 +15,7 @@ Un diccionario es, en otras palabras, un grupo de pares clave-valor, donde los v
 
 Las llaves de llaves (corchetes) son la forma más sencilla de generar un diccionario de Python, aunque también hay otros enfoques posibles. Con muchos pares clave-valor rodeados de llaves y dos puntos que separan cada clave de su valor, se puede construir el diccionario. (:). Lo siguiente muestra la sintaxis para definir el diccionario.
 
-**Sintaxis:**
+**Sintaxis**:
 
 ```python
 Diccionario = {"Nombre": "Gayle", "Edad": 25}
@@ -25,19 +25,17 @@ En el diccionario anterior, las claves "Nombre" y "Edad" son cadenas que pertene
 
 Veamos un ejemplo para crear un diccionario e imprimir su contenido.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 Empleado = {"Nombre": "Johnny", "Edad": 32, "salario": 26000, "Compañía": "^TCS"}
 
 print(type(Empleado))
-
 print("Imprimiendo datos del Empleado .... ")
-
 print(Empleado)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 <class 'dict'>
@@ -49,32 +47,29 @@ Python nos proporciona la función incorporada **dict()**, que también se utili
 
 Las llaves vacías {} se utilizan para crear un diccionario vacío.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Creando un diccionario vacío
 Diccionario = {}
 
 print("Diccionario vacío: ")
-
 print(Diccionario)
 
 # Creando un diccionario con el método dict()
 Diccionario = dict({1: 'Hcl', 2: 'WIPRO', 3:'Facebook'})
 
 print("\\nCrear un diccionario usando dict(): ")
-
 print(Diccionario)
 
 # Creando un diccionario con cada elemento como par
 Diccionario = dict([(4, 'Rinku'), (2, Singh)])
 
 print("\\nDiccionario con cada elemento como par: ")
-
 print(Diccionario)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 Diccionario vacío:
@@ -87,29 +82,24 @@ Diccionario con cada elemento como par:
 {4: 'Rinku', 2: 'Singh'}
 ```
 
-## Acceso a los valores del diccionario
+## Acceso a los Valores del Diccionario
 
 Para acceder a los datos contenidos en listas y tuplas, se ha estudiado la indexación. Las claves del diccionario se pueden utilizar para obtener los valores porque son únicas entre sí. El siguiente método se puede utilizar para acceder a los valores del diccionario.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 Empleado = {"Nombre": "Dev", "Edad": 20, "salario": 45000, "Compañía": "WIPRO"}
 
 print(type(Empleado))
-
 print("Imprimiendo datos del Empleado .... ")
-
 print("Nombre: %s" % Empleado["Nombre"])
-
 print("Edad: %d" % Empleado["Edad"])
-
 print("Salario: %d" % Empleado["salario"])
-
 print("Compañía: %s" % Empleado["Compañía"])
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 <class 'dict'>
@@ -122,7 +112,7 @@ Compañía : WIPRO
 
 Python nos proporciona una alternativa para usar el método get() para acceder a los valores del diccionario. Esto daría el mismo resultado que el índice.
 
-## Agregando valores al diccionario
+## Agregando Valores al Diccionario
 
 El diccionario es un tipo de datos mutable y utilizando las claves adecuadas se pueden cambiar sus valores. Dict[key] = value y el valor pueden modificarse. También se puede actualizar un valor existente utilizando el método update().
 
@@ -131,26 +121,22 @@ El diccionario es un tipo de datos mutable y utilizando las claves adecuadas se 
 
 Veamos un ejemplo para actualizar los valores del diccionario.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Creando un diccionario vacío
 Diccionario = {}
 
 print("Diccionario vacío: ")
-
 print(Diccionario)
 
 # Agregando elementos al diccionario uno por uno
 
 Diccionario[0] = 'Peter'
-
 Diccionario[2] = 'Joseph'
-
 Diccionario[3] = 'Ricky'
 
 print("\\nDiccionario después de agregar 3 elementos: ")
-
 print(Diccionario)
 
 # Agregando un conjunto de valores con una sola clave
@@ -159,7 +145,6 @@ print(Diccionario)
 Diccionario['Emp_ages'] = 20, 33, 24
 
 print("\\nDiccionario después de agregar 3 elementos: ")
-
 print(Diccionario)
 
 # Actualizando el valor de una clave existente
@@ -167,11 +152,10 @@ print(Diccionario)
 Diccionario[3] = 'JavaTpoint'
 
 print("\\nValor de clave actualizado: ")
-
 print(Diccionario)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 Diccionario vacío:
@@ -187,7 +171,7 @@ Valor de clave actualizado:
 {0: 'Peter', 2: 'Joseph', 3: 'JavaTpoint', 'Emp_ages': (20, 33, 24)}
 ```
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 Empleado = {"Nombre": "Dev", "Edad": 20, "
@@ -195,27 +179,20 @@ Empleado = {"Nombre": "Dev", "Edad": 20, "
 salario": 45000, "Compañía": "WIPRO"}
 
 print(type(Empleado))
-
 print("Imprimiendo datos del Empleado .... ")
-
 print(Empleado)
-
 print("Ingrese los detalles del nuevo empleado....");
 
 Empleado["Nombre"] = input("Nombre: ");
-
 Empleado["Edad"] = int(input("Edad: "));
-
 Empleado["salario"] = int(input("Salario: "));
-
 Empleado["Compañía"] = input("Compañía: ");
 
 print("Imprimiendo los nuevos datos");
-
 print(Empleado)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 <class 'dict'>
@@ -229,11 +206,11 @@ Imprimiendo los nuevos datos
 {'Nombre': 'Sunny', 'Edad': 38, 'salario': 39000, 'Compañía': 'Hcl'}
 ```
 
-## Eliminando elementos con la palabra clave "del"
+## Eliminando Elementos con la Palabra Clave "del"
 
 Los elementos del diccionario se pueden eliminar utilizando la palabra clave **del** de la siguiente manera:
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 Empleado = {"Nombre": "David", "Edad": 30, "salario": 55000, "Compañía": "WIPRO"}
@@ -263,7 +240,7 @@ print("Intentemos imprimirlo de nuevo");
 print(Empleado)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 <class 'dict'>
@@ -285,7 +262,7 @@ Un diccionario es un grupo de pares clave-valor en Python. Puede recuperar, inse
 
 El valor asociado a una clave específica en un diccionario se elimina utilizando el método pop(), que luego devuelve el valor. El único argumento necesario es la clave del elemento que se va a eliminar. El método pop() se puede utilizar de las siguientes formas:
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Método del diccionario
@@ -298,7 +275,7 @@ clave_eliminada = Diccionario1.pop(2)
 print(Diccionario1)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 {1: 'JavaTpoint', 3: 'Website'}
@@ -310,7 +287,7 @@ Además, Python ofrece las funciones incorporadas popitem() y clear() para elimi
 
 Un diccionario se puede recorrer utilizando un bucle for de la siguiente manera:
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Bucle for para imprimir todas las claves de un diccionario
@@ -321,7 +298,7 @@ for x in Empleado:
     print(x)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 Nombre
@@ -330,7 +307,7 @@ salario
 Compañía
 ```
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Bucle for para imprimir todos los valores del diccionario
@@ -341,7 +318,7 @@ for x in Empleado:
     print(Empleado[x])
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 John
@@ -350,7 +327,7 @@ John
 WIPRO
 ```
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Bucle for para imprimir los valores del diccionario utilizando el método values()
@@ -361,7 +338,7 @@ for x in Empleado.values():
     print(x)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 John
@@ -370,7 +347,7 @@ John
 WIPRO
 ```
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Bucle for para imprimir los elementos del diccionario utilizando el método items()
@@ -381,7 +358,7 @@ for x in Empleado.items():
     print(x)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 ('Nombre', 'John')
@@ -394,7 +371,7 @@ for x in Empleado.items():
 
 1. En el diccionario, no podemos almacenar múltiples valores para las mismas claves. Si pasamos más de un valor para una sola clave, entonces se considera que el último valor asignado es el valor de la clave.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 Empleado = {"Nombre": "John", "Edad": 29, "salario": 25000, "Compañía": "WIPRO", "Nombre": "John"}
@@ -403,7 +380,7 @@ for x, y in Empleado.items():
     print(x, y)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 Nombre John
@@ -414,7 +391,7 @@ Compañía WIPRO
 
 1. La clave no puede pertenecer a ningún objeto mutable en Python. Se pueden utilizar números, cadenas o tuplas como clave, pero objetos mutables como listas no se pueden utilizar como clave en un diccionario.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 Empleado = {"Nombre": "John", "Edad": 29, "salario": 25000, "Compañ
@@ -425,7 +402,7 @@ for x, y in Empleado.items():
     print(x, y)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 Traceback (most recent call last):
@@ -440,11 +417,11 @@ Una función es un método que se puede utilizar en una construcción para obten
 
 A continuación se presentan los métodos incorporados del diccionario de Python, junto con una breve descripción.
 
-- **len()**
+### len()
 
 La función len() devuelve la longitud del diccionario de Python. La cadena se alarga por cada par clave-valor.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 diccionario = {1: "Ayan", 2: "Bunny", 3: "Ram", 4: "Bheem"}
@@ -452,17 +429,17 @@ diccionario = {1: "Ayan", 2: "Bunny", 3: "Ram", 4: "Bheem"}
 len(diccionario)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 4
 ```
 
-- **any()**
+### any()
 
 Al igual que hace con listas y tuplas, el método any() devuelve True si realmente hay una clave de diccionario que tiene una expresión booleana que se evalúa como True.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 diccionario = {1: "Ayan", 2: "Bunny", 3: "Ram", 4: "Bheem"}
@@ -470,17 +447,17 @@ diccionario = {1: "Ayan", 2: "Bunny", 3: "Ram", 4: "Bheem"}
 any({'':'','':'','3':''})
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 True
 ```
 
-- **all()**
+### all()
 
 A diferencia del método any(), all() solo devuelve True si cada una de las claves del diccionario contiene un valor booleano True.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 diccionario = {1: "Ayan", 2: "Bunny", 3: "Ram", 4: "Bheem"}
@@ -488,17 +465,17 @@ diccionario = {1: "Ayan", 2: "Bunny", 3: "Ram", 4: "Bheem"}
 all({1:'',2:'','':''})
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 False
 ```
 
-- **sorted()**
+### sorted()
 
 Al igual que hace con listas y tuplas, el método sorted() devuelve una serie ordenada de las claves del diccionario. La clasificación ascendente no afecta al diccionario de Python original.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 diccionario = {7: "Ayan", 5: "Bunny", 8: "Ram", 1: "Bheem"}
@@ -506,7 +483,7 @@ diccionario = {7: "Ayan", 5: "Bunny", 8: "Ram", 1: "Bheem"}
 sorted(diccionario)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 [1, 5, 7, 8]
@@ -516,11 +493,11 @@ sorted(diccionario)
 
 A continuación se presentan los métodos incorporados del diccionario de Python junto con la descripción y el código.
 
-- **clear()**
+### clear()
 
 Se utiliza principalmente para eliminar todos los elementos del diccionario.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Métodos del diccionario
@@ -534,17 +511,17 @@ diccionario.clear()
 print(diccionario)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 { }
 ```
 
-- **copy()**
+### copy()
 
 Devuelve una copia superficial del diccionario que se crea.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Métodos del diccionario
@@ -558,17 +535,17 @@ dic_demo = diccionario.copy()
 print(dic_demo)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 {1: 'Hcl', 2: 'WIPRO', 3: 'Facebook', 4: 'Amazon', 5: 'Flipkart'}
 ```
 
-- **pop()**
+### pop()
 
 Principalmente elimina el elemento utilizando la clave definida.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Métodos del diccionario
@@ -584,17 +561,17 @@ x = dic_demo.pop(1)
 print(x)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 {2: 'WIPRO', 3: 'Facebook', 4: 'Amazon', 5: 'Flipkart'}
 ```
 
-- **popitem()**
+### popitem()
 
 Elimina el par clave-valor más reciente ingresado
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Métodos del diccionario
@@ -608,17 +585,17 @@ dic_demo.popitem()
 print(dic_demo)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 {1: 'Hcl', 2: 'WIPRO', 3: 'Facebook'}
 ```
 
-- **keys()**
+### keys()
 
 Devuelve todas las claves del diccionario.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Métodos del diccionario
@@ -630,17 +607,17 @@ diccionario = {1: "Hcl", 2: "WIPRO", 3: "Facebook", 4: "Amazon", 5: "Flipkart"}
 print(dic_demo.keys())
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 dict_keys([1, 2, 3, 4, 5])
 ```
 
-- **items()**
+### items()
 
 Devuelve todos los pares clave-valor como una tupla.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Métodos del diccionario
@@ -652,17 +629,17 @@ diccionario = {1: "Hcl", 2: "WIPRO", 3: "Facebook", 4: "Amazon", 5: "Flipkart"}
 print(dic_demo.items())
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 dict_items([(1, 'Hcl'), (2, 'WIPRO'), (3, 'Facebook'), (4, 'Amazon'), (5, 'Flipkart')])
 ```
 
-- **get()**
+### get()
 
 Se utiliza para obtener el valor especificado para la clave pasada.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Métodos del diccionario
@@ -674,17 +651,17 @@ diccionario = {1: "Hcl", 2: "WIPRO", 3: "Facebook", 4: "Amazon", 5: "Flipkart"}
 print(dic_demo.get(3))
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 Facebook
 ```
 
-- **update()**
+### update()
 
 Principalmente actualiza todo el diccionario añadiendo el par clave-valor de dict2 a este diccionario.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Métodos del diccionario
@@ -702,10 +679,8 @@ diccionario.update(dic2)
 print(diccionario)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 {1: 'Hcl', 2: 'WIPRO', 3: 'Facebook', 4: 'Amazon', 5: 'Flipkart', 6: 'Apple'}
 ```
-
-Estos son algunos de los métodos y funciones útiles que puedes utilizar con diccionarios en Python.
