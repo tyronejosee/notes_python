@@ -8,7 +8,7 @@ En Python, hay tres tipos numéricos:
 
 Las variables de los tipos numéricos se crean cuando les asignas un valor.
 
-#### Ejemplo
+**Ejemplo**:
 
 ```python
 x = 1 # int
@@ -18,7 +18,7 @@ z = 1j # complex
 
 Para verificar el tipo de cualquier objeto en Python, utiliza la función `type()`.
 
-#### Ejemplo
+**Ejemplo**:
 
 ```python
 print(type(x))
@@ -30,9 +30,7 @@ print(type(z))
 
 Int, o entero, es un número entero, positivo o negativo, sin decimales y de longitud ilimitada.
 
-#### Ejemplo
-
-Enteros.
+**Ejemplo**:
 
 ```python
 x = 1
@@ -48,9 +46,7 @@ print(type(z))
 
 Float, o "número de punto flotante", es un número, positivo o negativo, que contiene uno o más decimales.
 
-#### Ejemplo
-
-Punto flotante.
+**Ejemplo**:
 
 ```python
 x = 1.10
@@ -64,9 +60,7 @@ print(type(z))
 
 Los floats también pueden representar números científicos con una "e" para indicar la potencia de 10.
 
-#### Ejemplo
-
-Punto flotante.
+**Ejemplo**:
 
 ```python
 x = 35e3
@@ -82,9 +76,7 @@ print(type(z))
 
 Los números complejos se escriben con una "j" como parte imaginaria.
 
-#### Ejemplo
-
-Complejo.
+**Ejemplo**:
 
 ```python
 x = 3+5j
@@ -100,9 +92,7 @@ print(type(z))
 
 Puedes convertir de un tipo a otro utilizando los métodos `int()`, `float()` y `complex()`.
 
-#### Ejemplo
-
-Convertir de un tipo a otro.
+**Ejemplo**:
 
 ```python
 x = 1 # int
@@ -133,7 +123,7 @@ print(type(c))
 
 Python no tiene una función `random()` para generar un número aleatorio, pero tiene un módulo incorporado llamado `random` que se puede utilizar para generar números aleatorios.
 
-#### Ejemplo
+**Ejemplo**:
 
 Importa el módulo random y muestra un número aleatorio entre 1 y 9.
 
