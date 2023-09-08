@@ -6,31 +6,28 @@ Aunque seis tipos de datos de Python pueden contener secuencias, la Lista es la 
 
 Las listas escritas en Python son idénticas a los arrays escalados dinámicamente definidos en otros lenguajes, como ArrayList en Java y Vector en C++. Una lista es una colección de elementos separados por comas y denotados por el símbolo [].
 
-## Declaración de lista
+## Declaración de Lista
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # una lista simple
 
 lista1 = [1, 2, "Python", "Programa", 15.9]
-
 lista2 = ["Amy", "Ryan", "Henry", "Emma"]
 
 # imprimir la lista
 
-**print**(lista1)
-
-**print**(lista2)
+print(lista1)
+print(lista2)
 
 # imprimir el tipo de lista
 
-**print**(type(lista1))
-
-**print**(type(lista2))
+print(type(lista1))
+print(type(lista2))
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 [1, 2, 'Python', 'Programa', 15.9]
@@ -39,7 +36,7 @@ lista2 = ["Amy", "Ryan", "Henry", "Emma"]
 < class ' list ' >
 ```
 
-# Características de las listas
+## Características de las Listas
 
 Las características de la lista son las siguientes:
 
@@ -49,21 +46,19 @@ Las características de la lista son las siguientes:
 - Las listas son tipos de datos modificables.
 - Se pueden almacenar varios elementos diferentes en una lista.
 
-### Comprobación de lista ordenada
+### Comprobación de Lista Ordenada
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # ejemplo
 
 a = [1, 2, "Ram", 3.50, "Rahul", 5, 6]
-
 b = [1, 2, 5, "Ram", 3.50, "Rahul", 6]
-
 a == b
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 False
@@ -71,19 +66,17 @@ False
 
 Los componentes idénticos se encontraban en las dos listas, pero la segunda lista cambió la posición del quinto componente, lo que va en contra del orden previsto de las listas. Se devuelve False cuando se comparan las dos listas.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # ejemplo
 
 a = [1, 2, "Ram", 3.50, "Rahul", 5, 6]
-
 b = [1, 2, "Ram", 3.50, "Rahul", 5, 6]
-
 a == b
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 True
@@ -93,39 +86,28 @@ Las listas preservan la estructura de los componentes. Debido a esto, es una col
 
 Vamos a examinar con más detalle el ejemplo de lista.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # ejemplo de lista en detalle
 
 empleado = ["John", 102, "USA"]
-
 Dep1 = ["CS", 10]
-
 Dep2 = ["IT", 11]
-
 HOD_CS = [10, "Sr. Holding"]
-
 HOD_IT = [11, "Sr. Bewon"]
 
 print("imprimiendo datos del empleado...")
-
 print(" Nombre : %s, ID: %d, País: %s" % (empleado[0], empleado[1], empleado[2]))
-
 print("imprimiendo departamentos...")
-
 print("Departamento 1:\\nNombre: %s, ID: %d\\nDepartamento 2:\\nNombre: %s, ID: %s" % (Dep1[0], Dep2[1], Dep2[0], Dep2[1]))
-
 print("Detalles del jefe de departamento...")
-
 print("Jefe de CS: %s, ID: %d" % (HOD_CS[1], HOD_CS[0]))
-
 print("Jefe de IT: %s, ID: %d" % (HOD_IT[1], HOD_IT[0]))
-
 print(type(empleado), type(Dep1), type(Dep2), type(HOD_CS), type(HOD_IT))
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 imprimiendo datos del empleado...
@@ -143,36 +125,32 @@ Jefe de IT: Sr. Bewon, ID: 11
 
 En la ilustración anterior, imprimimos los detalles específicos del empleado y del departamento a partir de las listas que hemos creado. Para comprender mejor el concepto de la lista, revisa el código anterior.
 
-# Indexación y división de listas
+## Indexación y división de listas
 
 El procedimiento de indexación se lleva a cabo de manera similar al procesamiento de cadenas de texto. El operador de segmento [] se puede usar para acceder a los componentes de la lista.
 
 El índice varía de 0 a longitud - 1. El índice 0 es donde se almacena el primer elemento de la lista; el índice 1 es donde se almacena el segundo elemento, y así sucesivamente.
 
-![https://static.javatpoint.com/python/images/python-list.png](https://static.javatpoint.com/python/images/python-list.png)
-
 Podemos obtener la sublista de la lista utilizando la siguiente sintaxis.
 
-1. lista_variable(inicio:fin:paso)
+```python
+lista_variable(inicio:fin:paso)
+```
+
 - El inicio indica la posición del registro inicial de la lista.
 - El fin indica la última posición del registro de la lista.
 - Con un valor para inicio, el paso se utiliza para saltar el enésimo elemento: stop.
 
 El parámetro de inicio es el índice inicial, el parámetro de paso es el índice final y el valor del parámetro de fin es el número de elementos que se "saltan". El valor predeterminado para el paso es uno sin un valor específico. Dentro de la Sublista resultante, estarán disponibles los elementos desde el inicio del registro, pero no el que tiene el fin de archivo. El primer elemento de una lista tiene un índice de cero.
 
-Considera el siguiente ejemplo:
-
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 lista = [1, 2, 3, 4, 5, 6, 7]
 
 print(lista[0])
-
 print(lista[1])
-
 print(lista[2])
-
 print(lista[3])
 
 # Dividiendo los elementos
@@ -182,13 +160,11 @@ print(lista[0:6])
 # Por defecto, el valor del índice es 0, así que comienza desde el primer elemento y va hasta el índice -1.
 
 print(lista[:])
-
 print(lista[2:5])
-
 print(lista[1:6:2])
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 1
@@ -203,11 +179,9 @@ print(lista[1:6:2])
 
 A diferencia de otros lenguajes de programación, Python también te permite usar la indexación negativa. Los índices negativos se cuentan desde la derecha. El índice -1 representa el último elemento en el lado derecho de la lista, seguido del índice -2 para el siguiente miembro a la izquierda, y así sucesivamente, hasta llegar al último elemento a la izquierda.
 
-![https://static.javatpoint.com/python/images/python-list2.png](https://static.javatpoint.com/python/images/python-list2.png)
-
 Echemos un vistazo al siguiente ejemplo, donde utilizaremos la indexación negativa para acceder a los elementos de la lista.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # ejemplo de indexación negativa
@@ -215,15 +189,12 @@ Echemos un vistazo al siguiente ejemplo, donde utilizaremos la indexación negat
 lista = [1, 2, 3, 4, 5]
 
 print(lista[-1])
-
 print(lista[-3:])
-
 print(lista[:-1])
-
 print(lista[-3:-1])
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 5
@@ -234,13 +205,13 @@ print(lista[-3:-1])
 
 La indexación negativa nos permite obtener un elemento, como se mencionó anteriormente. El primer print devuelve el elemento más a la derecha de la lista. El segundo print devuelve la sublista, y así sucesivamente.
 
-# Actualización de valores de la lista
+## Actualización de Valores de la Lista
 
 Debido a su mutabilidad y a la capacidad del operador de segmento y asignación para actualizar sus valores, las listas son la estructura de datos más versátil en Python. Los métodos append() e insert() de Python también pueden agregar valores a una lista.
 
 Considera el siguiente ejemplo para actualizar los valores dentro de la lista.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # actualizando valores de lista
@@ -268,7 +239,7 @@ lista[-1] = 25
 print(lista)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 [1, 2, 3, 4, 5, 6]
@@ -281,7 +252,7 @@ Los elementos de la lista también se pueden eliminar utilizando la palabra clav
 
 Considera el siguiente ejemplo para eliminar elementos de la lista.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 lista = [1, 2, 3, 4, 5, 6]
@@ -307,7 +278,7 @@ del lista[-1]
 print(lista)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 [1, 2, 3, 4, 5, 6]
@@ -316,7 +287,7 @@ print(lista)
 [1, 5]
 ```
 
-# Operaciones con listas en Python
+## Operaciones con Listas
 
 Los operadores de concatenación (+) y repetición (*) funcionan de la misma manera que con las cadenas de texto. Las diferentes operaciones con listas son:
 
@@ -332,7 +303,7 @@ Veamos cómo responde la lista a varios operadores.
 
 El operador de repetición permite que los elementos de la lista se repitan varias veces.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # repetición de una lista
@@ -348,7 +319,7 @@ l = lista1 * 2
 print(l)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 [12, 14, 16, 18, 20, 12, 14, 16, 18, 20]
@@ -358,7 +329,7 @@ print(l)
 
 Concatena dos listas mencionadas a ambos lados del operador.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # concatenación de dos listas
@@ -376,7 +347,7 @@ l = lista1 + lista2
 print(l)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 [12, 14, 16, 18, 20, 9, 10, 32, 54, 86]
@@ -386,7 +357,7 @@ print(l)
 
 Se utiliza para obtener la longitud de la lista.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # tamaño de la lista
@@ -400,7 +371,7 @@ lista1 = [12, 14, 16, 18, 20, 23, 27, 39, 40]
 len(lista1)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 9
@@ -410,7 +381,7 @@ len(lista1)
 
 El bucle for se utiliza para iterar sobre los elementos de la lista.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # iteración de la lista
@@ -425,7 +396,7 @@ for i in lista1:
     print(i)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 12
@@ -439,7 +410,7 @@ for i in lista1:
 
 Devuelve verdadero (True) si un elemento específico existe en una lista determinada, de lo contrario, devuelve falso (False).
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # pertenencia en la lista
@@ -460,7 +431,7 @@ print(100 in lista1)
 print(500 in lista1)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 False
@@ -471,11 +442,11 @@ True
 True
 ```
 
-# Iterando una lista
+## Iterando una Lista
 
 Una lista puede iterarse utilizando un bucle for-in. Una lista simple que contiene cuatro cadenas, se puede iterar de la siguiente manera.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # iterando una lista
@@ -487,7 +458,7 @@ for i in lista:
     print(i)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 John
@@ -496,13 +467,13 @@ James
 Jonathan
 ```
 
-# Añadiendo elementos a la lista
+## Añadiendo Elementos a la Lista
 
 La función append() en Python puede agregar un nuevo elemento a la lista. Además, la función append() puede añadir elementos al final de la lista.
 
 Considera el siguiente ejemplo, donde tomamos los elementos de la lista del usuario e imprimimos la lista en la consola.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # Declarando una lista vacía
@@ -529,7 +500,7 @@ for i in l:
     print(i, end=" ")
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 Ingresa el número de elementos en la lista: 10
@@ -547,11 +518,11 @@ Imprimiendo los elementos de la lista...
 32 56 81 2 34 65 9 66 12 18
 ```
 
-# Eliminando elementos de la lista
+## Eliminando Elementos de la Lista
 
 La función remove() en Python puede eliminar un elemento de la lista. Para entender este concepto, veamos el siguiente ejemplo.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 lista = [0, 1, 2, 3, 4]
@@ -569,7 +540,7 @@ for i in lista:
     print(i, end=" ")
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 Imprimiendo la lista original:
@@ -578,7 +549,7 @@ Imprimiendo la lista después de eliminar el primer elemento...
 0 1 3 4
 ```
 
-# Funciones integradas de listas en Python
+## Funciones Integradas de Listas
 
 Python proporciona las siguientes funciones integradas, que se pueden utilizar con listas.
 
@@ -586,11 +557,11 @@ Python proporciona las siguientes funciones integradas, que se pueden utilizar c
 2. max()
 3. min()
 
-### len( )
+### len()
 
 Se utiliza para calcular la longitud de la lista.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # tamaño de la lista
@@ -604,17 +575,17 @@ lista1 = [12, 16, 18, 20, 39, 40]
 len(lista1)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 6
 ```
 
-### max( )
+### max()
 
 Devuelve el elemento máximo de la lista.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # máximo de la lista
@@ -626,7 +597,7 @@ lista1 = [103, 675, 321, 782, 200]
 print(max(lista1))
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 782
@@ -636,7 +607,7 @@ print(max(lista1))
 
 Devuelve el elemento mínimo de la lista.
 
-**Ejemplo:**
+**Ejemplo**:
 
 ```python
 # mínimo de la lista
@@ -648,7 +619,7 @@ lista1 = [103, 675, 321, 782, 200]
 print(min(lista1))
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 103
@@ -656,9 +627,7 @@ print(min(lista1))
 
 Echemos un vistazo a algunos ejemplos de listas.
 
-**Ejemplo 1:** Crear un programa para eliminar los elementos duplicados de una lista.
-
-**Ejemplo:**
+**Ejemplo 1**: Crear un programa para eliminar los elementos duplicados de una lista.
 
 ```python
 lista1 = [1, 2, 2, 3, 55, 98, 65, 65, 13, 29]
@@ -674,15 +643,13 @@ for i in lista1:
 print(lista2)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 [1, 2, 3, 55, 98, 65, 13, 29]
 ```
 
 **Ejemplo 2:** Crear un programa para calcular la suma de los elementos de una lista.
-
-**Ejemplo:**
 
 ```python
 lista1 = [3, 4, 5, 9, 10, 12, 24]
@@ -695,15 +662,13 @@ for i in lista1:
 print("La suma es:", suma)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 La suma es: 67
 ```
 
-**Ejemplo 3:** Crear un programa para encontrar los elementos comunes entre dos listas.
-
-**Ejemplo:**
+**Ejemplo 3**: Crear un programa para encontrar los elementos comunes entre dos listas.
 
 ```python
 lista1 = [1, 2, 3, 4, 5, 6]
@@ -715,7 +680,7 @@ for x in lista1:
             print("El elemento común es:", x)
 ```
 
-**Salida:**
+**Salida**:
 
 ```python
 El elemento común es: 2
